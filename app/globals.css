@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color: #121212;
+}
+
+.hero {
+  color: white;
+background-image: linear-gradient(
+  to bottom,
+  rgba(0, 0, 0, 0.85),
+  rgba(30, 20, 18, 0.75),
+  rgba(70, 45, 40, 0.55),
+  rgba(110, 70, 60, 0.45),
+  rgba(150, 90, 75, 0.5)
+),
+    url("/background4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hamburger-top, .hamburger-middle, .hamburger-bottom {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}

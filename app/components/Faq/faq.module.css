@@ -1,0 +1,89 @@
+.faqSection {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  color: #ffffff;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+ 
+}
+
+.subtitle {
+  font-size: 0.95rem; /* manji tekst od naslova */
+  color: #555;        /* neutralna, tamnosiva boja */
+ 
+  line-height: 1.4;   /* prijatno za čitanje */
+
+   margin-bottom: 2rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 1rem;
+}
+
+.question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  font-size: 1.125rem;
+  font-weight: 500;
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 1.25rem;
+}
+
+.answerWrapper {
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.open {
+  max-height: 500px;
+  margin-top: 0.75rem;
+}
+
+.closed {
+  max-height: 0;
+}
+
+.answer {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.6;
+}
+
+/* Inner content styling */
+.answer p {
+  margin-top: 0.5rem;
+}
+
+.answer ul {
+  margin-left: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.answer li {
+  list-style: disc;
+  margin-bottom: 0.25rem;
+}
+
+.day {
+  font-weight: 600;
+  margin-top: 0.75rem;
+}

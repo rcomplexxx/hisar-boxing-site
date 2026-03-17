@@ -1,0 +1,108 @@
+
+
+
+.topBar{
+  height: 40px;
+  width: 100%;
+  color: var(--headTrack-color);
+  background-color: rgb(0, 0, 0); 
+ /* background-color: rgb(34, 33, 32); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: var(--font-size-2);
+  font-weight: 700;
+}
+
+
+.navBar {
+  background-color: rgba(0, 0, 0, 0.568);
+  padding-left: 2.5rem;  /* mx-10 */
+  padding-right: 2.5rem;
+  padding-top: 1rem;  /* py-6 */
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 0;
+}
+
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600; /* font-semibold */
+  font-size: 2rem;  /* text-2xl */
+  text-transform: uppercase;
+  gap: 1.25rem;    /* space-y-5 */
+}
+
+.mobileMenu a {
+  transition: color 0.2s;
+}
+
+.mobileMenu a:hover {
+  color: #f87171;  /* Tailwind red-500 */
+}
+
+.hidden {
+  display: none;
+}
+
+
+.logoDiv{
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+
+
+  .logoLink{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    padding: var(--size-3);
+    
+    transition: transform 0.08s ease-in;
+    transform: scale(1);
+  }
+
+    .logoImg {
+  
+    height: 96px;
+    width: auto;
+
+
+  
+    
+  }
+
+
+  
+@media(pointer: fine){
+  .logoLink:hover {
+    transform: scale(1.1);
+  }
+}
+
+
+ @media(max-width: 980px){
+ 
+    .logoLink{
+      padding:  var(--size-3) var(--size-2);
+    }
+   
+   }

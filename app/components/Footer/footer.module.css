@@ -1,0 +1,41 @@
+.footer {
+  background-color: #222120; /* dark gray */
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #f87171; /* red hover like navbar */
+}
+
+.contact p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.links a {
+  font-weight: 500;
+}
+
+.copy p {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 10px;
+}
