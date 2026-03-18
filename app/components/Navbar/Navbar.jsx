@@ -43,7 +43,7 @@ export default function Navbar() {
                height={0}
                width={0}
                sizes="128px"
-               src='/logo3.png'
+               src='/Images/logo3.png'
                alt={`logo`}
                className={styles.logoImg}/>
 
