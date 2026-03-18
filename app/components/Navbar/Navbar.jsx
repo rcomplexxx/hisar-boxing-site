@@ -3,7 +3,7 @@ import Image from "next/image";
 import clsx from "clsx";
 import { useState } from "react";
 import DesktopNavLinks from "./DesktopNavLinks";
-import {MenuIcon,CancelIcon } from "/svgs/svgImages";
+import {MenuIcon,CancelIcon } from "@/public/Images/svgs/svgImages";
 import styles from './navbar.module.css'
 import Link from "next/link";
 
