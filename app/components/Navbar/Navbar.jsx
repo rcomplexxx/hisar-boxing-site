@@ -3,6 +3,7 @@ import Image from "next/image";
 import clsx from "clsx";
 import { useState } from "react";
 import DesktopNavLinks from "./DesktopNavLinks";
+import {MenuIcon,CancelIcon } from "@/public/svgs/svgImages";
 import styles from './navbar.module.css'
 import Link from "next/link";
 
@@ -54,15 +55,14 @@ export default function Navbar() {
 
           </div>
 
-         
+         <button className={styles.menuOpenButton} onClick={handleClick}>
+    {isOpen?<CancelIcon color={"#ad4a4a"} styleClassName={styles.menuCancel}/>:<MenuIcon/>}
+    </button>
           
 
           <button
             type="button"
-            className={clsx("w-[24px] h-[20px] relative group", {
-              open: isOpen,
-              "md:hidden": !isOpen,
-            })}
+            className={`${styles.menuWrapper} ${isOpen ? styles.open : styles.hideOnDesktop}`}
             onClick={handleClick}
           >
             <span className="hamburger-top bg-white group-hover:bg-red-500"></span>

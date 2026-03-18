@@ -3,8 +3,10 @@
 
 import NumberItem from "./components/NumberItem";
 import Navbar from './components/Navbar/Navbar'
-import Faq from './components/Faq/Faq'
+import FirstSection from './components/Pocetna/FirstSection/FirstSection'
+import Faq from './components/Pocetna/Faq/Faq'
 import Footer from './components/Footer/Footer'
+import Image from "next/image";
 
 export default function Pocetna() {
  
@@ -33,60 +35,7 @@ export default function Pocetna() {
       
       </section>
 
-      <section id="our-classes" className="bg-black text-white w-100 py-12">
-        <div className="container mx-auto px-10">
-          <div className="flex flex-col md:flex-row w-100">
-            <div>
-              <img src="/boxer2.png" className="h-full" />
-            </div>
-            
-            <div className="flex flex-col w-100 md:w-3/4 lg:w-1/2 mt-10 text-center md:text-start space-y-10">
-              <h1 className="text-2xl uppercase font-black">Boks trening koji donosi rezultate</h1>
-
-              <p>Naši treninzi kombinuju proverene metode profesionalnog boksa sa modernim pristupom kondicionoj pripremi. Fokus je na pravilnoj tehnici, snazi i izdržljivosti. Rezultat su bolja forma, veće samopouzdanje i realan napredak iz treninga u trening.</p>
-
-              <div className="flex flex-row justify-between">
-                <div className="flex flex-row space-x-4">
-                  <img src="/gloves.png" className="invert w-16" alt="" />
-                  <div>
-                    <p className="font-black">Boxing</p>
-                    <p className="opacity-50">Instructor: José Luis</p>
-                  </div>
-                </div>
-
-                <div className="flex flex-row space-x-4">
-                  <img src="/mma.png" className="invert w-16" alt="" />
-                  <div>
-                    <p className="font-black">MMA</p>
-                    <p className="opacity-50">Instructor: José Luis</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex flex-row justify-between">
-                <div className="flex flex-row space-x-4">
-                  <img src="/kickboxing.png" className="invert w-16" alt="" />
-                  <div>
-                    <p className="font-black">Kickboxing</p>
-                    <p className="opacity-50">Instructor: José Luis</p>
-                  </div>
-                </div>
-
-                <div className="flex flex-row space-x-4">
-                  <img src="/selfdefense.png" className="invert w-16" alt="" />
-                  <div>
-                    <p className="font-black">Self-defense</p>
-                    <p className="opacity-50">Instructor: José Luis</p>
-                  </div>
-                </div>
-              </div>
-
-
-            </div>
-            
-          </div>
-        </div>
-      </section>
+      <FirstSection/>
 
 
       <section>

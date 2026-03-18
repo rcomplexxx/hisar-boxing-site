@@ -28,6 +28,22 @@
   z-index: 0;
 }
 
+.menuOpenButton {
+  width: 24px;
+  height: 20px;
+  position: relative;
+  z-index: 9999;
+}
+
+/* md:hidden → hide on ≥768px */
+@media (min-width: 768px) {
+ .menuOpenButton{
+  display: none;
+ }
+}
+
+
+
 .mobileMenu {
   position: fixed;
   top: 0;
@@ -44,6 +60,7 @@
   font-size: 2rem;  /* text-2xl */
   text-transform: uppercase;
   gap: 1.25rem;    /* space-y-5 */
+  z-index: 1000;
 }
 
 .mobileMenu a {
@@ -58,6 +75,14 @@
   display: none;
 }
 
+  .menuCancel {
+    height: var(--size-5);
+    width: var(--size-5);
+  
+  
+  
+  }
+
 
 .logoDiv{
   
@@ -65,6 +90,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 24px;
+    z-index: 9999;
 }
 
 

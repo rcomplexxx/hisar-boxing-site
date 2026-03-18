@@ -18,7 +18,7 @@ background-image: linear-gradient(
   rgba(110, 70, 60, 0.45),
   rgba(150, 90, 75, 0.5)
 ),
-    url("/background4.png");
+    url("/Images/background4.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
