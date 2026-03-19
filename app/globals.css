@@ -117,8 +117,9 @@ html{
 
 body{
   color:white;
-  min-height: 100vh;
-  background-color: #121212;
+   background-color: #121212;
+ 
+ 
    height: max-content;
     display: flex;
   flex-direction: column;
@@ -126,6 +127,16 @@ body{
   align-items: center;
 
 
+
+  min-height: 100%;
+  width: 100%;
+ 
+
+
+  overflow-x: clip;
+
+
+  overflow-anchor: none;
   
 }
 
@@ -151,6 +162,10 @@ main{
   
   overflow-anchor: none;
 
+}
+
+section{
+  width: 100%;
 }
 
 h1{
