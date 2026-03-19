@@ -10,7 +10,7 @@ export default function FirstSection() {
       <div className={styles.containerWrapper}>
   <div className={styles.container}>
             
-              <Image height={0} width={0} sizes='100vw' src="/main_1.png" className={styles.imgMain1} />
+              <Image height={0} width={0} sizes='100vw' src="/Images/main_1.png" className={styles.imgMain1} />
             
             
             <div className="flex flex-col w-100 md:w-3/4 lg:w-1/2 mt-10 text-center md:text-start space-y-10">

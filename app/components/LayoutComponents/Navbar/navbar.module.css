@@ -28,6 +28,19 @@
   z-index: 0;
 }
 
+
+.heading {
+  font-weight: 900;          /* font-black */
+  text-transform: uppercase; /* uppercase */
+  color: #dc2626;            /* text-red-600 */
+  font-size: 1.25rem;        /* text-xl */
+  transition: color 0.2s;    /* optional smooth hover effect */
+}
+
+.heading:hover {
+  color: #f87171;            /* hover:text-red-400 */
+}
+
 .menuOpenButton {
   width: 24px;
   height: 20px;
@@ -75,13 +88,7 @@
   display: none;
 }
 
-  .menuCancel {
-    height: var(--size-5);
-    width: var(--size-5);
-  
-  
-  
-  }
+ 
 
 
 .logoDiv{

@@ -4,8 +4,78 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
+:root {
+
+ --size-1: 2px;
+  --size-2: 4px;
+  --size-3: 8px;
+  --size-4: 12px;
+  --size-5: 16px;
+  --size-6: 24px;
+  --size-7: 32px;
+  --size-8: 48px;
+  --size-8-5: 56px;
+  --size-9: 64px;
+  --size-9-5: 80px;
+  --size-10: 96px;
+  --size-10-5: 112px;
+  --size-11: 128px;
+  --size-11-5: 160px;
+  --size-12: 192px;
+  --size-12-5: 224px; 
+  --size-13: 256px;
+  --size-13-5: 320px;
+  --size-14: 384px;
+  --size-14-5: 448px;
+  --size-15: 512px;
+  --size-15-5: 576px;
+  --size-16: 640px;
+  --size-17: 768px;
+  --size-18: 1024px;
+  --size-18-5: 1102px;
+  --size-19: 1280px;
+  --size-20: 1680px;
+
+
+  
+
+
+
+  /* --hand-writing-font: var(--font-eb_garamond); */
+  --hand-writing-font: "Times New Roman", serif;
+  --font-neutral: var(--font-inter);
+  --font-size-1: 12px;
+  --font-size-2: 14px;
+  --font-size-3: 16px;
+  --font-size-4: 18px;
+  --font-size-5: 20px;
+  --font-size-6: 24px;
+  --font-size-6-5: 28px;
+  --font-size-7: 30px;
+  --font-size-8: 36px;
+  --font-size-9: 48px;
+  --font-size-10: 60px;
+  --font-size-11: 72px;
+
+
+
+
+
+  --navbar-height: 104px;
+
+}
+
+
+
 body{
   background-color: #121212;
+   height: max-content;
+  display: flex;
+  flex-direction: column;
+   align-items: center;
 }
 
 .hero {
@@ -23,36 +93,3 @@ background-image: linear-gradient(
   background-size: cover;
 }
 
-.hamburger-top, .hamburger-middle, .hamburger-bottom {
-  position: absolute;
-  width: 24px;
-  height: 2px;
-  top: 0;
-  left: 0;
-  transform: rotate(0);
-  transition: all 0.5s;
-}
-
-.hamburger-middle {
-  transform: translateY(7px);
-}
-
-.hamburger-bottom {
-  transform: translateY(14px);
-}
-
-.open {
-  transform: rotate(90deg);
-}
-
-.open .hamburger-middle {
-  display: none;
-}
-
-.open .hamburger-top {
-  transform: rotate(45deg) translateY(6px) translateX(6px);
-}
-
-.open .hamburger-bottom {
-  transform: rotate(-45deg) translateY(6px) translateX(-6px);
-}
