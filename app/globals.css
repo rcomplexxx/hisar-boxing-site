@@ -60,12 +60,43 @@
   --font-size-10: 60px;
   --font-size-11: 72px;
 
+  --fs-1: 0.75rem;
+  --fs-2:  0.875rem;
+  --fs-3: 1rem;/* small */
+  --fs-4: 1.25rem;/* normal */
+  --fs-5: 1.5rem;/* large */
+  --fs-6: 1.75rem;
+  --fs-7: 2rem;
+ --fs-8: 3rem;
 
 
-
+  --h1-fs: var(--fs-8);
+  --h2-fs: var(--fs-6);
   --topbar-height: 40px;
   --navbar-height: 144px;
 
+ 
+
+
+}
+  @media (max-width: 1024px) {
+    :root {
+      --fs-8: 2.5rem;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+  :root {
+    --fs-1: 0.5rem;
+    --fs-2: 0.75rem;
+    --fs-3: 0.875rem; /* small */
+    --fs-4: 1rem; /* normal */
+    --fs-5: 1.25rem; /* large */
+    --fs-6: 1.5rem;
+    --fs-7: 1.75rem;
+     --fs-8: 2rem;
+  }
 }
 
 
@@ -74,14 +105,18 @@ html, body{
   width: 100%;
 }
 
+
 html{
-  
- 
- 
+  font-size: 16px;
 }
 
 
+
+
+
+
 body{
+  color:white;
   min-height: 100vh;
   background-color: #121212;
    height: max-content;
@@ -89,15 +124,51 @@ body{
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+
   
 }
 
 
 main{
+
+   position: relative;
+  height: max-content;
+   width: 100% ;
    min-height: calc(100vh - var(--topbar-height) - var(--navbar-height));
+
     display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+
+
+  
+ 
+  overflow-x: clip;
+
+  
+  overflow-anchor: none;
+
 }
 
+h1{
+  font-size: var(--h1-fs);
+}
+
+h2{
+  font-size: var(--h2-fs);
+}
+
+p{
+  line-height: 1.4; 
+}
+
+section{
+  min-width: 0;
+}
+
+button{
+  min-width: 0;
+}

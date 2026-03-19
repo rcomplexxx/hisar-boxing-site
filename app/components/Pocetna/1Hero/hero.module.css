@@ -67,3 +67,10 @@ background-image: linear-gradient(
     margin-top: 10rem; /* md:mt-40 */
   }
 }
+
+
+.heroHeading{
+  line-height: 1;         /* Tailwind default for large text */
+  text-transform: uppercase; /* uppercase */
+  font-weight: 900;       /* font-black */
+}

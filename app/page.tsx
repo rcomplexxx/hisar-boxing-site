@@ -13,7 +13,7 @@ import Image from "next/image";
 export default function Pocetna() {
  
 
-  return (<div>
+  return (<>
       
         <Hero/>
       
@@ -30,8 +30,7 @@ export default function Pocetna() {
    
    
 
-      <Footer/>
-</div>
+</>
       
   );
 }

@@ -16,14 +16,14 @@
   justify-content: center;
   align-items: center;
 
-  font-size: var(--font-size-2);
+  font-size: var(--fs-2);
   font-weight: 700;
 }
 
 
 .navBar {
   height: var(--navbar-height);
-  background-color: rgba(0, 0, 0, 0.568);
+  background-color: rgba(0, 0, 0, 0.5);
   padding-left: 2.5rem;  /* mx-10 */
   padding-right: 2.5rem;
   padding-top: 1rem;  /* py-6 */
@@ -39,7 +39,7 @@
   font-weight: 900;          /* font-black */
   text-transform: uppercase; /* uppercase */
   color: #dc2626;            /* text-red-600 */
-  font-size: 1.25rem;        /* text-xl */
+  font-size: var(--fs-3);        /* text-xl */
   transition: color 0.2s;    /* optional smooth hover effect */
 }
 

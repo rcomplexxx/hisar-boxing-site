@@ -4,7 +4,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import DesktopNavLinks from "./DesktopNavLinks";
+import DesktopNavLinks from "./DesktopNavLinks/DesktopNavLinks";
 import {MenuIcon,CancelIcon } from "@/public/Images/svgs/svgImages";
 import styles from './navbar.module.css'
 import Link from "next/link";
