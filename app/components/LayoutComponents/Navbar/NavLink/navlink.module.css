@@ -1,0 +1,17 @@
+
+
+
+
+
+
+.linkStyle {
+  display: inline-block;
+  margin: 0.5rem;      /* mx-2 mt-2 */
+  border-bottom: 2px solid #f87171; /* red-500 */
+  border-color: transparent;
+  transition: border-color 0.5s;
+}
+
+.linkStyle:hover {
+  border-color: #f87171; /* show underline on hover */
+}

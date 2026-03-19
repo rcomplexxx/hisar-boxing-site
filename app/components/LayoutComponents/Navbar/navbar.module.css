@@ -1,8 +1,13 @@
 
+.navWrapper {
+ width: 100%;
+   z-index: 1000;
+}
+
 
 
 .topBar{
-  height: 40px;
+  height: var(--topbar-height);
   width: 100%;
   color: var(--headTrack-color);
   background-color: rgb(0, 0, 0); 
@@ -17,6 +22,7 @@
 
 
 .navBar {
+  height: var(--navbar-height);
   background-color: rgba(0, 0, 0, 0.568);
   padding-left: 2.5rem;  /* mx-10 */
   padding-right: 2.5rem;

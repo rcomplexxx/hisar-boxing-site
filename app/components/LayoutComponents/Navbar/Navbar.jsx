@@ -1,15 +1,22 @@
+"use client";
+
+
 
 import Image from "next/image";
-import clsx from "clsx";
 import { useState } from "react";
 import DesktopNavLinks from "./DesktopNavLinks";
 import {MenuIcon,CancelIcon } from "@/public/Images/svgs/svgImages";
 import styles from './navbar.module.css'
 import Link from "next/link";
 
+
+
+
 export default function Navbar() {
 
  const [isOpen, setOpen] = useState(false);
+
+
 
   function handleClick() {
     setOpen(!isOpen);

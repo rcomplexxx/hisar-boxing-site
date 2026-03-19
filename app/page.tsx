@@ -1,4 +1,4 @@
-"use client";
+
 
 
 import NumberItem from "./components/Pocetna/2NumberCopyWriting/NumberItem";

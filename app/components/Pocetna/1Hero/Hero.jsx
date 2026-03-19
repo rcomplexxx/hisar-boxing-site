@@ -1,16 +1,16 @@
 import React from 'react'
-import Navbar from '../../LayoutComponents/Navbar/Navbar'
+import styles from './hero.module.css'
 
 
 export default function Hero() {
   return (
-    <section id="hero" className="hero min-h-screen relative">
+    <section id="hero" className={`${styles.hero} min-h-screen relative`}>
 
-        <Navbar/>
 
-           <div className="pb-10 flex text-center lg:text-left justify-center md:justify-end">
-          <div className="flex flex-col items-start justify-start lg:w-2/5 space-y-16 lg:space-y-10 mx-10 mt-20 md:mt-40 object-scale-down">
-            <h1 className="text-5xl uppercase font-black">
+         <div className={styles.outerWrapper}>
+  <div className={styles.innerWrapper}>
+    
+       <h1 className="text-5xl uppercase font-black">
               GRUPNI I INDIVIDUALNI TRENINZI BOKSA U LESKOVCU
             </h1>
 
