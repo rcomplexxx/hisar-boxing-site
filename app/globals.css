@@ -72,6 +72,7 @@
 
   --h1-fs: var(--fs-8);
   --h2-fs: var(--fs-6);
+  --h3-fs: var(--fs-5);
   --topbar-height: 40px;
   --navbar-height: 144px;
 
@@ -170,10 +171,17 @@ section{
 
 h1{
   font-size: var(--h1-fs);
+    font-weight: 900;
 }
 
 h2{
   font-size: var(--h2-fs);
+    font-weight: 800;
+}
+
+h3{
+  font-size: var(--h3-fs);
+  font-weight: 700;
 }
 
 p{

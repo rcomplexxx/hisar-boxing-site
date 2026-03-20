@@ -8,7 +8,7 @@ export default function Footer() {
         
         {/* Brand */}
         <div className={styles.col}>
-          <h3 className={styles.logo}>Hisar Boxing</h3>
+          <h3 className={styles.logo}>Hisar Boxing Club</h3>
           <p className={styles.desc}>
             Profesionalni boks klub u Staroj Pazovi. Trening za početnike i napredne.
           </p>
@@ -44,7 +44,7 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className={styles.bottom}>
-        <p>© {new Date().getFullYear()} Hisar Boxing Gym. Sva prava zadržana.</p>
+        <p>© {new Date().getFullYear()} Hisar Boxing Club. Sva prava zadržana.</p>
       </div>
     </footer>
   );
