@@ -17,6 +17,9 @@ background-image: linear-gradient(
 
     margin-top: calc(-1 * (var(--topbar-height) + var(--navbar-height)));
      padding-top: calc((var(--topbar-height) + var(--navbar-height)));
+
+     display: flex;
+     justify-content: center;
   z-index: 2;
 }
 
@@ -24,56 +27,79 @@ background-image: linear-gradient(
 /* Outer wrapper */
 .outerWrapper {
    
-  padding-bottom: 2.5rem; /* pb-10 */
+  padding-bottom: var(--size-8); 
   display: flex;
-  text-align: center;       /* text-center */
-  justify-content: center;  /* justify-center */
+  text-align: left;       /* text-center */
+  justify-content: flex-end;  /* justify-center */
 }
 
-/* Responsive overrides */
-@media (min-width: 768px) { /* md: */
-  .outerWrapper {
-    justify-content: flex-end; /* md:justify-end */
-  }
-}
 
-@media (min-width: 1024px) { /* lg: */
-  .outerWrapper {
-    text-align: left; /* lg:text-left */
-  }
-}
+
+
+
 
 /* Inner wrapper */
 .innerWrapper {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;    /* items-start */
-  justify-content: flex-start;/* justify-start */
-  width: 100%;
-  margin-left: 2.5rem;       /* mx-10 */
-  margin-right: 2.5rem;      /* mx-10 */
-  margin-top: 5rem;           /* mt-20 */
-  gap: 4rem;                  /* space-y-16 */
-  object-fit: scale-down;     /* object-scale-down */
+  align-items: flex-start;    
+  justify-content: flex-start;
+  width: 40%; 
+  margin-left: 2.5rem;     
+  margin-right: 2.5rem;      
+  margin-top: var(--size-16);  
+  gap: var(--size-8);        
+                 
+  object-fit: scale-down;     
 }
 
-/* Responsive adjustments */
-@media (min-width: 1024px) { /* lg: */
-  .innerWrapper {
-    width: 40%;       /* lg:w-2/5 */
-    gap: 2.5rem;     /* lg:space-y-10 */
+
+
+@media (max-width: 1024px) { /* lg: */
+
+  
+
+  .outerWrapper {
+    
+    text-align: center; /* lg:text-left */
+    
+  }
+
+
+   .innerWrapper {
+    max-width: var(--size-25);
+    width: 100%;       
+     gap: var(--size-8);         
   }
 }
 
-@media (min-width: 768px) { /* md: */
-  .innerWrapper {
-    margin-top: 10rem; /* md:mt-40 */
+
+@media (max-width: 768px) {
+
+
+  .hero{
+    align-items: center;
   }
+
+  .outerWrapper {
+     padding-bottom: var(--size-7); 
+  }
+
+  .innerWrapper {
+     max-width: var(--size-24);
+    justify-content: center;
+      margin-top: calc(-1 * var(--size-8));    
+    
+  }
+
 }
+
+
+
 
 
 .heroHeading{
   line-height: 1;         /* Tailwind default for large text */
   text-transform: uppercase; /* uppercase */
-  font-weight: 900;       /* font-black */
+  font-weight: 800;       /* font-black */
 }

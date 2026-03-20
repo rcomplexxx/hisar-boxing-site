@@ -27,7 +27,7 @@ export default function Footer() {
         <div className={styles.col}>
           <h4>Navigacija</h4>
           <a href="/">Početna</a>
-          <a href="#our-classes">Naš tim</a>
+          <a href="#our-classes">Ekipa</a>
           <a href="#gallery">Galerija</a>
           <a href="#about">O nama</a>
           <a href="#contact">Kontakt</a>

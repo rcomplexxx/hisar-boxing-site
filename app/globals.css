@@ -9,35 +9,36 @@
 
 :root {
 
- --size-1: 2px;
-  --size-2: 4px;
-  --size-3: 8px;
-  --size-4: 12px;
-  --size-5: 16px;
-  --size-6: 24px;
-  --size-7: 32px;
-  --size-8: 48px;
-  --size-8-5: 56px;
-  --size-9: 64px;
-  --size-9-5: 80px;
-  --size-10: 96px;
-  --size-10-5: 112px;
-  --size-11: 128px;
-  --size-11-5: 160px;
-  --size-12: 192px;
-  --size-12-5: 224px; 
-  --size-13: 256px;
-  --size-13-5: 320px;
-  --size-14: 384px;
-  --size-14-5: 448px;
-  --size-15: 512px;
-  --size-15-5: 576px;
-  --size-16: 640px;
-  --size-17: 768px;
-  --size-18: 1024px;
-  --size-18-5: 1102px;
-  --size-19: 1280px;
-  --size-20: 1680px;
+--size-1: 0.125rem;   /* 2px */
+--size-2: 0.25rem;    /* 4px */
+--size-3: 0.5rem;     /* 8px */
+--size-4: 0.75rem;    /* 12px */
+--size-5: 1rem;       /* 16px */
+--size-6: 1.5rem;     /* 24px */
+--size-7: 2rem;       /* 32px */
+--size-8: 2.5rem;       /* 48px */
+--size-9: 3rem;       /* 48px */
+--size-10: 3.5rem;   /* 56px */
+--size-11: 4rem;       /* 64px */
+--size-12: 5rem;     /* 80px */
+--size-13: 6rem;      /* 96px */
+--size-14: 7rem;    /* 112px */
+--size-15: 8rem;      /* 128px */
+--size-16: 10rem;   /* 160px */
+--size-17: 12rem;     /* 192px */
+--size-18: 14rem;   /* 224px */
+--size-19: 16rem;     /* 256px */
+--size-20: 20rem;   /* 320px */
+--size-21: 24rem;     /* 384px */
+--size-22: 28rem;   /* 448px */
+--size-23: 32rem;     /* 512px */
+--size-24: 36rem;   /* 576px */
+--size-25: 40rem;     /* 640px */
+--size-26: 48rem;     /* 768px */
+--size-27: 64rem;     /* 1024px */
+--size-28: 68.875rem; /* 1102px */
+--size-29: 80rem;     /* 1280px */
+--size-30: 105rem;    /* 1680px */
 
 
   
@@ -99,6 +100,21 @@
      --fs-8: 2rem;
   }
 }
+
+  @media (max-width: 640pxpx) {
+  :root {
+    --fs-1: 0.375rem;
+    --fs-2: 0.5rem;
+    --fs-3: 0.75rem; /* small */
+    --fs-4: 875rem; /* normal */
+    --fs-5: 1rem; /* large */
+    --fs-6: 1.25rem;
+    --fs-7: 1.5rem;
+     --fs-8: 1.75rem;
+  }
+}
+
+
 
 
 html, body{
@@ -169,10 +185,15 @@ section{
   width: 100%;
 }
 
+
+
+
 h1{
   font-size: var(--h1-fs);
-    font-weight: 900;
+   font-weight: 800; 
 }
+
+
 
 h2{
   font-size: var(--h2-fs);
