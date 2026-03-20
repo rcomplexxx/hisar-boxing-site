@@ -128,7 +128,7 @@ background-image: linear-gradient(
   background-color: #b91c1c; /* bg-red-700 */
   text-transform: uppercase;
   font-weight: 600; /* font-semibold */
-  padding: var(--size-5) var(--size-9); /* py-4 px-20 → 16px top/bottom, 80px left/right */
+  padding: var(--size-5) var(--size-8); /* py-4 px-20 → 16px top/bottom, 80px left/right */
   transition: background-color 0.2s; /* duration-200 */
   display: block; /* to make mx-auto work */
 }
