@@ -10,7 +10,7 @@ export default function Footer() {
         <div className={styles.col}>
           <h3 className={styles.logo}>Hisar Boxing Club</h3>
           <p className={styles.desc}>
-            Profesionalni boks klub u Staroj Pazovi. Trening za početnike i napredne.
+            Profesionalni boks klub u Leskovcu. Trening za početnike i napredne.
           </p>
         </div>
 
