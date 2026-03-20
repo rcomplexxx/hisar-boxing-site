@@ -27,7 +27,7 @@ background-image: linear-gradient(
 /* Outer wrapper */
 .outerWrapper {
    
-  padding-bottom: var(--size-8); 
+ 
   display: flex;
   text-align: left;       /* text-center */
   justify-content: flex-end;  /* justify-center */
@@ -48,6 +48,7 @@ background-image: linear-gradient(
   margin-left: 2.5rem;     
   margin-right: 2.5rem;      
   margin-top: var(--size-16);  
+  margin-bottom: var(--size-8); 
   gap: var(--size-8);        
                  
   object-fit: scale-down;     
@@ -70,7 +71,7 @@ background-image: linear-gradient(
     max-width: var(--size-25);
     width: 100%;       
      gap: var(--size-8);
-      margin-top: 0;         
+       margin-top: var(--size-8);      
   }
 }
 
