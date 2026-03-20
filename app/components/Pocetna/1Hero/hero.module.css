@@ -15,6 +15,9 @@ background-image: linear-gradient(
   background-repeat: no-repeat;
   background-size: cover;
 
+
+    position: relative;
+  min-height: 100vh;
     margin-top: calc(-1 * (var(--topbar-height) + var(--navbar-height)));
      padding-top: calc((var(--topbar-height) + var(--navbar-height)));
 
@@ -40,6 +43,8 @@ background-image: linear-gradient(
 
 /* Inner wrapper */
 .innerWrapper {
+
+ 
   display: flex;
   flex-direction: column;
   align-items: flex-start;    
@@ -70,8 +75,8 @@ background-image: linear-gradient(
    .innerWrapper {
     max-width: var(--size-25);
     width: 100%;       
-     gap: var(--size-8);
-       margin-top: var(--size-8);      
+    gap: var(--size-8);
+    margin-top: var(--size-11);      
   }
 }
 
@@ -80,6 +85,7 @@ background-image: linear-gradient(
 
 
   .hero{
+    min-height: 0;
     align-items: center;
   }
 
@@ -88,10 +94,17 @@ background-image: linear-gradient(
   }
 
   .innerWrapper {
-     max-width: var(--size-24);
+    max-width: var(--size-24);
     justify-content: center;
+    gap: var(--size-6);
+    margin-top: var(--size-14);
+    margin-bottom: var(--size-14);   
      
     
+  }
+
+  .heroPharagraph{
+    display: none;
   }
 
 }
