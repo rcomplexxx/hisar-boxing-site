@@ -14,13 +14,16 @@ background-image: linear-gradient(
     url("/Images/background4.png");
   background-repeat: no-repeat;
   background-size: cover;
+
+    margin-top: calc(-1 * (var(--topbar-height) + var(--navbar-height)));
+     padding-top: calc((var(--topbar-height) + var(--navbar-height)));
+  z-index: 2;
 }
 
 
 /* Outer wrapper */
 .outerWrapper {
-     margin-top: calc(-1 * (var(--topbar-height) + var(--navbar-height)));
-     padding-top: calc((var(--topbar-height) + var(--navbar-height)));
+   
   padding-bottom: 2.5rem; /* pb-10 */
   display: flex;
   text-align: center;       /* text-center */
