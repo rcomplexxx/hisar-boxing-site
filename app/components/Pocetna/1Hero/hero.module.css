@@ -69,7 +69,8 @@ background-image: linear-gradient(
    .innerWrapper {
     max-width: var(--size-25);
     width: 100%;       
-     gap: var(--size-8);         
+     gap: var(--size-8);
+      margin-top: 0;         
   }
 }
 
@@ -88,7 +89,8 @@ background-image: linear-gradient(
   .innerWrapper {
      max-width: var(--size-24);
     justify-content: center;
-    padding-bottom: var(--size-3); 
+    padding-bottom: var(--size-3);
+     
     
   }
 
