@@ -4,9 +4,9 @@
 import styles from "./galerija.module.css";
 
 const sections = [
-  { title: "Gym Training" },
-  { title: "Gym Training" },
-  { title: "Videos" },
+  { title: "Gym " },
+  { title: "Treninzi" },
+  { title: "Video klipovi" },
 ];
 
 export default function Gallery() {
