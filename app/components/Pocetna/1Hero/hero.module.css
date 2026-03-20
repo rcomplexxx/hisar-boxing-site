@@ -50,8 +50,8 @@ background-image: linear-gradient(
   align-items: flex-start;    
   justify-content: flex-start;
   width: 40%; 
-  margin-left: 2.5rem;     
-  margin-right: 2.5rem;      
+  margin-left: var(--size-8);     
+  margin-right: var(--size-8);     
   margin-top: var(--size-16);  
   margin-bottom: var(--size-8); 
   gap: var(--size-8);        
@@ -98,14 +98,16 @@ background-image: linear-gradient(
     justify-content: center;
     gap: var(--size-6);
     margin-top: var(--size-14);
-    margin-bottom: var(--size-14);   
+    margin-bottom: var(--size-14);  
+      margin-left: var(--size-4);     
+  margin-right: var(--size-4);  
      
     
   }
 
-  .heroPharagraph{
+  /* .heroPharagraph{
     display: none;
-  }
+  } */
 
 }
 
@@ -118,3 +120,28 @@ background-image: linear-gradient(
   text-transform: uppercase; /* uppercase */
   font-weight: 800;       /* font-black */
 }
+
+
+
+.kontaktButton {
+ 
+  background-color: #b91c1c; /* bg-red-700 */
+  text-transform: uppercase;
+  font-weight: 600; /* font-semibold */
+  padding: var(--size-5) var(--size-9); /* py-4 px-20 → 16px top/bottom, 80px left/right */
+  transition: background-color 0.2s; /* duration-200 */
+  display: block; /* to make mx-auto work */
+}
+
+.kontaktButton:hover {
+  background-color: #f87171; /* hover:bg-red-500 */
+}
+
+
+@media (max-width: 1024px) { /* lg: breakpoint */
+  .kontaktButton {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
