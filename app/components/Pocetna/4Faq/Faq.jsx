@@ -87,7 +87,7 @@ export default function Faq() {
 
   return (
     <section className={styles.faqSection}>
-    <h2 className={styles.title}>Cesto postavljana pitanja</h2>
+    <h2 className={styles.title}>Često postavljana pitanja</h2>
 <p className={styles.subtitle}>
   Slobodno nam pošaljite poruku na <a href="mailto:hisarboxing@gmail.com">hisarboxing@gmail.com</a> ako imate dodatnih pitanja.
 </p>

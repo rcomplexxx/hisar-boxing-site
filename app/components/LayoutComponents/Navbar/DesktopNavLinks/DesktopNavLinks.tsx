@@ -21,7 +21,7 @@ const currentPath = usePathname();
             <NavLink link="o-nama" text="O nama" currentPath={currentPath} />
 
             <button className="mb-2 bg-yellow-700 hover:bg-yellow-500 duration-200 py-2 px-3 font-semibold">
-              Kontaktirajte nas
+              Učlani se
             </button>
           </div>
     );
