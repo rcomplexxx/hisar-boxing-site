@@ -27,9 +27,14 @@
   color: #f87171;
 }
 
-.logo {
-  font-weight: 700;
-  color: #f87171;         
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoText {
+  margin-bottom: 0 !important;
 }
 
 .desc {

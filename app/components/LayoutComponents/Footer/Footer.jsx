@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./footer.module.css";
 import React from "react";
 
@@ -8,7 +9,15 @@ export default function Footer() {
         
         {/* Brand */}
         <div className={styles.col}>
-          <h3 className={styles.logo}>Hisar Boxing Club</h3>
+          <div className={styles.logoWrapper}>
+  <Image
+    src="/Images/logo3.png" // put your logo in /public
+    alt="Hisar Boxing Club logo"
+    width={40}
+    height={40}
+  />
+  <h4 className={styles.logoText}>Hisar Boxing Club</h4>
+</div>
           <p className={styles.desc}>
             Profesionalni boks klub u Leskovcu. Trening za početnike i napredne.
           </p>
