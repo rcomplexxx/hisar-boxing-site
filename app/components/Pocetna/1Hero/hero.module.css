@@ -88,7 +88,7 @@ background-image: linear-gradient(
   .innerWrapper {
      max-width: var(--size-24);
     justify-content: center;
-      margin-top: calc(-1 * var(--size-8));    
+    padding-bottom: var(--size-3); 
     
   }
 
