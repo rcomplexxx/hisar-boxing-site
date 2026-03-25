@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import AppInitializer from '@/app/AppInitializer'
 import Footer from "./components/LayoutComponents/Footer/Footer";
 import Navbar from "./components/LayoutComponents/Navbar/Navbar";
+
 
 
 const inter = Inter({
@@ -19,10 +21,17 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
+
+
+  
+
   return (
     <html className="mainHtml" lang="en">
 
       <body className={inter.className}>
+       <AppInitializer/>
  <Navbar/>
        <main className="main">
           {children}

@@ -1,0 +1,62 @@
+
+ 
+
+
+.logoDiv{
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+  .heading {
+  font-weight: 900;          /* font-black */
+  text-transform: uppercase; /* uppercase */
+  color: #dc2626;            /* text-red-600 */
+  font-size: var(--fs-3);        /* text-xl */
+  transition: color 0.2s;    /* optional smooth hover effect */
+}
+
+.heading:hover {
+  color: #f87171;            /* hover:text-red-400 */
+}
+
+
+
+
+  .logoLink{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    padding: var(--size-3);
+    
+    transition: transform 0.08s ease-in;
+    transform: scale(1);
+  }
+
+    .logoImg {
+  
+    height: 96px;
+    width: auto;
+
+    
+  }
+
+
+  
+@media(pointer: fine){
+  .logoLink:hover {
+    transform: scale(1.1);
+  }
+}
+
+
+ @media(max-width: 980px){
+ 
+    .logoLink{
+      padding:  var(--size-3) var(--size-2);
+    }
+   
+   }
