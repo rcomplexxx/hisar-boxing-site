@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const trainers = [
   {
-    name: "Marko Petrović",
+    name: "Rastko Stamenković",
     role: "Glavni trener",
-    image: "/Images/boxer.png",
+    image: "/Images/boxer_ra_3.png",
     bio: "Bivši profesionalni bokser sa preko 50 mečeva. Specijalizovan za tehniku i pripremu takmičara.",
     achievements: ["Nacionalni šampion", "15+ godina iskustva"],
     experience: "15+ god"
