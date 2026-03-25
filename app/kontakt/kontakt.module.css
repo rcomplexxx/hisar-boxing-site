@@ -1,0 +1,82 @@
+/* app/contact/contact.module.css */
+
+.subtitle {
+  color: #9ca3af;
+  margin-bottom: 30px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #1f2937;
+  padding: 15px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+}
+
+.item:hover {
+  background: #374151;
+  transform: translateY(-2px);
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.ctaBox {
+  background: #1e40af;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ctaBox h2 {
+  margin-bottom: 10px;
+}
+
+.ctaButton {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 20px;
+  background: white;
+  color: #1e40af;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.ctaButton:hover {
+  opacity: 0.9;
+}
+
+.backLink {
+  display: inline-block;
+  margin-top: 10px;
+  color: #9ca3af;
+  text-decoration: none;
+}
+
+.backLink:hover {
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 25px;
+  }
+
+  .card h1 {
+    font-size: 2rem;
+  }
+}
