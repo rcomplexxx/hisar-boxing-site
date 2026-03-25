@@ -131,8 +131,8 @@ export default function TeamPage() {
         {/* QUOTE SECTION */}
         <div className="text-center mt-20 max-w-3xl mx-auto">
           <p className="text-xl italic text-gray-300">
-            "Šampioni se ne stvaraju u ringu — tamo se samo dokazuje ono što su
-            izgradili na treninzima."
+            {'"Šampioni se ne stvaraju u ringu — tamo se samo dokazuje ono što su izgradili na treninzima."'}
+
           </p>
         </div>
 
