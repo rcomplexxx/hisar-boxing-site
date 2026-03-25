@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './hero.module.css'
+import Link from 'next/link'
 
 
 export default function Hero() {
@@ -18,9 +19,9 @@ export default function Hero() {
               Naučite boks uz profesionalnog trenera sa iskustvom od 45 profesionalnih mečeva. Naučite pravilnu tehniku, taktiku i disciplinu koja stoji iza ovog sporta. Treninzi su prilagođeni vašim ciljevima – bilo da želite bolju formu, samoodbranu ili takmičarski nivo. Uđite u ring spremni i sigurni u svoje sposobnosti.
             </p>
 
-            <button className={styles.kontaktButton}>
+            <Link href={`/kontakt`} className={styles.kontaktButton}>
               Kontaktirajte nas
-            </button>
+            </Link>
           </div>
         </div>
       
