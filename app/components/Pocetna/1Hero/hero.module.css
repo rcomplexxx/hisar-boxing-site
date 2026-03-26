@@ -125,7 +125,7 @@ background-image: linear-gradient(
 
 .kontaktButton {
  
-  background-color: var(--hero-cta-color); /* bg-red-700 */
+  background-color: var(--hero-cta-color);
   text-transform: uppercase;
   font-weight: 600; /* font-semibold */
   padding: var(--size-5) var(--size-8); /* py-4 px-20 → 16px top/bottom, 80px left/right */

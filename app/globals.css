@@ -77,18 +77,20 @@
    --main-color-8: #d6514d;
  --main-color-9: #ec645f;
 
---neutral-color-1: black;
- --neutral-color-2: #050404;
- --neutral-color-3: #0b0907;/*Rezervisana za footer*/
- --neutral-color-4: #0e0d0b;
- --neutral-color-5: #0f0e0c;
- --neutral-color-6: #181715;
- --neutral-color-7: #2b2b27;
- --neutral-color-8: #3a3a37;
- --neutral-color-9: #555552;
- --neutral-color-10: #85857d;
- --neutral-color-11: #adada8;
---neutral-color-12: #d5d5d4;
+
+  --neutral-color-1: #000000;  /*Rezervisana za footer*/
+--neutral-color-2: #050608;
+ --neutral-color-3: #090C0F;
+ --neutral-color-4: #0E1014;
+ --neutral-color-5: #14171D;
+ --neutral-color-6: #1B212A;
+ --neutral-color-7: #181715;
+ --neutral-color-8: #2b2b27;/*pocetna boja */
+ --neutral-color-9: #3a3a37;
+ --neutral-color-10: #555552;
+ --neutral-color-11: #85857d;
+ --neutral-color-12: #adada8;
+--neutral-color-13: #d5d5d4;
 
 
 
@@ -120,9 +122,11 @@
 
 --hero-cta-color: var(--main-color-3);
 
+--section-proof-bg: var(--neutral-3);
+
 --section-important-bg: var(--neutral-color-2);
 
---footer-bg: var(--neutral-color-3);
+--footer-bg: var(--neutral-color-1);
  
 
 
@@ -180,7 +184,7 @@ html{
 
 body{
   color:white;
-   background-color: var(--neutral-color-4);
+   background-color: var(--neutral-color-3);
  
  
    height: max-content;
