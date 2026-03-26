@@ -1,6 +1,6 @@
 .section {
   background-color: var(--section-proof-bg); /* main dark */
-  color: #ffffff;
+  color: var(--text-highlighted-color);
   padding: 3rem 2.5rem;
 
   display: flex;

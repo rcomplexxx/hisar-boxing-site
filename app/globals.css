@@ -84,14 +84,16 @@
  --neutral-color-4: #0E1014;
  --neutral-color-5: #14171D;
  --neutral-color-6: #1B212A;
- --neutral-color-7: #181715;
- --neutral-color-8: #2b2b27;/*pocetna boja */
- --neutral-color-9: #3a3a37;
- --neutral-color-10: #555552;
- --neutral-color-11: #85857d;
- --neutral-color-12: #adada8;
---neutral-color-13: #d5d5d4;
-
+ --neutral-color-7: #202833;
+ --neutral-color-8: #222B38;/*pocetna boja */
+ --neutral-color-9: #38404c;
+ --neutral-color-10: #4e5560;
+ --neutral-color-11: #7a8088;
+ --neutral-color-12: #a7aaaf;
+--neutral-color-13: #bdbfc3;
+--neutral-color-14: #d3d5d7;
+--neutral-color-15: #dedfe1;
+--neutral-color-16: #f3f1f0;
 
 
    /* --main-color-1: #ff4537;
@@ -117,16 +119,39 @@
 #f1a39d
 #ffcbb5 */
 
+--bg-footer: var(--neutral-color-1);
+--bg-important: var(--neutral-color-2);
+--bg-important-2: var(--neutral-color-3);
+--bg-classic: var(--neutral-color-4);
+--bg-classic-2: var(--neutral-color-5);
 
+--text-highlighted-color: var(--neutral-color-16);
+--text-highlighted-color-2: var(--neutral-color-15);
+--text-classic-color: var(--neutral-color-14);
+--text-classic-color-2: var(--neutral-color-13);
+--text-classic-color-3: var(--neutral-color-12);
+--text-dimmed-color:var(--neutral-color-11);
+--text-dimmed-color-2:var(--neutral-color-10);
+
+
+--headtrack-bg: var(--bg-important);
+--headtrack-color: var(--text-classic-color);
 --logo-heading-color: var(--main-color-5);
 
---hero-cta-color: var(--main-color-3);
+
+
+--hero-cta-bg: var(--main-color-3);
+--hero-cta-bg-hover: var(--main-color-2);
+--hero-cta-color: var(--text-highlighted-color-2);
+--hero-cta-color-hover: var(--text-highlighted-color);
 
 --section-proof-bg: var(--neutral-3);
 
 --section-important-bg: var(--neutral-color-2);
 
---footer-bg: var(--neutral-color-1);
+--footer-border-top-color: var(--neutral-color-8);
+--footer-text-classic-color: var(--text-classic-color-2);
+--footer-bg: var(--bg-footer);
  
 
 
@@ -183,8 +208,8 @@ html{
 
 
 body{
-  color:white;
-   background-color: var(--neutral-color-3);
+  color:var(--text-classic-color);
+   background-color: var(--bg-classic);
  
  
    height: max-content;
@@ -239,6 +264,7 @@ section{
 
 
 h1{
+  color: var(--text-highlighted-color);
   font-size: var(--h1-fs);
    font-weight: 800; 
 }
@@ -246,16 +272,20 @@ h1{
 
 
 h2{
+  color: var(--text-highlighted-color-2);
   font-size: var(--h2-fs);
-    font-weight: 800;
+    font-weight: 700;
 }
 
 h3{
+  color: var(--text-highlighted-color-2);
   font-size: var(--h3-fs);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 p{
+  color: var(--text-classic-color);
+  color:var(--neutral-color-16);
   line-height: 1.4; 
   font-size: var(--p-fs);
 }

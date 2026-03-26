@@ -2,7 +2,7 @@
   max-width: 768px;
   margin: 0 auto;
   padding: 4rem 1rem;
-  color: #ffffff;
+  color: var(--text-highlighted-color);
 }
 
 .title {

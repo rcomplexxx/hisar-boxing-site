@@ -2,7 +2,7 @@
 
 .firstSection {
   background-color: var(--section-important-bg);  /* bg-black */
-  color: #fff;             /* text-white */
+  color: var(--text-classic-color);
   width: 100%;             /* w-100 */
   padding-top: 3rem;       /* py-12 */
   padding-bottom: 3rem;

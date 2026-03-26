@@ -1,9 +1,9 @@
 .footer {
    width: 100%;
   background-color: var(--footer-bg);
-  color: #fff;
+  color: var(--footer-text-classic-color);
   padding: 60px 20px 20px;
-  border-top: 1px solid #222;
+  border-top: 1px solid var(--footer-border-top-color);
 }
 
 /* GRID LAYOUT */

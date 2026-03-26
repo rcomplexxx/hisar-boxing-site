@@ -2,7 +2,6 @@
 
 
 .hero {
-  color: white;
 background-image: linear-gradient(
   to bottom,
   rgba(0, 0, 0, 0.85),
@@ -124,17 +123,18 @@ background-image: linear-gradient(
 
 
 .kontaktButton {
- 
-  background-color: var(--hero-cta-color);
+  color:var(--hero-cta-color);
+  background-color: var(--hero-cta-bg);
   text-transform: uppercase;
   font-weight: 600; /* font-semibold */
   padding: var(--size-5) var(--size-8); /* py-4 px-20 → 16px top/bottom, 80px left/right */
-  transition: background-color 0.2s; /* duration-200 */
+ transition: background-color 0.2s, color 0.2s;
   display: block; /* to make mx-auto work */
 }
 
 .kontaktButton:hover {
-  background-color: #f87171; /* hover:bg-red-500 */
+  background-color: var(--hero-cta-bg-hover); /* hover:bg-red-500 */
+  color: var(--hero-cta-color-hover);
 }
 
 
