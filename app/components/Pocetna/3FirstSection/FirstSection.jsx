@@ -6,7 +6,7 @@ import styles from './firstsection.module.css'
 
 export default function FirstSection() {
   return (
-    <section id="our-classes" className="bg-black text-white w-100 py-12">
+    <section id="our-classes" className={styles.firstSection}>
       <div className={styles.containerWrapper}>
   <div className={styles.container}>
             

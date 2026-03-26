@@ -1,0 +1,140 @@
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.heroImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 10;
+  padding: 0 1.5rem;
+}
+
+.heroTitle {
+  font-size: 2.25rem; /* 36px */
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.heroText {
+  font-size: 1.125rem; /* 18px */
+  color: #d1d5db; /* gray-300 */
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+/* Story Section */
+.story {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+.sectionTitle {
+  font-size: 1.875rem; /* 30px */
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.sectionTitleCenter {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.storyText {
+  color: #d1d5db; /* gray-300 */
+  margin-bottom: 1.5rem;
+}
+
+.storyTextSecondary {
+  color: #9ca3af; /* gray-400 */
+}
+
+/* VALUES / TIMELINE */
+.valuesSection {
+  background-color: #030712; /* gray-950 */
+  padding: 6rem 1.5rem;      /* more vertical padding like original Tailwind py-16 */
+}
+
+.container {
+  max-width: 80rem; /* same as before */
+  margin: 0 auto;
+}
+
+.sectionTitleCenter {
+  font-size: 1.875rem; /* 3xl */
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  color: #ffffff;      /* make it brighter like Tailwind's default text-white */
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.valueCard {
+    
+  text-align: center;
+}
+
+.valueTitle {
+  font-size: 1.25rem;   /* xl */
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #ff4537;        /* closer to your first bright red (#ff4537) */
+}
+
+.valueText {
+  color: #d1d5db;        /* Tailwind gray-300 for better readability */
+ 
+}
+
+/* Split Section */
+.splitSection {
+  max-width: 96rem;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .splitSection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.splitImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}

@@ -13,13 +13,13 @@
   .heading {
   font-weight: 900;          /* font-black */
   text-transform: uppercase; /* uppercase */
-  color: #dc2626;            /* text-red-600 */
+  color: var(--logo-heading-color);            /* text-red-600 */
   font-size: var(--fs-3);        /* text-xl */
   transition: color 0.2s;    /* optional smooth hover effect */
 }
 
 .heading:hover {
-  color: #f87171;            /* hover:text-red-400 */
+  color: #141010;            /* hover:text-red-400 */
 }
 
 

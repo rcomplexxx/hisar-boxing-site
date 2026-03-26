@@ -4,7 +4,7 @@
 import styles from "./galerija.module.css";
 
 const sections = [
-  { title: "Gym " },
+  { title: "Sala " },
   { title: "Treninzi" },
   { title: "Video klipovi" },
 ];

@@ -1,6 +1,12 @@
 
 
-
+.firstSection {
+  background-color: var(--section-important-bg);  /* bg-black */
+  color: #fff;             /* text-white */
+  width: 100%;             /* w-100 */
+  padding-top: 3rem;       /* py-12 */
+  padding-bottom: 3rem;
+}
 
 .imgMain1{
     max-width: 576px;
