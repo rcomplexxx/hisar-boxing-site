@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./footer.module.css";
 import React from "react";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -26,11 +27,11 @@ export default function Footer() {
         {/* Navigation */}
         <div className={styles.col}>
           <h4>Navigacija</h4>
-          <a href="/">Početna</a>
-          <a href="#our-classes">Ekipa</a>
-          <a href="#gallery">Galerija</a>
-          <a href="#about">O nama</a>
-          <a href="#contact">Kontakt</a>
+          <Link href="/">Početna</Link>
+          <Link href="/ekipa">Ekipa</Link>
+          <Link href="/galerija">Galerija</Link>
+          <Link href="/o-nama">O nama</Link>
+          <Link href="/kontakt">Kontakt</Link>
         </div>
 
         {/* Contact */}

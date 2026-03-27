@@ -1,14 +1,15 @@
 // app/contact/page.jsx
 import Link from "next/link";
 import styles from "./kontakt.module.css";
+import { InstagramIcon, WhatsAppIcon } from "../../public/Images/svgs/svgImages";
 
 export default function ContactPage() {
   return (
     <div className={styles.container}>
       <div className={styles.card}>
-        <h1>Get in Touch</h1>
+        <h1>Kontaktiraj nas</h1>
         <p className={styles.subtitle}>
-          Have a question, idea, or just want to connect? Reach out directly using the options below.
+         Imate pitanje, želite da se učlanite ili vam je potrebna dodatna informacija? Slobodno nas kontaktirajte putem neke od opcija u nastavku — rado ćemo vam pomoći.
         </p>
 
         <div className={styles.options}>
@@ -16,12 +17,12 @@ export default function ContactPage() {
             <div className={styles.icon}>📧</div>
             <div>
               <h3>Email</h3>
-              <p>your@email.com</p>
+              <p>hisarboxing@gmail.com</p>
             </div>
           </a>
 
           <a href="https://wa.me/123456789" target="_blank" className={styles.item}>
-            <div className={styles.icon}>💬</div>
+            <div className={styles.icon}><WhatsAppIcon/></div>
             <div>
               <h3>WhatsApp</h3>
               <p>Chat instantly</p>
@@ -29,9 +30,9 @@ export default function ContactPage() {
           </a>
 
           <a href="https://twitter.com" target="_blank" className={styles.item}>
-            <div className={styles.icon}>🐦</div>
+            <div className={styles.icon}><InstagramIcon/></div>
             <div>
-              <h3>Twitter / X</h3>
+              <h3>Instagram</h3>
               <p>Send a DM</p>
             </div>
           </a>

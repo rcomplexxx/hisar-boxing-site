@@ -2,13 +2,30 @@
  
 
 
-.logoDiv{
-  
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 24px;
+.logoDiv {
+  display: flex;
+  align-items: center;
+  gap: 32px; /* default for desktop */
 }
+
+@media (max-width: 1200px) {
+  .logoDiv {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logoDiv {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logoDiv {
+    gap: 12px;
+  }
+}
+
 
   .heading {
   font-weight: 900;          /* font-black */
@@ -22,7 +39,11 @@
   color: #141010;            /* hover:text-red-400 */
 }
 
-
+@media (max-width: 480px) {
+  .heading {
+    display: none;
+  }
+}
 
 
   .logoLink{
@@ -38,12 +59,18 @@
 
     .logoImg {
   
-    height: 96px;
+    height: var(--size-13);
     width: auto;
 
     
   }
 
+
+  @media (max-width: 480px) {
+  .logoImg {
+    height: var(--size-12); /* smaller than default 96px */
+  }
+}
 
   
 @media(pointer: fine){

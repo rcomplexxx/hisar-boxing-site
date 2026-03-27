@@ -3,6 +3,7 @@
 import { usePathname, useRouter } from "next/navigation";
 import {  useGlobalStoreShallow } from "@/app/Contexts/AppContext";
 import { useEffect } from "react";
+// import GlobalLoader from './GlobalLoader/GlobalLoader.jsx'
 
 
 export default function AppInitializer() {

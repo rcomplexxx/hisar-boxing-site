@@ -1,0 +1,29 @@
+.container {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--size-5); /* space-x-6 */
+  }
+
+  .hiddenWhenOpen {
+    display: none;
+  }
+}
+
+.cta {
+  margin-bottom: 0.5rem;
+  background-color: #b45309; /* yellow-700 */
+  padding: var(--size-3) var(--size-4);
+  font-weight: 600;
+
+  transition: all 200ms ease;
+}
+
+.cta:hover {
+  background-color: #ef4444; /* red-500 */
+}
