@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import React from 'react'
 import styles from './firstsection.module.css'
+import {BoxingGloves} from '@/public/Images/svgs/svgImages'
 
 export default function FirstSection() {
   return (
@@ -19,37 +20,33 @@ export default function FirstSection() {
               <p>Naši treninzi kombinuju proverene metode profesionalnog boksa sa modernim pristupom kondicionoj pripremi. Fokus je na pravilnoj tehnici, snazi i izdržljivosti. Rezultat su bolja forma, veće samopouzdanje i realan napredak iz treninga u trening.</p>
 
               <div className="flex flex-row justify-between">
-                <div className="flex flex-row space-x-4">
-                  <img src="/gloves.png" className="invert w-16" alt="" />
-                  <div>
-                    <p className="font-black">Boxing</p>
-                    <p className="opacity-50">Instructor: José Luis</p>
+              
+
+                <div className={styles.boxerRow}>
+                  <BoxingGloves/>
+                  <div className={styles.boxerNameDiv}>
+                    <p className="font-black">Glavni trener</p>
+                    <p className="opacity-50">Rastko Stamenvkovic</p>
                   </div>
                 </div>
 
-                <div className="flex flex-row space-x-4">
-                  <img src="/mma.png" className="invert w-16" alt="" />
-                  <div>
-                    <p className="font-black">MMA</p>
-                    <p className="opacity-50">Instructor: José Luis</p>
+                  <div className={styles.boxerRow}>
+                  <BoxingGloves/>
+                  <div className={styles.boxerNameDiv}>
+                    <p className="font-black">Kondicioni trener</p>
+                    <p className="opacity-50">Marko Manojlovic</p>
                   </div>
                 </div>
               </div>
 
               <div className="flex flex-row justify-between">
-                <div className="flex flex-row space-x-4">
-                  <img src="/kickboxing.png" className="invert w-16" alt="" />
-                  <div>
-                    <p className="font-black">Kickboxing</p>
-                    <p className="opacity-50">Instructor: José Luis</p>
-                  </div>
-                </div>
+              
 
-                <div className="flex flex-row space-x-4">
-                  <img src="/selfdefense.png" className="invert w-16" alt="" />
-                  <div>
-                    <p className="font-black">Self-defense</p>
-                    <p className="opacity-50">Instructor: José Luis</p>
+                <div className={styles.boxerRow}>
+                 <BoxingGloves/>
+                  <div className={styles.boxerNameDiv}>
+                    <p className="font-black">Trener za pocetnike</p>
+                    <p className="opacity-50">Nikola Markovic</p>
                   </div>
                 </div>
               </div>

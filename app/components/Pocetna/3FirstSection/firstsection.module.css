@@ -38,3 +38,16 @@
     flex-direction: row;
   }
 }
+
+
+.boxerRow {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem; /* equivalent to space-x-4 in Tailwind (4 * 0.25rem = 1rem) */
+}
+
+.boxerNameDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
