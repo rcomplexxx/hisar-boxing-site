@@ -65,56 +65,45 @@ const faqs = [
       </>
     ),
   },
-{question: "Da li ćeme treneri terati da sparingujem?",
-    answer: "Nema problema; Ne morate da sparingujete ako ne osećate da je vreme. Nema nikakvog pritiska."
-},
-
-{
+  {
+    question: "Da li ćeme treneri terati da sparingujem?",
+    answer: "Nema problema; Ne morate da sparingujete ako ne osećate da je vreme. Nema nikakvog pritiska.",
+  },
+  {
     question: "Kako mogu da se prijavim i učlanim?",
-    answer: "Članstvo možete ostvariti putem e-maila, telefonom ili direktno na recepciji našeg centra."
-
-}
- 
-
+    answer: "Članstvo možete ostvariti putem e-maila, telefonom ili direktno na recepciji našeg centra.",
+  },
 ];
 
 export default function Faq() {
   const [openIndex, setOpenIndex] = useState(null);
 
-  const toggle = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
+  const toggle = (index) => setOpenIndex(openIndex === index ? null : index);
 
   return (
     <section className={styles.faqSection}>
-    <h2 className={styles.title}>Često postavljana pitanja</h2>
-<p className={styles.subtitle}>
-  Slobodno nam pošaljite poruku na <a href="mailto:hisarboxing@gmail.com">hisarboxing@gmail.com</a> ako imate dodatnih pitanja.
-</p>
+      <h2 className={styles.title}>Često postavljana pitanja</h2>
+      <p className={styles.subtitle}>
+        Slobodno nam pošaljite poruku na{" "}
+        <a href="mailto:hisarboxing@gmail.com">hisarboxing@gmail.com</a> ako imate dodatnih pitanja.
+      </p>
+
       <div className={styles.list}>
         {faqs.map((faq, index) => (
           <div key={index} className={styles.item}>
-            
             <button
               onClick={() => toggle(index)}
-              className={styles.question}
+              className={`${styles.question} ${openIndex === index && styles.active}`}
             >
               {faq.question}
-              <span className={styles.icon}>
-                {openIndex === index ? "−" : "+"}
-              </span>
+              <span className={styles.icon}>{openIndex === index ? "−" : "+"}</span>
             </button>
 
             <div
-              className={`${styles.answerWrapper} ${
-                openIndex === index ? styles.open : styles.closed
-              }`}
+              className={`${styles.answerWrapper} ${openIndex === index ? styles.open : styles.closed}`}
             >
-              <div className={styles.answer}>
-                {faq.answer}
-              </div>
+              <div className={styles.answer}>{faq.answer}</div>
             </div>
-
           </div>
         ))}
       </div>
