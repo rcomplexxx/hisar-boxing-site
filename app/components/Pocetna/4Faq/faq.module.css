@@ -27,13 +27,13 @@
 
 .item {
   border-radius: 12px;
-  background: rgba(122, 58, 58, 0.089);
+  background: var(--faq-section-card-bg);
   padding: 1rem;
   transition: background-color 0.2s ease;
 }
 
 .item:hover {
-  background: rgba(122, 58, 58, 0.2);
+  background: var(--faq-section-card-bg-hover);
 }
 
 .question {
@@ -52,7 +52,7 @@
 }
 
 .question.active {
-  color: #ffd166; /* soft accent color */
+  color: var(--faq-section-question-active-color); /* soft accent color */
 }
 
 .icon {

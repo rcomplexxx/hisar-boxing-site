@@ -162,7 +162,7 @@
 --headtrack-bg: var(--bg-important);
 --headtrack-color: var(--text-classic-color);
 --logo-heading-color: var(--main-color-5);
-
+--menu-icon-color: var(--neutral-color-14);
 
 
 --hero-cta-bg: var(--main-color-3);
@@ -174,8 +174,11 @@
 
 --section-important-bg: var(--neutral-color-2);
 
---first-section-gloves-icon-color: var(--secondary-color-6);
+--first-section-gloves-icon-color: var(--neutral-color-10);
 
+--faq-section-card-bg: var(--neutral-color-7);
+--faq-section-card-bg-hover: var(--neutral-color-8);
+--faq-section-question-active-color: var(--main-color-5);
 
 /* kontakt page */
 --kontakt-item-bg: var(--neutral-color-8);
