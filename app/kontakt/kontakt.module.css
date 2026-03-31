@@ -16,7 +16,7 @@
   display: flex;
   align-items: center;
   gap: 15px;
-  background: #1f2937;
+  background-color: var(--kontakt-item-bg);
   padding: 15px;
   border-radius: 12px;
   text-decoration: none;
@@ -25,7 +25,7 @@
 }
 
 .item:hover {
-  background: #374151;
+  background-color: var(--kontakt-item-bg-hover);
   transform: translateY(-2px);
 }
 
@@ -35,7 +35,7 @@
 }
 
 .ctaBox {
-  background: #1e40af;
+  background: var(--kontakt-cta-box-bg);
   padding: 25px;
   border-radius: 12px;
   text-align: center;
@@ -50,15 +50,15 @@
   display: inline-block;
   margin-top: 10px;
   padding: 12px 20px;
-  background: white;
-  color: #1e40af;
+  background-color: var(--kontakt-cta-bg);
+  color: var(--kontakt-cta-color);
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
 }
 
 .ctaButton:hover {
-  opacity: 0.9;
+  background-color: var(--kontakt-cta-bg-hover);
 }
 
 .backLink {

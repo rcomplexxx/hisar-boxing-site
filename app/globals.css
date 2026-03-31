@@ -78,22 +78,47 @@
  --main-color-9: #ec645f;
 
 
-  --neutral-color-1: #000000;  /*Rezervisana za footer*/
---neutral-color-2: #050608;
- --neutral-color-3: #090C0F;
- --neutral-color-4: #0E1014;
- --neutral-color-5: #14171D;
- --neutral-color-6: #1B212A;
- --neutral-color-7: #202833;
- --neutral-color-8: #222B38;/*pocetna boja */
- --neutral-color-9: #38404c;
- --neutral-color-10: #4e5560;
- --neutral-color-11: #7a8088;
- --neutral-color-12: #a7aaaf;
---neutral-color-13: #bdbfc3;
---neutral-color-14: #d3d5d7;
---neutral-color-15: #dedfe1;
---neutral-color-16: #f3f1f0;
+
+
+ --secondary-color-1: #050C1F;
+--secondary-color-2: #0A183D;
+/* rarely used */
+
+--secondary-color-3: #0F245C;
+--secondary-color-4: #14307A;
+--secondary-color-5: #193C99;
+
+--secondary-color-6: #2D53A8;
+--secondary-color-7: #416AB8;
+
+/* rarely used */
+
+--secondary-color-8: #5A84CC;
+--secondary-color-9: #739DE0;
+
+
+--neutral-color-1:  #000000;  /* footer */
+
+--neutral-color-2:  #060605;
+--neutral-color-3:  #0B0B09;
+--neutral-color-4:  #11110F;
+--neutral-color-5:  #181714;
+
+--neutral-color-6:  #22211C;
+--neutral-color-7:  #2B2A24;
+--neutral-color-8:  #34332C; /* main base */
+
+--neutral-color-9:  #4A4840;
+--neutral-color-10: #615E54;
+
+--neutral-color-11: #858178;
+--neutral-color-12: #A9A59D;
+
+--neutral-color-13: #C1BEB7;
+--neutral-color-14: #D6D3CD;
+--neutral-color-15: #E4E1DC;
+
+--neutral-color-16: #F5F3EF;
 
 
    /* --main-color-1: #ff4537;
@@ -148,6 +173,16 @@
 --section-proof-bg: var(--neutral-3);
 
 --section-important-bg: var(--neutral-color-2);
+
+
+/* kontakt page */
+--kontakt-item-bg: var(--neutral-color-8);
+--kontakt-item-bg-hover: var(--neutral-color-9);
+
+--kontakt-cta-box-bg: var(--secondary-color-3);
+--kontakt-cta-bg: var(--neutral-color-4);
+--kontakt-cta-bg-hover: var(--neutral-color-3);
+--kontakt-cta-color: var(--text-highlighted-color-2);
 
 --footer-border-top-color: var(--neutral-color-8);
 --footer-text-classic-color: var(--text-classic-color-2);
