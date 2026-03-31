@@ -23,7 +23,7 @@ export default function FirstSection() {
               
 
                 <div className={styles.boxerRow}>
-                  <BoxingGloves/>
+                  <BoxingGloves className={styles.glovesIcon}/>
                   <div className={styles.boxerNameDiv}>
                     <p className="font-black">Glavni trener</p>
                     <p className="opacity-50">Rastko Stamenvkovic</p>
@@ -31,7 +31,7 @@ export default function FirstSection() {
                 </div>
 
                   <div className={styles.boxerRow}>
-                  <BoxingGloves/>
+                  <BoxingGloves className={styles.glovesIcon}/>
                   <div className={styles.boxerNameDiv}>
                     <p className="font-black">Kondicioni trener</p>
                     <p className="opacity-50">Marko Manojlovic</p>
@@ -43,7 +43,7 @@ export default function FirstSection() {
               
 
                 <div className={styles.boxerRow}>
-                 <BoxingGloves/>
+                 <BoxingGloves className={styles.glovesIcon}/>
                   <div className={styles.boxerNameDiv}>
                     <p className="font-black">Trener za pocetnike</p>
                     <p className="opacity-50">Nikola Markovic</p>

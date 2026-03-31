@@ -19,8 +19,16 @@
   max-width: 1400px; /* typical Tailwind container */
   margin-left: auto;
   margin-right: auto;
-  padding-left: 2.5rem;  /* px-10 */
-  padding-right: 2.5rem;
+  box-sizing: border-box;
+  padding-left: var(--size-8);  
+  padding-right: var(--size-8); 
+}
+
+@media (max-width: 420px) {
+.containerWrapper {
+  padding-left: var(--size-6);  
+  padding-right: var(--size-6); 
+}
 }
 
 .container {
@@ -28,7 +36,7 @@
   flex-direction: column; /* flex-col */
     justify-content: space-between;
     align-items: center;
-    gap: 32px;
+    gap: var(--size-7);
   width: 100%;            /* w-100 */
 }
 
@@ -46,8 +54,55 @@
   gap: 1rem; /* equivalent to space-x-4 in Tailwind (4 * 0.25rem = 1rem) */
 }
 
+.glovesIcon {
+  width: var(--size-7);
+  height: var(--size-7);
+  color: var(--main-color-5);
+}
+
 .boxerNameDiv{
   display: flex;
   flex-direction: column;
   align-items: start;
 }
+
+ @media (max-width: 640px) {
+.boxerNameDiv p{
+  text-align: start;
+}
+ }
+
+ @media (max-width: 480px) {
+
+  .boxerNameDiv p{
+  font-size: var(--fs-3);
+}
+
+  .boxerRow {
+    gap: var(--size-4);
+
+  }
+
+  .glovesIcon {
+  width: var(--size-6);
+  height: var(--size-6);
+}
+  
+ }
+
+
+  @media (max-width: 420px) {
+
+  .boxerNameDiv p{
+  font-size: var(--fs-3);
+}
+
+ .boxerRow {
+    gap: var(--size-3);
+
+  }
+
+ 
+
+  }
+
