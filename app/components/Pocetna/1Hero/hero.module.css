@@ -49,10 +49,8 @@ background-image: linear-gradient(
   align-items: flex-start;    
   justify-content: flex-start;
   width: 40%; 
-  margin-left: var(--size-8);     
-  margin-right: var(--size-8);     
+  margin: var(--size-8);     
   margin-top: var(--size-16);  
-  margin-bottom: var(--size-8); 
   gap: var(--size-8);        
                  
   object-fit: scale-down;     
@@ -84,7 +82,6 @@ background-image: linear-gradient(
 
 
   .hero{
-    min-height: 0;
     align-items: center;
   }
 
@@ -96,10 +93,9 @@ background-image: linear-gradient(
     max-width: var(--size-24);
     justify-content: center;
     gap: var(--size-6);
-    margin-top: var(--size-14);
-    margin-bottom: var(--size-14);  
-      margin-left: var(--size-4);     
-  margin-right: var(--size-4);  
+
+      
+  
      
     
   }
@@ -107,6 +103,23 @@ background-image: linear-gradient(
   /* .heroPharagraph{
     display: none;
   } */
+
+}
+
+@media (max-width: 480px) {
+
+  .hero{
+    min-height: 0;
+  }
+
+    .outerWrapper {
+     padding-bottom: 0; 
+  }
+
+  .innerWrapper{
+     margin: var(--size-12) var(--size-4);   
+  }
+
 
 }
 
@@ -142,6 +155,7 @@ background-image: linear-gradient(
   .kontaktButton {
     margin-left: auto;
     margin-right: auto;
+    padding: var(--size-5) var(--size-8); /* py-4 px-20 → 16px top/bottom, 80px left/right */
   }
 }
 
