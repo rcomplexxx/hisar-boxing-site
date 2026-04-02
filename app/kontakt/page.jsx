@@ -46,7 +46,9 @@ export default function ContactPage() {
           </a>
         </div>
 
-        <Link href="/" className={styles.backLink}>← Back to Home</Link>
+        <Link href="/" className={styles.backLink}>
+  ← Vrati se na početnu
+</Link>
       </div>
     </div>
   );
