@@ -116,7 +116,7 @@ background-image: linear-gradient(
   }
 
   .innerWrapper{
-     margin: var(--size-11) var(--size-4);   
+     margin: var(--size-11) var(--size-5);   
   }
 
 
@@ -135,7 +135,10 @@ background-image: linear-gradient(
 @media (max-width: 480px) {
   .heroHeading{
     text-align: start;
-    padding: 0 var(--size-5);
+  }
+
+  .heroPharagraph{
+    text-align: start;
   }
 }
 
