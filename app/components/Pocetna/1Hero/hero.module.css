@@ -116,7 +116,7 @@ background-image: linear-gradient(
   }
 
   .innerWrapper{
-     margin: var(--size-11) var(--size-5);   
+     margin: var(--size-10) var(--size-5);   
   }
 
 
@@ -140,6 +140,7 @@ background-image: linear-gradient(
   .heroPharagraph{
     text-align: start;
   }
+  
 }
 
 
@@ -165,6 +166,7 @@ background-image: linear-gradient(
     margin-left: auto;
     margin-right: auto;
     padding: var(--size-5) var(--size-8); /* py-4 px-20 → 16px top/bottom, 80px left/right */
+    
   }
 }
 
