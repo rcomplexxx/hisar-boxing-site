@@ -80,7 +80,7 @@
   max-height: 0;
 
   font-size: var(--fs-3);
-  padding: 0 var(--size-3);
+  padding: 0 var(--size-2);
   opacity: 0;
   transition: all 0.35s ease;
 }
