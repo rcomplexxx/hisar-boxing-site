@@ -57,9 +57,9 @@
   --h2-fs: var(--fs-6);
   --h3-fs: var(--fs-5);
   --p-fs: var(--fs-3);
-  --topbar-height: 40px;
-  /* --topbar-height: 0px; */
-  --navbar-height: 144px;
+  /* --topbar-height: 40px; */
+  --topbar-height: 0px;
+  --navbar-height: var(--size-15);
 
 
 
@@ -215,6 +215,8 @@
     --fs-6: 1.5rem;
     --fs-7: 1.75rem;
      --fs-8: 2rem;
+
+     --navbar-height: var(--size-14)
   }
 }
 
