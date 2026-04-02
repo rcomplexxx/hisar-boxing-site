@@ -109,6 +109,7 @@ background-image: linear-gradient(
 @media (max-width: 480px) {
 
   .hero{
+    min-height: 0;
   }
 
     .outerWrapper {
@@ -116,7 +117,7 @@ background-image: linear-gradient(
   }
 
   .innerWrapper{
-     margin: var(--size-8) var(--size-5);   
+     margin: var(--size-10) var(--size-5);   
   }
 
 
