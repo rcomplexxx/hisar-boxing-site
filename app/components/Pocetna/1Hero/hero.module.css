@@ -137,6 +137,7 @@ background-image: linear-gradient(
 @media (max-width: 480px) {
   .heroHeading{
     text-align: start;
+    padding-right: var(--size-6);
   }
 
   .heroPharagraph{
