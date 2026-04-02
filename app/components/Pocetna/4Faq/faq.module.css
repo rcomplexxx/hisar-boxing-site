@@ -37,15 +37,18 @@
 }
 
 .question {
+  
+  color: inherit;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.1rem;
+  gap: var(--size-3);
+
+  text-align: start;
+  font-size: var(--fs-4);
   font-weight: 500;
-  background: none;
-  border: none;
-  color: inherit;
+ 
   cursor: pointer;
   padding: 0.25rem 0;
   transition: color 0.2s;
@@ -55,9 +58,18 @@
   color: var(--faq-section-question-active-color); /* soft accent color */
 }
 
+@media (max-width: 480px) {
+
+  .question {
+   gap: var(--size-2);
+  }
+  
+}
+
 .icon {
   font-size: 1.5rem;
   transition: transform 0.3s ease;
+  text-align: end;
 }
 
 .question.active .icon {

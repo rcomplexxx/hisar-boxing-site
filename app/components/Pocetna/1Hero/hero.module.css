@@ -131,6 +131,7 @@ background-image: linear-gradient(
   line-height: 1;         /* Tailwind default for large text */
   text-transform: uppercase; /* uppercase */
   font-weight: 800;       /* font-black */
+  
 }
 
 @media (max-width: 480px) {
