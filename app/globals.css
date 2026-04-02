@@ -57,7 +57,8 @@
   --h2-fs: var(--fs-6);
   --h3-fs: var(--fs-5);
   --p-fs: var(--fs-3);
-  --topbar-height: 40px;
+  /* --topbar-height: 40px; */
+  --topbar-height: 0px;
   --navbar-height: 144px;
 
 
@@ -162,6 +163,7 @@
 --headtrack-bg: var(--bg-important);
 --headtrack-color: var(--text-classic-color);
 --logo-heading-color: var(--main-color-5);
+--logo-heading-color-hover: var(--main-color-6);
 --menu-icon-color: var(--neutral-color-14);
 
 
@@ -218,24 +220,14 @@
 
   @media (max-width: 480px) {
   :root {
-    --fs-1: 0.375rem;
-    --fs-2: 0.5rem;
-    --fs-3: 0.75rem; /* small */
-    --fs-4: 875rem; /* normal */
-    --fs-5: 1rem; /* large */
-    --fs-6: 1.25rem;
-    --fs-7: 1.5rem;
-     --fs-8: 1.75rem;
-  }
-}
-
-@media (max-width: 480px) {
-
-  :root{
-    
+ 
+  
   }
 
+
 }
+
+
 
 
 

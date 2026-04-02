@@ -1,0 +1,336 @@
+.full_screen_container {
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    contain: content;
+
+    transition: background-color 0.2s 0.01s ease;
+    user-select: none;
+    z-index: 12;
+    
+    
+  overscroll-behavior: contain;
+  
+  }
+
+  .disabeFullScreen{
+   
+    display: none;
+  }
+
+
+
+  
+  
+  .closeSuiter{
+
+
+    position: fixed;
+    top:0;
+    left: 0;
+
+
+    color: var(--fullscreen-nav-color);
+    background-color: var(--fullscreen-nav-bg);
+  
+    width: 100%;
+    height: var(--size-8);
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    box-sizing: border-box;
+    padding: 0 var(--size-5);
+    
+   
+    z-index: 11;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    
+    
+  }
+
+  .navActive{
+    opacity: 1;
+  }
+
+ 
+
+  @media(hover:hover){
+  
+  
+    .navInactive{
+      
+      animation: killNav 0.3s ease forwards;
+    }
+  }
+ 
+  .pagination{
+    
+    
+   
+    font-size: var(--font-size-4);
+   
+  }
+
+  .zoomButton{
+    height: var(--size-6);
+    width:var(--size-6);
+    border-radius: 100%;
+    cursor: pointer;
+    margin-right: var(--size-4);
+  }
+
+  .close_button {
+   
+    height: var(--size-6);
+    width:var(--size-6);
+ 
+    border-radius: 100%;
+   
+    
+    cursor: pointer;
+   
+  }
+
+
+  .leftArrow{
+    position: absolute;
+    top: calc(50% + var(--size-6));
+    left: var(--size-5);
+
+    height: var(--size-4);
+    width: var(--size-4);
+  
+    background-color: var(--fullscreen-arrow-bg);
+    padding: var(--size-3);
+    border-radius: 4px;
+    transform: translateY(-50%) rotate(90deg);
+    z-index: 8;
+    cursor: pointer;
+    transition: opacity 0.2s 0.01s ease;
+    opacity: 0;
+    /* animation: spawnArrow 0.2s 0.01s ease forwards; */
+  }
+
+  .spawnArrow{
+    opacity: 1;
+  }
+
+
+  @media (hover: none) {
+    .leftArrow{
+      visibility: hidden !important;
+    }
+  }
+
+  @media (hover: hover) {
+    .leftArrow:hover{
+      background-color: var(--fullscreen-arrow-hover-bg);
+    }
+   }
+
+
+  .leftArrow:active{
+    background-color:  var(--fullscreen-arrow-active-bg);
+  }
+
+
+
+
+  .rightArrow{
+    justify-self: flex-end;
+    left: auto;
+    right: var(--size-5);
+    transform: translateY(-50%) rotate(-90deg);
+
+  
+ 
+   
+  }
+
+
+
+
+
+
+
+ 
+ /* .arrowSpawnReverse{
+  animation: killArrow 0.2s 0.01s ease forwards;
+ } */
+
+ .productImageSwiper{
+
+  margin-top: var(--size-8);
+  height: calc(100% - var(--size-8));
+
+ }
+
+
+ 
+
+  
+
+
+
+  .productImageDiv{
+    height: 100%;
+    width: 100%;
+   
+  
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    
+
+      touch-action: pan-y;
+      cursor: zoom-in;
+     
+    
+  }
+
+  .productImageDivZoomed{
+    cursor: grab;
+  }
+  .productImageDivZoomed:active{
+    cursor: grabbing;
+  }
+
+
+
+  .productImage{
+ 
+ 
+    width: 100%;
+    height: 100%;
+    
+    object-fit: contain;
+
+
+ 
+    transform-origin: top center;
+    transition: transform 0.3s ease, left 0.3s ease, top 0.3s ease;
+   
+  }
+
+ 
+
+
+  
+
+
+@media(max-width: 1280px){
+  .leftArrow{
+    left: var(--size-3);
+   
+  }
+  .rightArrow{
+    right: var(--size-3);
+  }
+}
+
+
+@media(max-width: 980px){
+  .leftArrow{
+    left: 4px;
+  }
+  .rightArrow{
+    right: 4px;
+  }
+  .zoomButton{
+   
+    margin-right: var(--size-3);
+  }
+
+ 
+
+
+
+
+}
+
+@media(max-width: 600px){
+  .leftArrow{
+    left: var(--size-1);
+  }
+  .rightArrow{
+    right: var(--size-1);
+  }
+}
+  
+@keyframes spawnNav {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  
+  }
+
+
+  
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes killNav{
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+
+
+  
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+
+
+/* @keyframes spawnArrow{
+  0% {
+    opacity: 0;
+  }
+
+
+  
+  100% {
+    opacity: 1;
+  }
+} */
+
+@keyframes killArrow{
+  0% {
+    opacity: 1;
+  }
+
+
+  
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+
+
+

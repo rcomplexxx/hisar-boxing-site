@@ -26,7 +26,7 @@ export default function Navbar() {
 
   return (
     <nav className={styles.navWrapper}>
-    <div className={styles.topBar}>📍 Devet jugovica 24, Leskovac | 📞 +381 62 123456</div>
+    {/* <div className={styles.topBar}>📍 Devet jugovica 24, Leskovac | 📞 +381 62 123456</div> */}
     {isOpen && <MobileNavPanel isOpen={isOpen} toggleOpen={toggleOpen}/>}
         <div className={styles.navBar}>
           

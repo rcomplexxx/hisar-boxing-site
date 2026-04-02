@@ -24,10 +24,8 @@
 .navBar {
   height: var(--navbar-height);
   background-color: rgba(0, 0, 0, 0.5);
-  padding-left: 2.5rem;  /* mx-10 */
-  padding-right: 2.5rem;
-  padding-top: 1rem;  /* py-6 */
-  padding-bottom: 1rem;
+ padding: var(--size-5) var(--size-8);
+ 
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -41,14 +39,31 @@
   width: 24px;
   height: 20px;
   position: relative;
+  display: none;
 }
 
 /* md:hidden → hide on ≥768px */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+
+
  .menuOpenButton{
-  display: none;
+  display:block;
  }
+
+  .navBar{
+     padding: var(--size-5) var(--size-7);
+  }
 }
+
+@media (max-width: 480px) {
+
+    .navBar{
+     padding: var(--size-5) var(--size-5);
+  }
+  
+}
+
+
 
 
 

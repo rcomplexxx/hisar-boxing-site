@@ -1,0 +1,52 @@
+.toast{
+    position: absolute;
+    bottom: var(--size-5);
+    left: 50%;
+   
+    color: var(--toast-message-color);
+    background-color: var(--toast-message-bg);
+    
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: var(--size-4) var(--size-5);
+
+    white-space: nowrap;
+    opacity: 1;
+
+    font-size: var(--font-size-3);
+    font-weight: 500;
+    transform: translateX(-50%);
+    transition: opacity 0.3s ease,  transform 0.3s ease;
+    animation: spawnToast 0.3s ease;
+    z-index: 50;
+  }
+
+  .dissapearingToast{
+   opacity: 0;
+   transform : translateX(-50%) translateY(8px);
+  }
+
+  .instantDissapearingToast{
+    transition: transform 0.15s ease, opacity 0.15s ease;
+    transform: translateX(-50%) translateY(8px);
+    opacity: 0;
+  }
+
+
+  @keyframes spawnToast {
+    0%{
+      transform: translateX(-50%)  translateY(8px);
+      opacity: 0;
+    }
+    
+    100% {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .toast{
+      display: none;
+    }
+  }

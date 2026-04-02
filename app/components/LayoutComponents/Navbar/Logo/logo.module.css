@@ -5,43 +5,44 @@
 .logoDiv {
   display: flex;
   align-items: center;
-  gap: 32px; /* default for desktop */
+  gap: var(--size-4);
 }
 
 @media (max-width: 1200px) {
   .logoDiv {
-    gap: 24px;
+      gap: var(--size-4);
   }
 }
 
 @media (max-width: 768px) {
   .logoDiv {
-    gap: 16px;
+     gap: var(--size-4);
   }
 }
 
 @media (max-width: 480px) {
   .logoDiv {
-    gap: 12px;
+    gap: var(--size-3);
   }
 }
 
 
   .heading {
-  font-weight: 900;          /* font-black */
   text-transform: uppercase; /* uppercase */
   color: var(--logo-heading-color);            /* text-red-600 */
   font-size: var(--fs-3);        /* text-xl */
   transition: color 0.2s;    /* optional smooth hover effect */
+   user-select: none;
+  cursor: pointer;
 }
 
 .heading:hover {
-  color: #141010;            /* hover:text-red-400 */
+  color: var(--logo-heading-color-hover); 
 }
 
 @media (max-width: 480px) {
   .heading {
-    display: none;
+    font-size: var(--fs-2);   
   }
 }
 

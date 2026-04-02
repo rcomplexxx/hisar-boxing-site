@@ -1,0 +1,351 @@
+
+
+.zoomImg{
+ 
+    position: absolute;
+    left: var(--size-2);
+    top: var(--size-2);
+    height: var(--size-5);
+    width: var(--size-5);
+    padding: var(--size-2);
+    opacity: 1;
+    border-radius: 100%;
+    background-color: var(--swiper-zoomin-icon-bg);
+    display:none;
+    
+  }
+
+
+
+  .productPicsWrapper{
+   
+    position:relative;
+   
+   
+    width: var(--size-17);
+    height: auto;
+  }
+
+  .productImagesWrapper{
+    position: -webkit-sticky;
+    position: sticky;
+    top: var(--size-2);
+    bottom: 100%;
+
+    contain: content style size;
+  }
+  
+
+
+
+  .slide{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1;
+   
+    
+   
+  }
+  
+
+
+  .productImage{
+    width:100%;
+  height: 100%;
+  object-fit: cover;
+  
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  user-select: none;
+  cursor: pointer;
+  filter: blur(0.5px) brightness(50%);
+    
+}
+
+
+ 
+.selectedMainImage{
+
+  filter: none !important;
+  }
+
+
+  
+
+ 
+
+
+  .selectedImage{
+  
+   
+    
+    border: 1px solid var(--selected-product-image-border);
+    filter: none !important;
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .slider2Suiter{
+    display: none;
+    position: relative;
+    width: 100%;
+    contain: content;
+  }
+
+
+
+  
+
+  
+ 
+
+  
+
+  
+
+    
+ 
+
+  .grid_container {
+    width: 100%;
+    margin-top: var(--size-5);
+
+    display: grid;
+  
+    grid-template-columns: repeat(4, 1fr); /* Two columns */
+    gap: var(--size-4); /* Gap between grid items */
+   
+    
+    
+   
+    
+  }
+
+
+  
+  
+
+
+
+
+
+
+
+  @media (max-width: 1380px) {
+
+    .productPicsWrapper{
+
+     
+      width: var(--size-16);
+    }
+    
+  }
+ 
+
+  @media(max-width: 1280px){
+
+   
+    .productPicsFixed{
+      width: var(--size-15-5);
+    }
+ 
+  
+
+
+  }
+
+  
+
+  
+
+  @media(max-width: 980px){
+
+  
+
+    .productPicsWrapper{
+      margin-top: var(--size-6);
+      margin-right: 0;
+      width: 100%;
+    }
+
+    .productImagesWrapper{
+      width: 100%;
+      position: static;
+    }
+  
+
+    .productPicsFixed{
+      width:100%;
+      position: static;
+      
+    }
+
+  
+
+  
+  
+    
+ 
+   
+   
+    
+  .slide{
+ 
+
+
+    width: calc(100% - 32px) !important;
+   
+   
+    margin: 0 var(--size-2) !important;
+    transform: translateX(12px) !important;
+  }
+
+
+
+
+  .lastSlide{
+    padding-right: var(--size-5) !important;
+  }
+
+
+
+
+  .slider2Suiter{
+    display: block;
+
+    
+
+    box-sizing: border-box;
+    padding: var(--size-6) var(--size-8);
+  }
+
+
+
+  
+  
+
+
+  .slide2{
+    
+    position: relative;
+    width: calc(100%  / 3 - var(--size-5)) !important;
+    aspect-ratio: 1;
+    overflow: hidden;
+   
+    margin: 0 var(--size-3);
+  }
+
+  .leftArrowDiv{
+
+
+    position: absolute;
+    top: 50%;
+    left: var(--size-5);
+    height: var(--size-4);
+    width:var(--size-4);
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+ 
+    border-radius: 100%;
+    padding: var(--size-3);
+    
+    transform: translateY(-50%) rotate(90deg);
+    cursor: pointer;
+  }
+
+  @media (hover: hover) {
+  .leftArrowDiv:hover{
+    background-color: var(--mini-slider-arrow-bg);
+    
+  }
+
+   }
+
+  .leftArrowDiv:active{
+    background-color: var(--mini-slider-arrow-bg);
+  }
+
+  .rightArrowDiv{
+    left: auto;
+    right: var(--size-5);
+    transform: translateY(-50%) rotate(-90deg) ;
+  }
+
+  .disabledArrow{
+    display: none;
+  }
+
+
+
+
+
+     
+
+      .zoomImg{
+        /* Styles applied to .target when .trigger is hovered */
+        display: inline-block !important;
+      }
+  
+    
+      
+
+      .grid_container{
+        display:none;
+      }
+  
+    
+
+     
+  
+      
+      
+  
+
+  }
+
+
+
+  @media (max-width: 380px) {
+ 
+    
+
+    .slider2Suiter{
+    
+      
+      padding: var(--size-6) var(--size-8);
+  
+    
+  }
+
+}
+
+
+  @keyframes spawnAddToCart {
+    0%{
+      opacity: 0;
+      transform: translateY(100%);
+    
+    }
+    100%{
+      opacity: 1;
+      transform: translatey(0);
+    }
+  }
