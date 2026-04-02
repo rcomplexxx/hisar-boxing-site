@@ -140,6 +140,8 @@ background-image: linear-gradient(
 
   .heroPharagraph{
     text-align: start;
+
+    padding: 0 var(--size-1);
   }
   
 }
