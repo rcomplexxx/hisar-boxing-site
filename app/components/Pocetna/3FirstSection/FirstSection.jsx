@@ -14,8 +14,8 @@ export default function FirstSection() {
               <Image height={0} width={0} sizes='100vw' src="/Images/main_1.png" className={styles.imgMain1} />
             
             
-            <div className="flex flex-col w-100 md:w-3/4 lg:w-1/2 mt-10 text-center md:text-start space-y-10">
-              <h1 className="text-2xl uppercase font-black">Boks trening koji donosi rezultate</h1>
+            <div className={styles.textWrapper}>
+             <h2 className={styles.title}> Boks trening koji donosi rezultate</h2>
 
               <p>Naši treninzi kombinuju proverene metode profesionalnog boksa sa modernim pristupom kondicionoj pripremi. Fokus je na pravilnoj tehnici, snazi i izdržljivosti. Rezultat su bolja forma, veće samopouzdanje i realan napredak iz treninga u trening.</p>
 

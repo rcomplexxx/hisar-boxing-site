@@ -54,8 +54,8 @@
 
 
   --h1-fs: var(--fs-8);
-  --h2-fs: var(--fs-6);
-  --h3-fs: var(--fs-5);
+  --h2-fs: var(--fs-7);
+  --h3-fs: var(--fs-6);
   --p-fs: var(--fs-3);
   /* --topbar-height: 40px; */
   --topbar-height: 0px;
@@ -251,7 +251,7 @@ html{
 
 
 body{
-  color:var(--text-classic-color);
+  color:var(--text-classic-color-2);
    background-color: var(--bg-classic);
  
  
@@ -329,7 +329,6 @@ h3{
 
 p{
   color: var(--text-classic-color);
-  color:var(--neutral-color-16);
   line-height: 1.4; 
   font-size: var(--p-fs);
 }

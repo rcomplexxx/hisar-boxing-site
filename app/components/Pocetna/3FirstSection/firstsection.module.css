@@ -2,7 +2,7 @@
 
 .firstSection {
   background-color: var(--section-important-bg);  /* bg-black */
-  color: var(--text-classic-color);
+
   width: 100%;             /* w-100 */
   padding-top: 3rem;       /* py-12 */
   padding-bottom: 3rem;
@@ -47,6 +47,27 @@
   }
 }
 
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 2.5rem; /* mt-10 */
+  gap: 2.5rem; /* space-y-10 */
+}
+
+@media (min-width: 768px) {
+  .textWrapper {
+    width: 75%; /* md:w-3/4 */
+    text-align: left; /* md:text-start */
+  }
+}
+
+@media (min-width: 1024px) {
+  .textWrapper {
+    width: 50%; /* lg:w-1/2 */
+  }
+}
+
 
 .boxerRow {
   display: flex;
@@ -69,6 +90,7 @@
  @media (max-width: 640px) {
 .boxerNameDiv p{
   text-align: start;
+  
 }
  }
 
