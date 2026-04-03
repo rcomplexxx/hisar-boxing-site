@@ -1,61 +1,80 @@
-
-
 import Image from 'next/image'
 import React from 'react'
 import styles from './firstsection.module.css'
-import {BoxingGloves} from '@/public/Images/svgs/svgImages'
+import { BoxingGloves } from '@/public/Images/svgs/svgImages'
 
 export default function FirstSection() {
   return (
     <section id="our-classes" className={styles.firstSection}>
       <div className={styles.containerWrapper}>
-  <div className={styles.container}>
-            
-              <Image height={0} width={0} sizes='100vw' src="/Images/main_1.png" className={styles.imgMain1} />
-            
-            
-            <div className={styles.textWrapper}>
-             <h2 className={styles.title}> Boks trening koji donosi rezultate</h2>
+        <div className={styles.container}>
 
-              <p>Naši treninzi kombinuju proverene metode profesionalnog boksa sa modernim pristupom kondicionoj pripremi. Fokus je na pravilnoj tehnici, snazi i izdržljivosti. Rezultat su bolja forma, veće samopouzdanje i realan napredak iz treninga u trening.</p>
-
-              <div className="flex flex-row justify-between">
-              
-
-                <div className={styles.boxerRow}>
-                  <BoxingGloves className={styles.glovesIcon}/>
-                  <div className={styles.boxerNameDiv}>
-                    <p className="font-black">Glavni trener</p>
-                    <p className="opacity-50">Rastko Stamenvkovic</p>
-                  </div>
-                </div>
-
-                  <div className={styles.boxerRow}>
-                  <BoxingGloves className={styles.glovesIcon}/>
-                  <div className={styles.boxerNameDiv}>
-                    <p className="font-black">Kondicioni trener</p>
-                    <p className="opacity-50">Marko Manojlovic</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex flex-row justify-between">
-              
-
-                <div className={styles.boxerRow}>
-                 <BoxingGloves className={styles.glovesIcon}/>
-                  <div className={styles.boxerNameDiv}>
-                    <p className="font-black">Trener za pocetnike</p>
-                    <p className="opacity-50">Nikola Markovic</p>
-                  </div>
-                </div>
-              </div>
-
-
-            </div>
-            
+          {/* IMAGE */}
+          <div className={styles.imageWrapper}>
+            <Image
+              height={0}
+              width={0}
+              sizes="100vw"
+              src="/Images/main_1.png"
+              className={styles.imgMain1}
+              alt="Boks trening"
+            />
           </div>
+
+          {/* TEXT */}
+          <div className={styles.textWrapper}>
+            {/* HOOK / TITLE */}
+            <h2 className={styles.title}>Rezultati ne dolaze slučajno</h2>
+
+            {/* SHORT BODY */}
+            <p className={styles.bodyText}>
+              Prestani da treniraš bez rezultata. <br/>
+              Naši treninzi kombinuju pravu boks tehniku, snagu i kondiciju. <br/>
+              Svaki trening ima cilj — i vidiš napredak.
+            </p>
+
+            {/* BENEFITS */}
+            <div className={styles.benefits}>
+              <span>✔ Brži rezultati</span>
+              <span>✔ Prava tehnika</span>
+              <span>✔ Veće samopouzdanje</span>
+            </div>
+
+            {/* TRAINERS / PROOF */}
+            <div className={styles.trainers}>
+              <div className={styles.boxerRow}>
+                <BoxingGloves className={styles.glovesIcon}/>
+                <div className={styles.boxerNameDiv}>
+                  <p className="font-black">Glavni trener</p>
+                  <p className="opacity-50">Rastko Stamenvkovic – 15+ godina iskustva</p>
+                </div>
+              </div>
+
+              <div className={styles.boxerRow}>
+                <BoxingGloves className={styles.glovesIcon}/>
+                <div className={styles.boxerNameDiv}>
+                  <p className="font-black">Kondicioni trener</p>
+                  <p className="opacity-50">Marko Manojlovic – stručnjak za snagu i izdržljivost</p>
+                </div>
+              </div>
+
+              <div className={styles.boxerRow}>
+                <BoxingGloves className={styles.glovesIcon}/>
+                <div className={styles.boxerNameDiv}>
+                  <p className="font-black">Trener za početnike</p>
+                  <p className="opacity-50">Nikola Markovic – vodi te od prvog koraka</p>
+                </div>
+              </div>
+            </div>
+
+            {/* CTA BUTTON */}
+            {/* <button className={styles.ctaButton}>
+              Započni trening →
+            </button> */}
+          </div>
+
         </div>
-      </section>
+      </div>
+    </section>
   )
 }
