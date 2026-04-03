@@ -41,22 +41,18 @@ display: grid;
 grid-template-columns: 1fr;
 gap: 1.5rem;
 }
-
 .card {
-background: rgba(255, 255, 255, 0.04);
-padding: 2rem;
-border-radius: 14px;
-text-align: left;
-transition: all 0.25s ease;
-border: 1px solid rgba(255,255,255,0.06);
-
-opacity: 0;
-
+  background: rgba(255, 255, 255, 0.04);
+  padding: 2rem;
+  border-radius: 14px;
+  text-align: left;
+  border: 1px solid rgba(255,255,255,0.06);
+  opacity: 0;
+  transform: translateY(20px) scale(0.95); /* start slightly smaller and lower */
 }
 
 .animate {
-transform: translateY(30px);
-animation: fadeUp 0.6s ease forwards;
+  animation: fadeUpScale 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 .card:hover {
@@ -98,6 +94,21 @@ transform: translateY(-10px);
 .card:nth-child(2) {
 transform: translateY(10px);
 }
+}
+
+@keyframes fadeUpScale {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-5px) scale(1.02); /* slight overshoot for pop effect */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 
