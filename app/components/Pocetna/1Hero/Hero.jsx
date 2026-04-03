@@ -16,11 +16,16 @@ export default function Hero() {
             </h1>
 
             <p className={styles.heroPharagraph}>
-              Naučite boks uz profesionalnog trenera sa iskustvom od 45 profesionalnih mečeva. Naučite pravilnu tehniku, taktiku i disciplinu koja stoji iza ovog sporta. Treninzi su prilagođeni vašim ciljevima – bilo da želite bolju formu, samoodbranu ili takmičarski nivo. Uđite u ring spremni i sigurni u svoje sposobnosti.
+
+
+            Hisar Boxing je klub u Leskovcu koji nudi kvalitetne boks treninge uz stručno vođstvo iskusnih trenera i fokus na napredak svakog člana.
+             Kroz kvalitetan trening i podršku trenera gradiš formu, tehniku i sigurnost u sebe.
+
+           
             </p>
 
             <Link href={`/kontakt`} className={styles.kontaktButton}>
-              Kontaktirajte nas
+              POČNI ODMAH
             </Link>
           </div>
         </div>

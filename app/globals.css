@@ -122,6 +122,15 @@
 --neutral-color-16: #F5F3EF;
 
 
+
+/*Hero gradient colors*/
+
+--neutral-color-1-grad: rgba(0, 0, 0, 0.78);  /* #000000c7 */
+--neutral-color-2-grad: rgba(6, 6, 5, 0.62);  /* #0606059d */
+--neutral-color-3-grad: rgba(11, 11, 9, 0.44); /* #0b0b0971 */
+--neutral-color-4-grad: rgba(17, 17, 15, 0.32); /* #11110f52 */
+--neutral-color-5-grad: rgba(24, 23, 20, 0.45); /* #18171473 */
+
    /* --main-color-1: #ff4537;
   --main-color-2: #F50000;
    --main-color-3: #ba332d;
