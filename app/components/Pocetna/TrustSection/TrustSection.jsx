@@ -1,5 +1,11 @@
-import React from "react";
+'use client'
+
+import React, { useEffect, useRef, useState } from "react";
 import styles from "./trust.module.css";
+
+export default function TrustSection() {
+
+
 
 const items = [
 {
@@ -26,26 +32,49 @@ desc: "za sve nivoe spremnosti",
 },
 ];
 
-export default function TrustSection() {
-return ( <section className={styles.section}> <div className={styles.header}> <h2>
-Ovde se ne trenira rekreativno. <br /> <span>Ovde se stvara disciplina.</span> </h2> <p>
-15 godina rada sa borcima svih nivoa — od početnika do takmičara. </p> </div>
 
-  <div className={styles.grid}>
-    {items.map((item, i) => (
-      <div
-        key={i}
-        className={`${styles.card} ${
-          item.highlight ? styles.highlight : ""
-        }`}
-      >
-        <h3>{item.number}</h3>
-        <h4>{item.title}</h4>
-        <p>{item.desc}</p>
-      </div>
-    ))}
-  </div>
-</section>
 
+return ( <section className={styles.section}> <div className={styles.grid}>
+{items.map((item, i) => (
+  <TrustCard item={item} i = {i}/>
+))} </div> </section>
 );
+}
+
+
+function TrustCard({ item, index }) {
+  const itemRef = useRef();
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    if (itemRef.current) {
+      observer.observe(itemRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div
+      ref={itemRef}
+      className={`${styles.card} ${
+        item.highlight ? styles.highlight : ""
+      } ${visible ? styles.animate : ""}`}
+      style={{ animationDelay: `${index * 0.15}s` }}
+    >
+      <h3>{item.number}</h3>
+      <h4>{item.title}</h4>
+      <p>{item.desc}</p>
+    </div>
+  );
 }
