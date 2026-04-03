@@ -44,11 +44,24 @@ gap: 1.5rem;
   text-align: left;
   border: 1px solid rgba(255,255,255,0.06);
   opacity: 0;
-  transform: translateY(20px) scale(0.95); /* start slightly smaller and lower */
+  transform: translateY(20px) scale(0.97); /* start slightly smaller and lower */
 }
 
 .animate {
-   animation: slideInRightFade 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+   animation: fadeUpScale 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+
+@media (max-width: 480px) {
+  
+ .card {
+  transform: translateX(16px) scale(0.98);
+}
+
+ .animate {
+   animation: fadeUpScaleMobile 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+  
 }
 
 .card:hover {
@@ -107,20 +120,24 @@ transform: translateY(10px);
   }
 }
 
-@keyframes fadeUpScaleHighlight {
+
+@keyframes fadeUpScaleMobile {
   0% {
     opacity: 0;
-    transform: translateY(20px) scale(0.95);
+    transform: translateY(16px) scale(0.98);
   }
-  50% {
+  60% {
     opacity: 1;
-    transform: translateY(-10px) scale(1.05); /* bigger pop */
+    transform: translateY(-2px) scale(1.02); /* slight overshoot for pop effect */
   }
   100% {
     opacity: 1;
     transform: translateY(0) scale(1);
   }
+
 }
+
+
 
 
 @keyframes fadeUp {
@@ -130,14 +147,3 @@ transform: translateY(0);
 }
 }
 
-
-@keyframes slideInRightFade {
-  from {
-    opacity: 0;
-    transform: translateX(30px); /* start slightly off-screen */
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
