@@ -37,7 +37,10 @@ desc: "za sve nivoe spremnosti",
 return ( <section className={styles.section}> <div className={styles.grid}>
 {items.map((item, i) => (
   <TrustCard item={item} i = {i} key={i}/>
-))} </div> </section>
+))} </div> 
+
+<div>Im the best</div>
+</section>
 );
 }
 
