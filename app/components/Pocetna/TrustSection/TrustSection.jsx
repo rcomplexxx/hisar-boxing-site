@@ -56,7 +56,7 @@ function TrustCard({ item, index }) {
           observer.disconnect();
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.4 }
     );
 
     if (itemRef.current) {
