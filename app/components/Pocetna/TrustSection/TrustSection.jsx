@@ -39,7 +39,6 @@ return ( <section className={styles.section}> <div className={styles.grid}>
   <TrustCard item={item} i = {i} key={i}/>
 ))} </div> 
 
-<div>Im the best</div>
 </section>
 );
 }
