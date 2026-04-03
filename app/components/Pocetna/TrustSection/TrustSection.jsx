@@ -34,7 +34,13 @@ desc: "za sve nivoe spremnosti",
 
 
 
-return ( <section className={styles.section}> <div className={styles.grid}>
+return ( <section className={styles.section}> 
+<div className={styles.header}>
+<h2>Naši rezultati</h2>
+<p>Pogled na ono što smo zajedno gradili, i čemu smo se posvetili.</p>
+</div>
+<div className={styles.grid}>
+  
 {items.map((item, i) => (
   <TrustCard item={item} i = {i} key={i}/>
 ))} </div> 
