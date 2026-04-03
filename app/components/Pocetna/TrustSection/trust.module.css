@@ -76,7 +76,7 @@ opacity: 0.75;
 
 .highlight {
 border: 1px solid var(--primary-color);
-background: rgba(255, 0, 0, 0.08);
+background: var(--secondary-color-1);
 }
 
 /* desktop */
