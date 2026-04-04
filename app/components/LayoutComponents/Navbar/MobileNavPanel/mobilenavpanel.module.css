@@ -73,7 +73,7 @@
 }
 
 .mobileMenu a:hover {
-  color: #f87171;  /* Tailwind red-500 */
+  color: var(--mobile-menu-link-color-hover);  /* Tailwind red-500 */
 }
 
 .mobileMenuClose {
