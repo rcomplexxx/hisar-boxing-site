@@ -69,9 +69,7 @@ export default function MobileNavPanel({isOpen, toggleOpen}) {
                 </div>
     
 
-          <div
-           className={`${styles.mobileMenuMain}`}
-          >
+          <div className={`${styles.mobileMenuMain}`} >
              <Link href={"/"} className={`${styles.linkStyle}`} onClick={toggleOpen} >Početna</Link>
               <Link href={"/ekipa"} className={`${styles.linkStyle}`} onClick={toggleOpen} >Ekipa</Link>
               <Link href={"/galerija"} className={`${styles.linkStyle}`} onClick={toggleOpen} >Galerija</Link>
