@@ -187,10 +187,10 @@
 
 --section-proof-bg: var(--neutral-3);
 --card-bg: var(--neutral-color-4);
---card-border-color: var(--neutral-color-6);
+--card-border-color: var(--neutral-color-9);
 
 --card-highlight-bg: var(--secondary-color-2);
---card-highlight-border-color: var(--neutral-color-6);
+--card-highlight-border-color: var(--neutral-color-9);
 
 --section-important-bg: var(--neutral-color-3);
 
