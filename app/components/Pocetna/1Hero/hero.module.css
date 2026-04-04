@@ -19,7 +19,7 @@ background-image: linear-gradient(
     position: relative;
   min-height: 100vh;
     margin-top: calc(-1 * (var(--topbar-height) + var(--navbar-height)));
-    padding: 0;
+    
      padding-top: calc((var(--topbar-height) + var(--navbar-height)  + var(--section-padding-vertical)));
      padding-bottom: var(--section-padding-vertical);
 
@@ -53,7 +53,7 @@ background-image: linear-gradient(
   justify-content: flex-start;
   width: 40%; 
   margin: var(--size-8);     
-  margin-top: var(--size-16);  
+  margin-top: var(--size-15);  
   gap: var(--size-8);        
                  
   object-fit: scale-down;     
@@ -68,7 +68,7 @@ background-image: linear-gradient(
   @media (max-width: 1440px) {
 
      .innerWrapper {
-        margin-top: var(--size-15);   
+        margin-top: var(--size-13);   
      }
     
   }
@@ -76,7 +76,7 @@ background-image: linear-gradient(
     @media (max-width: 1280px) {
 
      .innerWrapper {
-        margin-top: var(--size-12);   
+        margin-top: var(--size-11);   
      }
     
   }
@@ -97,8 +97,8 @@ background-image: linear-gradient(
    .innerWrapper {
     max-width: var(--size-24);
     width: 100%;       
-    gap: var(--size-8);
-    margin-top: var(--size-11);      
+    gap: var(--size-8); 
+    margin-top: var(--size-10);    
   }
 }
 
@@ -140,7 +140,7 @@ background-image: linear-gradient(
   }
 
   .innerWrapper{
-     margin: var(--size-10) var(--size-5);   
+    margin: 0;
   }
 
 
@@ -178,7 +178,7 @@ background-image: linear-gradient(
   background-color: var(--hero-cta-bg);
   text-transform: uppercase;
   font-weight: 600; /* font-semibold */
-  padding: 0 var(--size-8); /* py-4 px-20 → 16px top/bottom, 80px left/right */
+  padding: var(--size-5) var(--size-8); /* py-4 px-20 → 16px top/bottom, 80px left/right */
  transition: background-color 0.2s, color 0.2s;
   display: block; /* to make mx-auto work */
   margin-left: var(--size-1);
