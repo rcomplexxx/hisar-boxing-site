@@ -19,7 +19,7 @@ background-image: linear-gradient(
     position: relative;
   min-height: 100vh;
     margin-top: calc(-1 * (var(--topbar-height) + var(--navbar-height)));
-     padding-top: calc((var(--topbar-height) + var(--navbar-height)));
+     padding-top: calc((var(--topbar-height) + var(--navbar-height)  + var(--section-padding-vertical)));
 
      display: flex;
      justify-content: center;

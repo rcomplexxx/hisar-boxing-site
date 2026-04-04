@@ -5,7 +5,7 @@
     var(--neutral-color-2) 100% /* #A9A59D - soft highlight */
   );
   color: var(--text-highlighted-color);
-  padding: 5rem 2rem;
+
   position: relative;
   overflow: hidden;
 }

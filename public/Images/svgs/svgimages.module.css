@@ -67,7 +67,7 @@ margin-bottom: var(--size-2);
   }
 
 
-  @media (max-width: 420px){
+  @media (max-width: 480px){
 
     .spinner2{
       height: 40px;

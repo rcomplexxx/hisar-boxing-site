@@ -1,7 +1,6 @@
 .faqSection {
   max-width: 768px;
   margin: 0 auto;
-  padding: 4rem 1rem;
   color: var(--text-highlighted-color);
   font-family: 'Inter', sans-serif;
 }

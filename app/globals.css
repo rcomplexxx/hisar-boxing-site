@@ -52,6 +52,8 @@
   --fs-7: 2rem;
  --fs-8: 3rem;
 
+--section-padding-vertical: var(--size-10);
+--section-padding-horizontal: var(--size-7);
 
   --h1-fs: var(--fs-8);
   --h2-fs: var(--fs-7);
@@ -308,23 +310,30 @@ main{
 
 }
 
-section{
-  width: 100%;
-}
 
 
 
 
 h1{
   color: var(--text-highlighted-color);
+
+  margin-top: 0;
+  padding-top: 0;
+
   font-size: var(--h1-fs);
    font-weight: 800; 
+    line-height: var(--size-8);
 }
 
 
 
 h2{
+  
   color: var(--text-highlighted-color-2);
+
+  margin-top: 0;
+  padding-top: 0;
+
   font-size: var(--h2-fs);
     font-weight: 700;
     line-height: var(--size-7);
@@ -334,6 +343,10 @@ h2{
 
 h3{
   color: var(--text-highlighted-color-2);
+
+  margin-top: 0;
+  padding-top: 0;
+
   font-size: var(--h3-fs);
   font-weight: 600;
 }
@@ -346,6 +359,9 @@ p{
 
 section{
   min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: var(--section-padding-vertical) var(--section-padding-horizontal);
 }
 
 button{

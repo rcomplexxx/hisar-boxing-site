@@ -1,8 +1,9 @@
 .firstSection {
   background-color: var(--section-important-bg);
-  width: 100%;
-  padding: 4rem 0;
+  
 }
+
+
 
 .containerWrapper {
   max-width: 1400px;
@@ -11,9 +12,17 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 420px) {
+.secondPoint{
+  margin-top: var(--size-9);
+}
+
+@media (max-width: 480px) {
+
+
+
+
   .containerWrapper {
-    padding: 0 var(--size-6);
+    padding: 0;
   }
 }
 
