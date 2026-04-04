@@ -123,9 +123,11 @@
 }
 
 .glovesIcon {
+  
+  color: var(--first-section-gloves-icon-color);
   width: var(--size-7);
   height: var(--size-7);
-  color: var(--first-section-gloves-icon-color);
+  flex-shrink: 0;
 }
 
 .boxerNameDiv {
