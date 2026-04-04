@@ -95,10 +95,10 @@ background-image: linear-gradient(
 
 
    .innerWrapper {
-    max-width: var(--size-24);
+    max-width: var(--size-23);
     width: 100%;       
     gap: var(--size-8); 
-    margin-top: var(--size-10);    
+    margin: 0;    
   }
 }
 
@@ -107,6 +107,8 @@ background-image: linear-gradient(
 
 
   .hero{
+    
+    min-height: 0;
     align-items: center;
   }
 
@@ -115,7 +117,7 @@ background-image: linear-gradient(
   }
 
   .innerWrapper {
-    max-width: var(--size-24);
+    max-width: var(--size-23);
     justify-content: center;
     gap: var(--size-6);
 
@@ -132,7 +134,6 @@ background-image: linear-gradient(
 @media (max-width: 480px) {
 
   .hero{
-    min-height: 0;
   }
 
     .outerWrapper {
