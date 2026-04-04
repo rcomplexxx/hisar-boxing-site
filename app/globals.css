@@ -357,7 +357,7 @@ p{
   color: var(--text-classic-color);
 
  
-
+  padding: 0 var(--size-1);
   line-height: 1.4; 
   font-size: var(--p-fs);
 }

@@ -44,7 +44,7 @@ margin-top: 1rem;
 display: grid;
 grid-template-columns: 1fr;
 gap: 1.5rem;
-margin: 0 var(--size-3);
+margin: 0 var(--size-1);
 }
 .card {
   background: var(--neutral-color-3);
