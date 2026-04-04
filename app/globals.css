@@ -186,6 +186,11 @@
 --hero-cta-color-hover: var(--text-highlighted-color);
 
 --section-proof-bg: var(--neutral-3);
+--card-bg: var(--neutral-color-4);
+--card-border-color: var(--neutral-color-8);
+
+--card-highlight-bg: var(--secondary-color-2);
+--card-highlight-border-color: var(--neutral-color-8);
 
 --section-important-bg: var(--neutral-color-3);
 
