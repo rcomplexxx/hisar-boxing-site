@@ -15,7 +15,7 @@ const faqs = [
   {
     question: "Kada su termini treninga?",
     answer: (
-      <section>
+      <div>
         <p className={styles.day}>Ponedeljak</p>
         <ul>
           <li>(prepodne) 10:00 – 11:00</li>
@@ -42,7 +42,7 @@ const faqs = [
         <ul>
           <li>19:00 – 21:00</li>
         </ul>
-      </section>
+      </div>
     ),
   },
   {
