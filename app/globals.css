@@ -177,6 +177,8 @@
 --logo-heading-color-hover: var(--main-color-6);
 --menu-icon-color: var(--neutral-color-14);
 
+--footer-title-color: var(--main-color-5);
+
 
 --hero-cta-bg: var(--main-color-3);
 --hero-cta-bg-hover: var(--main-color-2);
@@ -353,6 +355,9 @@ h3{
 
 p{
   color: var(--text-classic-color);
+
+ 
+
   line-height: 1.4; 
   font-size: var(--p-fs);
 }

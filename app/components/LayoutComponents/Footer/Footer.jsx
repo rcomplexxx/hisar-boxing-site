@@ -37,8 +37,8 @@ export default function Footer() {
         {/* Contact */}
         <div className={styles.col}>
           <h4>Kontakt</h4>
+           <p>📞 <a href="tel:+381600000000">+381 62 123456</a></p>
           <p>📧 <a href="mailto:hisarboxing@gmail.com">hisarboxing@gmail.com</a></p>
-          <p>📞 <a href="tel:+381600000000">+381 62 123456</a></p>
           <p>📍 Devet jugovica 24, Leskovac</p>
         </div>
 
