@@ -76,8 +76,8 @@ function TrustCard({ item, index }) {
     <div
       ref={itemRef}
       className={`${styles.card} ${
-        item.highlight ? styles.highlight : ""
-      } ${visible ? styles.animate : ""}`}
+        item.highlight && styles.highlight
+      } ${visible && styles.animate}`}
       style={{ animationDelay: `${index * 0.15}s` }}
     >
       <h3>{item.number}</h3>
