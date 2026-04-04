@@ -21,6 +21,7 @@ background-image: linear-gradient(
     margin-top: calc(-1 * (var(--topbar-height) + var(--navbar-height)));
     padding: 0;
      padding-top: calc((var(--topbar-height) + var(--navbar-height)  + var(--section-padding-vertical)));
+     padding-bottom: var(--section-padding-vertical);
 
      display: flex;
      justify-content: center;
@@ -177,7 +178,7 @@ background-image: linear-gradient(
   background-color: var(--hero-cta-bg);
   text-transform: uppercase;
   font-weight: 600; /* font-semibold */
-  padding: var(--size-5) var(--size-8); /* py-4 px-20 → 16px top/bottom, 80px left/right */
+  padding: 0 var(--size-8); /* py-4 px-20 → 16px top/bottom, 80px left/right */
  transition: background-color 0.2s, color 0.2s;
   display: block; /* to make mx-auto work */
   margin-left: var(--size-1);
