@@ -15,7 +15,7 @@ export default function FirstSection() {
               height={0}
               width={0}
               sizes="100vw"
-              src="/Images/main_1.png"
+              src="/Images/background.png"
               className={styles.imgMain1}
               alt="Boks trening"
             />
