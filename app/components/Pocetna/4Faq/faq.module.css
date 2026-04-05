@@ -23,7 +23,7 @@
 }
 
 .item {
-  border-radius: 12px;
+  border-radius: var(--radius-2);
   background: var(--faq-section-card-bg);
   padding: var(--size-5);
   transition: background-color 0.2s ease;

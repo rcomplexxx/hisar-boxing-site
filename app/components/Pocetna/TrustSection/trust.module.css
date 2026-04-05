@@ -47,7 +47,7 @@ margin: 0 var(--size-1);
   background: var(--card-bg);
   padding: 2rem;
   box-sizing: border-box;
-  border-radius: 14px;
+  border-radius: var(--radius-3);
   text-align: left;
   border: 1px solid var(--card-border-color);
   opacity: 0;

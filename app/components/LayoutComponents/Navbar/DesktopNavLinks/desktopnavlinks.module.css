@@ -17,7 +17,8 @@
 
 .cta {
   margin-bottom: 0.5rem;
-  background-color: #b45309; /* yellow-700 */
+  color: var(--neutral-color-2);
+  background-color: var(--main-color-4); /* yellow-700 */
   padding: var(--size-3) var(--size-4);
   font-weight: 600;
 

@@ -59,7 +59,7 @@
   width: 100%;
   max-width: 576px;
   height: auto;
-  border-radius: 1rem;
+  border-radius: var(--radius-3);
   transition: transform 0.5s ease;
 }
 
@@ -103,7 +103,7 @@
 .benefits span {
   background-color: var(--secondary-color-2);
   padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
+  border-radius: var(--radius-1);
   font-weight: 600;
   font-size: 0.9rem;
 }
@@ -142,7 +142,7 @@
   background-color: var(--brand-color);
   color: white;
   font-weight: 700;
-  border-radius: 0.75rem;
+  border-radius: var(--radius-1);
   cursor: pointer;
   transition: transform 0.2s ease, background-color 0.2s ease;
   align-self: flex-start;

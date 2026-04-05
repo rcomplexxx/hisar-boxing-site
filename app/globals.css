@@ -41,6 +41,12 @@
 --size-30: 105rem;    /* 1680px */
 
 
+--radius-1: 4px;
+--radius-2: 8px;   /* main */
+--radius-3: 12px;  /* cards */
+--radius-4: 20px;  /* special sections */
+
+
   
 
   --fs-1: 0.75rem;
@@ -181,10 +187,11 @@
 --footer-title-color: var(--main-color-5);
 
 
---hero-cta-bg: var(--main-color-3);
---hero-cta-bg-hover: var(--main-color-2);
---hero-cta-color: var(--text-highlighted-color-2);
---hero-cta-color-hover: var(--text-highlighted-color);
+--hero-cta-bg: var(--main-color-4);
+--hero-cta-bg-hover: var(--main-color-3);
+--hero-cta-color: var(--neutral-color-2);
+--hero-cta-color-hover: var(--neutral-color-2);
+--hero-cta-border-color: var(--neutral-color-7);
 
 --section-proof-bg: var(--neutral-3);
 --card-header-color: var(--neutral-color-14);
@@ -237,7 +244,7 @@
     --fs-7: 1.75rem;
      --fs-8: 2rem;
 
-     --navbar-height: var(--size-14)
+     --navbar-height: var(--size-14);
   }
 }
 
@@ -379,5 +386,5 @@ section{
 
 button{
   min-width: 0;
-  border-radius: 2px;
+  border-radius: var(--radius-1);
 }

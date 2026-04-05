@@ -18,7 +18,7 @@
   gap: 15px;
   background-color: var(--kontakt-item-bg);
   padding: 15px;
-  border-radius: 12px;
+  border-radius: var(--radius-2);
   text-decoration: none;
   color: inherit;
   transition: all 0.2s ease;
@@ -37,7 +37,7 @@
 .ctaBox {
   background: var(--kontakt-cta-box-bg);
   padding: 25px;
-  border-radius: 12px;
+  border-radius: var(--radius-3);
   text-align: center;
   margin-bottom: 20px;
 }
@@ -52,7 +52,7 @@
   padding: 12px 20px;
   background-color: var(--kontakt-cta-bg);
   color: var(--kontakt-cta-color);
-  border-radius: 8px;
+  border-radius: var(--radius-1);
   text-decoration: none;
   font-weight: bold;
 }
