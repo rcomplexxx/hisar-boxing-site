@@ -135,10 +135,10 @@
 
 /*Hero gradient colors*/
 
---neutral-color-1-grad: rgba(6, 6, 5, 0.75);  /* #0606059d */
---neutral-color-2-grad: rgba(11, 11, 9, 0.6); /* #0b0b0971 */
---neutral-color-3-grad: rgba(17, 17, 15, 0.4); /* #11110f52 */
---neutral-color-4-grad: rgba(24, 23, 20, 0.3); /* #18171473 */
+--neutral-color-1-grad: rgba(6, 6, 5, 0.78);  /* #0606059d */
+--neutral-color-2-grad: rgba(11, 11, 9, 0.62); /* #0b0b0971 */
+--neutral-color-3-grad: rgba(17, 17, 15, 0.44); /* #11110f52 */
+--neutral-color-4-grad: rgba(24, 23, 20, 0.32); /* #18171473 */
 --neutral-color-5-grad: rgba(34, 33, 28, 0.45);
 /*0.45*/
 
