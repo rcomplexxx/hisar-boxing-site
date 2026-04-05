@@ -25,10 +25,10 @@ highlight: true,
 
 
 return ( <section className={styles.section}> 
-<div className={styles.header}>
+{/* <div className={styles.header}>
 <h2>Naši rezultati</h2>
 <p>Pogled na ono što smo zajedno gradili, i čemu smo se posvetili.</p>
-</div>
+</div> */}
 <div className={styles.container}>
 
   <div className={styles.left}>

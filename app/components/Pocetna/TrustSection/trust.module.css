@@ -165,7 +165,7 @@ color: var(--text-classic-color-2);
 
 .highlight {
 border: 1px solid var(--card-highlight-border-color);
-background: var(--card-highlight-bg);
+background: var(--card-bg);
 }
 
 /* desktop */
