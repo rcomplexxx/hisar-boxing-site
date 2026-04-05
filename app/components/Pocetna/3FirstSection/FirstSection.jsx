@@ -41,7 +41,7 @@ export default function FirstSection() {
             </div>
 
             {/* TRAINERS / PROOF */}
-            <div className={styles.trainers}>
+            {/* <div className={styles.trainers}>
               <div className={styles.boxerRow}>
                 <BoxingGloves className={styles.glovesIcon}/>
                 <div className={styles.boxerNameDiv}>
@@ -65,7 +65,7 @@ export default function FirstSection() {
                   <p className="opacity-50">Nikola Markovic – vodi te od prvog koraka</p>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* CTA BUTTON */}
             {/* <button className={styles.ctaButton}>
