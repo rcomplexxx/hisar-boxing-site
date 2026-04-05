@@ -80,6 +80,10 @@ margin-top: 1rem;
     align-items: stretch;
   }
 
+  .left{
+    margin-bottom: var(--size-6);
+  }
+
   .right {
     gap: 1.5rem; /* spacing between cards */
   }
@@ -91,7 +95,7 @@ margin-top: 1rem;
 }
 
 .left p {
-  margin-bottom: var(--size-6);
+  margin-bottom: var(--size-3);
 }
 
 .left .button {
