@@ -179,8 +179,8 @@ background-image: linear-gradient(
   background-color: var(--hero-cta-bg);
   text-transform: uppercase;
   font-weight: 600; /* font-semibold */
-  padding: var(--size-5) var(--size-8); /* py-4 px-20 → 16px top/bottom, 80px left/right */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); 
+  padding: var(--size-5) var(--size-7); /* py-4 px-20 → 16px top/bottom, 80px left/right */
+  box-shadow: 0 4px 12px var(--neutral-color-6); 
   border-radius: var(--radius-2);
  transition: background-color 0.2s, color 0.2s;
   display: block; /* to make mx-auto work */
@@ -201,7 +201,7 @@ background-image: linear-gradient(
   .kontaktButton {
     margin-left: auto;
     margin-right: auto;
-    padding: var(--size-5) var(--size-8); /* py-4 px-20 → 16px top/bottom, 80px left/right */
+    padding: var(--size-5) var(--size-7); /* py-4 px-20 → 16px top/bottom, 80px left/right */
     
   }
 }
