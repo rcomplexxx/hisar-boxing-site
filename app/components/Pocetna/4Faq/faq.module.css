@@ -12,7 +12,6 @@
 
 .subtitle {
   color: var(--text-classic-color-3);
-  line-height: 1.5;
   margin-bottom: 2rem;
 }
 
@@ -90,7 +89,6 @@
 
 .answer {
   color: rgba(255, 255, 255, 0.85);
-  line-height: 1.6;
 }
 
 .answer p {

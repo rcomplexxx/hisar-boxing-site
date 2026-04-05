@@ -342,7 +342,7 @@ h1{
 
   font-size: var(--h1-fs);
    font-weight: 800; 
-    line-height: var(--size-8);
+    line-height: 1.2;
 }
 
 
@@ -356,7 +356,7 @@ h2{
 
   font-size: var(--h2-fs);
     font-weight: 700;
-    line-height: var(--size-7);
+    line-height: 1.2;
 }
 
 
@@ -369,6 +369,7 @@ h3{
 
   font-size: var(--h3-fs);
   font-weight: 600;
+  line-height: 1.2;
 }
 
 p{
@@ -376,7 +377,7 @@ p{
 
  
   padding: 0 var(--size-1);
-  line-height: 1.4; 
+  line-height: 1.5; 
   font-size: var(--p-fs);
 }
 
