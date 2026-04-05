@@ -177,7 +177,6 @@ background-image: linear-gradient(
   color:var(--hero-cta-color);
   background-color: var(--hero-cta-bg);
   text-transform: uppercase;
-  font-weight: 600; /* font-semibold */
   padding: var(--size-5) var(--size-7); /* py-4 px-20 → 16px top/bottom, 80px left/right */
   box-shadow: 0 4px 12px var(--neutral-color-4); 
   border-radius: var(--radius-1);

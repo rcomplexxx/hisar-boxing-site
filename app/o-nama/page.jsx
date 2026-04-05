@@ -15,7 +15,7 @@ export default function Page() {
           className={styles.heroImage}
         />
         <div className={styles.heroContent}>
-          <h1 className={styles.heroTitle}>Naša Priča</h1>
+          <h2 className={styles.heroTitle}>Naša Priča</h2>
           <p className={styles.heroText}>
             Tradicija, disciplina i borbeni duh — temelj našeg kluba.
           </p>

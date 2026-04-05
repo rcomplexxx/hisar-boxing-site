@@ -34,7 +34,7 @@ return ( <section className={styles.section}>
   <div className={styles.left}>
     <h2>Nova Energija u Bokserkom Treningu</h2>
     <p>
-      U <strong>Leskovačkom Bokserkom Klubu</strong>, verujemo da boks nije samo sport – 
+      U <strong>Hisar Bokserkom Klubu</strong>, verujemo da boks nije samo sport – 
       on je način života koji jača telo i duh. Naša tradicija duguje se godinama stvaranja 
       vrhunskih boraca, a naš trening kombinuje ozbiljan rad sa druženjem i pozitivnom atmosferom.
     </p>

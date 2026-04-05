@@ -95,7 +95,9 @@ margin-top: 1rem;
 }
 
 .left .button {
-  background-color: var(--main-color-3);
+  color: var(--neutral-color-2);
+  
+  background-color: var(--main-color-4);
   width: auto;           /* only as wide as its content */
   max-width: fit-content; /* prevents it from stretching */
   padding: 0.75rem 1.5rem; /* adjust padding */
@@ -103,6 +105,7 @@ margin-top: 1rem;
   border: none;
   border-radius: var(--radius-2);
   cursor: pointer;
+  font-weight: 800;
 }
 
 

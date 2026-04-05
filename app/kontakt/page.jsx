@@ -7,7 +7,7 @@ export default function ContactPage() {
   return (
     <div className={styles.container}>
       <div className={styles.card}>
-        <h1>Kontaktiraj nas</h1>
+        <h2>Kontaktiraj nas</h2>
         <p className={styles.subtitle}>
          Imate pitanje, želite da se učlanite ili vam je potrebna dodatna informacija? Slobodno nas kontaktirajte putem neke od opcija u nastavku — rado ćemo vam pomoći.
         </p>

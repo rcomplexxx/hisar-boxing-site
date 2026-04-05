@@ -21,9 +21,9 @@ export default function Logo() {
 
             </Link>
 <Link id='logoHeading' href="/">
-          <h1 className={styles.heading}>
+          <h2 className={styles.heading}>
             Hisar Boxing Club
-          </h1></Link>
+          </h2></Link>
 
           </div>
   )

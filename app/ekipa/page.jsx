@@ -34,9 +34,9 @@ export default function TeamPage() {
 
         {/* Heading */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-6xl font-bold uppercase mb-4">
+          <h2 className="text-4xl md:text-6xl font-bold uppercase mb-4">
             Naš tim
-          </h1>
+          </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
             Ljudi iza svakog uspeha. Iskustvo, znanje i posvećenost.
           </p>
