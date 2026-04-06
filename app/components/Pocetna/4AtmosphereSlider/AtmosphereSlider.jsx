@@ -46,7 +46,7 @@ export default function AtmosphereSlider() {
             slidesPerView={1}
             loop={true}
             loopPreventsSliding={false}
-            speed={600}                       // general transition speed
+            speed={400}                       // general transition speed
             autoplay={{
               delay: 5000,
               disableOnInteraction: false,
