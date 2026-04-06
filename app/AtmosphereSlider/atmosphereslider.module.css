@@ -10,7 +10,6 @@
 .wrapper {
   max-width: var(--size-29);
   margin: 0 auto;
-  padding: 0 16px;
 }
 
 .title {
@@ -21,6 +20,10 @@
   overflow: hidden;
   border-radius: var(--radius-3);
   position: relative;
+  
+   user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .image {
@@ -30,19 +33,14 @@
   transition: transform 0.5s ease;
 }
 
-.card:hover .image {
-  transform: scale(1.05);
-}
+
 
 /* Optional gritty overlay for boxing feel */
 .card::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.15),
-    rgba(0, 0, 0, 0.35)
-  );
+
   pointer-events: none;
 }
 
