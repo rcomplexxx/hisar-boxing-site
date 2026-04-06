@@ -68,7 +68,7 @@ export default function AtmosphereSlider() {
             }}
           >
             {images.map((src, index) => (
-              <SwiperSlide key={index}>
+              <SwiperSlide key={index}  className={styles.mySwiperSlide}>
                 <div className={styles.card}>
                   <Image
                     src={src}

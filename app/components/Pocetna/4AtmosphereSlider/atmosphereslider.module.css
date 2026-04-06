@@ -22,6 +22,11 @@
   -ms-user-select: none;
 }
 
+/* Slider.module.css */
+.noSwiperSlide {
+  touch-action: none;
+}
+
 .card {
   overflow: hidden;
   border-radius: var(--radius-3);
