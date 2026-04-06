@@ -4,16 +4,23 @@
 
 .section {
   width: 100%;
+  max-width: none;
   background-color: var(--neutral-color-2);
 }
 
 .wrapper {
-  max-width: var(--size-29);
   margin: 0 auto;
 }
 
 .title {
   margin-bottom: 32px;
+  text-align: center;
+}
+
+@media (max-width: 980px) {
+  .title {
+  text-align: left !important;
+}
 }
 
 .mySwiper{

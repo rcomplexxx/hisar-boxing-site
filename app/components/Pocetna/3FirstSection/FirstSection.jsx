@@ -81,7 +81,7 @@ export default function FirstSection() {
 
           {/* TEXT ON LEFT */}
           <div className={styles.textWrapper}>
-            <h2>Trening koji se prilagođava tebi</h2>
+            <h2 className={styles.title}>Trening koji se prilagođava tebi</h2>
 
             <p className={styles.bodyText}>
               Svaki član ima svoj tempo i cilj. <br/>
