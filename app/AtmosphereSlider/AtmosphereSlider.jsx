@@ -10,11 +10,12 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const images = [
-  "/images/gym_atmosphere_1.jpg",
-  "/images/gym_atmosphere_2.jpg",
-  "/images/gym_atmosphere_3.jpg",
-  "/images/gym_atmosphere_4.jpg",
-  "/images/gym_atmosphere_5.jpg",
+  "/Images/gym_atmosphere_1.jpg",
+  "/Images/gym_atmosphere_2.jpg",
+  "/Images/gym_atmosphere_3.jpg",
+  "/Images/gym_atmosphere_4.jpg",
+  "/Images/gym_atmosphere_5.jpg",
+  "/Images/gym_atmosphere_6.jpg",
 ];
 
 export default function AtmosphereSlider() {
