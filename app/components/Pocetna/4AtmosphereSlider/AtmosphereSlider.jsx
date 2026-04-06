@@ -54,6 +54,10 @@ export default function AtmosphereSlider() {
             }}
             preventInteractionOnTransition={false}   // ← THIS ALLOWS CLICKS DURING TRANSITION
             allowTouchMove={false}
+
+             preventClicks={false}
+        touchStartPreventDefault={false}
+
             breakpoints={{
               640: { slidesPerView: 1 },
               768: { slidesPerView: 2 },
