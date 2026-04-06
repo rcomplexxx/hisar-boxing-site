@@ -16,14 +16,18 @@
   margin-bottom: 32px;
 }
 
+.mySwiper{
+     user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
 .card {
   overflow: hidden;
   border-radius: var(--radius-3);
   position: relative;
   
-   user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
+
 }
 
 .image {
