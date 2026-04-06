@@ -44,27 +44,54 @@
   pointer-events: none;
 }
 
+.swiperWrapper {
+  position: relative; /* <-- makes absolute arrows position relative to Swiper */
+}
+
 .prev,
 .next {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
+  
 
-  width: 40px;
-  height: 40px;
+  /* background: var(--neutral-color-2); */
+
+  width: var(--size-7);
+  height: var(--size-7);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   border-radius: 50%;
 
-  background: rgba(0,0,0,0.6);
+
+    z-index: 10;
   cursor: pointer;
 }
 
+.prev svg ,
+.next svg {
+
+  stroke: var(--main-color-9); /* boxing red */
+  stroke-width: 3;
+
+  height: var(--size-6);
+  width: var(--size-6);
+  background-color: var(--neutral-color-2);
+  border-radius: var(--radius-1);
+    
+
+}
+
+
+
 .prev {
-  left: 10px;
+  left: 8px;
 }
 
 .next {
-  right: 10px;
+  right: 8px;
 }
 
 .swiper-pagination-bullet {

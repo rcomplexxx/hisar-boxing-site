@@ -98,3 +98,24 @@ export const BoxingGloves = ({ className, ...props }) => {
     </svg>
   );
 }
+
+
+export const PrevArrow = ({ additionalClassName }) => (
+  <svg
+    className={`${additionalClassName} ${styles.prevArrow}`}
+  
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M15 18L9 12L15 6"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+export const NextArrow =() =>{
+  return <PrevArrow additionalClassName={styles.nextArrow}/>
+}

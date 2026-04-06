@@ -95,3 +95,13 @@ margin-bottom: var(--size-2);
     }
     
     }
+
+
+    .prevArrow {
+  /* nothing special for path, just position it */
+   transform: scale(1, 2);
+}
+
+.nextArrow {
+  transform: scale(-1, 2);
+}
