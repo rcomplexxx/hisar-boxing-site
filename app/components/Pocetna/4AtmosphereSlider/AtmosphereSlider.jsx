@@ -9,6 +9,7 @@ import styles from "./atmosphereslider.module.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import { NextArrow, PrevArrow } from "../../../../public/Images/svgs/svgImages";
+import Image from "next/image";
 
 const images = [
   "/Images/gym_atmosphere_1.jpg",
@@ -22,6 +23,16 @@ const images = [
 export default function AtmosphereSlider() {
   const swiperRef = useRef(null);
 
+  const handleSlide = (next) => {
+    if (!swiperRef.current) return;
+
+    if (next) {
+      swiperRef.current.slideNext();
+    } else {
+      swiperRef.current.slidePrev();
+    }
+  };
+
   return (
     <section className={styles.section}>
       <div className={styles.wrapper}>
@@ -34,7 +45,14 @@ export default function AtmosphereSlider() {
             spaceBetween={20}
             slidesPerView={1}
             loop={true}
-            autoplay={{ delay: 5000 }}
+            loopPreventsSliding={false}
+            speed={600}                       // general transition speed
+            autoplay={{
+              delay: 5000,
+              disableOnInteraction: false,
+              waitForTransition: false,       // ← Helps with rapid autoplay + clicks
+            }}
+            preventInteractionOnTransition={false}   // ← THIS ALLOWS CLICKS DURING TRANSITION
             allowTouchMove={false}
             breakpoints={{
               640: { slidesPerView: 1 },
@@ -48,26 +66,31 @@ export default function AtmosphereSlider() {
             {images.map((src, index) => (
               <SwiperSlide key={index}>
                 <div className={styles.card}>
-                  <img
+                  <Image
                     src={src}
                     alt={`Training ${index + 1}`}
                     className={styles.image}
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{ objectFit: "cover" }}
+                    priority={index < 3} // optional: preload first few images
                   />
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
 
-          {/* Custom arrows with onClick */}
+          {/* Custom arrows */}
           <div
             className={styles.prev}
-            onClick={() => swiperRef.current?.slidePrev()}
+            onClick={() => handleSlide(false)}
           >
             <PrevArrow />
           </div>
           <div
             className={styles.next}
-            onClick={() => swiperRef.current?.slideNext()}
+            onClick={() => handleSlide(true)}
           >
             <NextArrow />
           </div>
