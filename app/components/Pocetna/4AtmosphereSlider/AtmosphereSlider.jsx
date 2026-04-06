@@ -56,6 +56,8 @@ export default function AtmosphereSlider() {
             allowTouchMove={false}
 
              preventClicks={false}
+        preventClicksPropagation={false}
+        touchMoveStopPropagation={false}
         touchStartPreventDefault={false}
 
             breakpoints={{
@@ -68,7 +70,7 @@ export default function AtmosphereSlider() {
             }}
           >
             {images.map((src, index) => (
-              <SwiperSlide key={index}  className={styles.mySwiperSlide}>
+              <SwiperSlide key={index}>
                 <div className={styles.card}>
                   <Image
                     src={src}
