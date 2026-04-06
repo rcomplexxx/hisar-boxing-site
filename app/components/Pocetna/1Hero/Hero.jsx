@@ -12,7 +12,7 @@ export default function Hero() {
   <div className={styles.innerWrapper}>
     
        <h1 className={styles.heroHeading}>
-              GRUPNI I INDIVIDUALNI TRENINZI BOKSA U LESKOVCU
+              Postani Bokser — Treninzi Boksa u Leskovcu
             </h1>
 
             <p className={styles.heroPharagraph}>
