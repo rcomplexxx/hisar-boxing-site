@@ -68,7 +68,7 @@
 }
 
 .bottom p {
-  color: var(--text-color-dimmed-2);
+  color: var(--text-dimmed-color);
   font-size: var(--fs-1);
 }
 
