@@ -110,36 +110,36 @@
 
 --neutral-color-1:  #000000;  /* footer */
 
---neutral-color-2:  #060605;
---neutral-color-3:  #0B0B09;
---neutral-color-4:  #11110F;
---neutral-color-5:  #181714;
+--neutral-color-2:  #050605;
+--neutral-color-3:  #0A0B0A;
+--neutral-color-4:  #10110F;
+--neutral-color-5:  #171814;
 
---neutral-color-6:  #22211C;
---neutral-color-7:  #2B2A24;
---neutral-color-8:  #34332C; /* main base */
+--neutral-color-6:  #20211D;
+--neutral-color-7:  #292A25;
+--neutral-color-8:  #32332D; /* main base */
 
---neutral-color-9:  #4A4840;
---neutral-color-10: #615E54;
+--neutral-color-9:  #47463F;
+--neutral-color-10: #5D5B52;
 
---neutral-color-11: #858178;
---neutral-color-12: #A9A59D;
+--neutral-color-11: #807D74;
+--neutral-color-12: #A39F97;
 
---neutral-color-13: #C1BEB7;
---neutral-color-14: #D6D3CD;
---neutral-color-15: #E4E1DC;
+--neutral-color-13: #BBB8B1;
+--neutral-color-14: #D1CEC8;
+--neutral-color-15: #E0DDD8;
 
---neutral-color-16: #f5f0ef;
+--neutral-color-16: #F3EFEC;
 
 
 
 /*Hero gradient colors*/
 
---neutral-color-1-grad: rgba(6, 6, 5, 0.65);  /* #0606059d */
---neutral-color-2-grad: rgba(11, 11, 9, 0.60); /* #0b0b0971 */
---neutral-color-3-grad: rgba(17, 17, 15, 0.44); /* #11110f52 */
---neutral-color-4-grad: rgba(24, 23, 20, 0.30); /* #18171473 */
---neutral-color-5-grad: rgba(34, 33, 28, 0.40);
+--neutral-color-1-grad: rgba(6, 6, 6, 0.65);
+--neutral-color-2-grad: rgba(10, 11, 10, 0.60);
+--neutral-color-3-grad: rgba(16, 17, 15, 0.44);
+--neutral-color-4-grad: rgba(23, 24, 20, 0.30);
+--neutral-color-5-grad: rgba(32, 33, 28, 0.40);
 /*0.45*/
 
 
