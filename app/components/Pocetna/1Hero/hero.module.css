@@ -62,7 +62,6 @@ background-image: linear-gradient(
   .heroPharagraph{
     text-align: start;
 
-    padding: 0 var(--size-1);
   }
 
   @media (max-width: 1440px) {
@@ -166,7 +165,6 @@ background-image: linear-gradient(
   .heroPharagraph{
     text-align: start;
 
-    padding: 0 var(--size-1);
   }
   
 }
@@ -182,7 +180,6 @@ background-image: linear-gradient(
   border-radius: var(--radius-1);
  transition: background-color 0.2s, color 0.2s;
   display: block; /* to make mx-auto work */
-  margin-left: var(--size-1);
 
   font-weight: 800;
 
