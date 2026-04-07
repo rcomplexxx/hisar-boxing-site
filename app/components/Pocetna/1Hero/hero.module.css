@@ -182,11 +182,10 @@ background-image:
 .kontaktButton {
   color:var(--hero-cta-color);
   background-color: var(--hero-cta-bg);
-  text-transform: uppercase;
   padding: var(--size-5) var(--size-7); /* py-4 px-20 → 16px top/bottom, 80px left/right */
   box-shadow: 0 2px 4px var(--neutral-color-2); 
   border-radius: var(--radius-1);
- transition: background-color 0.2s, color 0.2s;
+ transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
   display: block; /* to make mx-auto work */
 
   font-weight: 800;

@@ -25,7 +25,7 @@ export default function Hero() {
             </p>
 
             <Link href={`/kontakt`} className={styles.kontaktButton}>
-              POČNI ODMAH
+              Počni odmah
             </Link>
           </div>
         </div>
