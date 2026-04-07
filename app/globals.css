@@ -144,6 +144,10 @@
 --neutral-color-5-grad: rgba(32, 33, 28, 0.40);
 /*0.45*/
 
+/*Swiper arrow bg color*/
+
+--neutral-color-swiper-arrow-bg: rgba(10, 11, 10, 0.8); /*Neutral 3*/
+
 
  /* Ghost secondary gradient (ultra subtle blues) */
   --secondary-grad-1: rgba(15, 36, 92, 0.04);   /* secondary-3 */
