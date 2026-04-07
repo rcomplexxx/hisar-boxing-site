@@ -184,7 +184,7 @@ background-image:
   background-color: var(--hero-cta-bg);
   text-transform: uppercase;
   padding: var(--size-5) var(--size-7); /* py-4 px-20 → 16px top/bottom, 80px left/right */
-  box-shadow: 0 4px 12px var(--neutral-color-4); 
+  box-shadow: 0 2px 4px var(--neutral-color-2); 
   border-radius: var(--radius-1);
  transition: background-color 0.2s, color 0.2s;
   display: block; /* to make mx-auto work */
@@ -196,7 +196,7 @@ background-image:
 .kontaktButton:hover {
   background-color: var(--hero-cta-bg-hover); /* hover:bg-red-500 */
   color: var(--hero-cta-color-hover);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 4px 8px var(--neutral-color-3); 
 }
 
 
