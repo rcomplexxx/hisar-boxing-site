@@ -8,18 +8,35 @@
   background-color: var(--neutral-color-2);
 }
 
-.wrapper {
-  margin: 0 auto;
+
+
+.titleWrapper{
+  display: flex;
+  flex-direction: column;
+   margin-bottom: var(--size-9);
 }
 
 .title {
-  margin-bottom: 32px;
   text-align: center;
 }
 
+.subTitle{
+  color: var(--text-classic-color-2);
+  display: none;
+}
+
 @media (max-width: 980px) {
+
+  .titleWrapper{
+     margin-bottom: var(--size-8);
+  }
+
   .title {
   text-align: left !important;
+}
+
+.subTitle{
+  display: block;
 }
 }
 

@@ -90,9 +90,7 @@ margin-top: 1rem;
 }
 
 /* Optional styling */
-.left h3 {
-  margin-bottom: var(--size-5);
-}
+
 
 .left p {
   margin-bottom: var(--size-3);

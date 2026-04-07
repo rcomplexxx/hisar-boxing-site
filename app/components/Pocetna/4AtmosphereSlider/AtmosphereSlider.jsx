@@ -35,9 +35,12 @@ export default function AtmosphereSlider() {
 
   return (
     <section className={styles.section}>
-      <div className={styles.wrapper}>
+
+        <div className={styles.titleWrapper}>
         <h2 className={styles.title}>Atmosfera na treningu</h2>
-        {/* <p>Delić atmosfere sa treninga.</p> */}
+        <p className={styles.subTitle}>Ovako izgleda atmosfera na našim treninzima.</p>
+
+        </div>
 
         <div className={styles.swiperWrapper}>
           <Swiper
@@ -101,7 +104,6 @@ export default function AtmosphereSlider() {
           >
             <NextArrow />
           </div>
-        </div>
       </div>
     </section>
   );
