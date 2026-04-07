@@ -61,14 +61,14 @@
 
 /* BOTTOM BAR */
 .bottom {
-  border-top: 1px solid var(--neutral-color-5);
+  border-top: 1px solid var(--neutral-color-9);
   margin-top: var(--size-7);
   padding-top: var(--size-5);
   text-align: center;
 }
 
 .bottom p {
-  color: var(--text-dimmed-color);
+  color: var(--text-classic-color-3);
   font-size: var(--fs-1);
 }
 
