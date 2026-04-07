@@ -63,23 +63,27 @@ function TrustCard({ item, index }) {
   const itemRef = useRef();
   const [visible, setVisible] = useState(false);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.25 }
-    );
 
-    if (itemRef.current) {
-      observer.observe(itemRef.current);
-    }
+  
 
-    return () => observer.disconnect();
-  }, []);
+useEffect(() => {
+  const el = itemRef.current;
+  if (!el) return;
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        setVisible(true);
+        observer.unobserve(el);
+      }
+    },
+    { threshold: 0.25 }
+  );
+
+  observer.observe(el);
+
+  return () => observer.unobserve(el);
+}, []);
 
   return (
     <div
