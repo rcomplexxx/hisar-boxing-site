@@ -19,7 +19,7 @@ export default function Gallery() {
 
   return (
     <div className={styles.galleryWrapper}>
-      {fullScreen && <FullscreenMediaViewer onClose={onClose}/>}
+      {/* {fullScreen && <FullscreenMediaViewer onClose={onClose}/>} */}
       {sections.map((section, i) => (
         <div key={i} className={styles.section}>
           <h2 className={styles.title}>{section.title}</h2>
