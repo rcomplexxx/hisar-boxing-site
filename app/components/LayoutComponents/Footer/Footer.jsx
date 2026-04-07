@@ -19,7 +19,7 @@ export default function Footer() {
   />
   <h4 className={styles.logoText}>Hisar Boxing Club</h4>
 </div>
-          <p className={styles.desc}>
+          <p>
             Profesionalni boks klub u Leskovcu. Trening za početnike i napredne.
           </p>
         </div>

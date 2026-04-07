@@ -68,6 +68,7 @@
   --h3-fs: var(--fs-6);
    --h4-fs: var(--fs-4);
   --p-fs: var(--fs-3);
+  --p-footer-fs: var(--fs-2);
   /* --topbar-height: 40px; */
   --topbar-height: 0px;
   --navbar-height: var(--size-15);
@@ -180,6 +181,7 @@
 --mobile-menu-link-color-hover: var(--main-color-6);
 
 --footer-title-color: var(--main-color-6);
+--footer-link-color: var(--secondary-color-9);
 
 
 --hero-cta-bg: var(--main-color-4);
