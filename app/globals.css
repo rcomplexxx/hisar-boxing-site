@@ -241,6 +241,10 @@
     --fs-7: 1.75rem;
      --fs-8: 2rem;
 
+     --h4-fs: var(--fs-5);
+     --p-footer-fs: var(--fs-3);
+     
+
      --navbar-height: var(--size-14);
      --section-padding-horizontal: var(--size-6);
   }
