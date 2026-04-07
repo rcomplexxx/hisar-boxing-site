@@ -6,12 +6,12 @@
 }
 
 .title {
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--size-3);
 }
 
 .subtitle {
   color: var(--text-classic-color-3);
-  margin-bottom: 2rem;
+  margin-bottom: var(--size-7);
 }
 
 .list {
