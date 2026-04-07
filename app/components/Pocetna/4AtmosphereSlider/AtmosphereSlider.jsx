@@ -37,6 +37,7 @@ export default function AtmosphereSlider() {
     <section className={styles.section}>
       <div className={styles.wrapper}>
         <h2 className={styles.title}>Atmosfera na treningu</h2>
+        {/* <p>Delić atmosfere sa treninga.</p> */}
 
         <div className={styles.swiperWrapper}>
           <Swiper
