@@ -129,41 +129,32 @@
 --neutral-color-14: #D6D3CD;
 --neutral-color-15: #E4E1DC;
 
---neutral-color-16: #F5F3EF;
+--neutral-color-16: #f5f0ef;
 
 
 
 /*Hero gradient colors*/
 
---neutral-color-1-grad: rgba(6, 6, 5, 0.55);   /* top slightly lighter */
---neutral-color-2-grad: rgba(11, 11, 9, 0.42); 
---neutral-color-3-grad: rgba(17, 17, 15, 0.30); 
---neutral-color-4-grad: rgba(24, 23, 20, 0.20); 
---neutral-color-5-grad: rgba(34, 33, 28, 0.35); /* bottom slightly lighter */
+--neutral-color-1-grad: rgba(6, 6, 5, 0.65);  /* #0606059d */
+--neutral-color-2-grad: rgba(11, 11, 9, 0.60); /* #0b0b0971 */
+--neutral-color-3-grad: rgba(17, 17, 15, 0.44); /* #11110f52 */
+--neutral-color-4-grad: rgba(24, 23, 20, 0.30); /* #18171473 */
+--neutral-color-5-grad: rgba(34, 33, 28, 0.40);
 /*0.45*/
 
-   /* --main-color-1: #ff4537;
-  --main-color-2: #F50000;
-   --main-color-3: #ba332d;
- --main-color-4: #8d2523;
- --main-color-5: #602322;
- --main-color-6: #452727; */
- 
 
- /* #F50000 je srbija color sa logo-a, mozda to uzmem ko main */
- /*sekundari #CFCCD6 */
- /*background espresso #4a271e */
+ /* Ghost secondary gradient (ultra subtle blues) */
+  --secondary-grad-1: rgba(15, 36, 92, 0.04);   /* secondary-3 */
+  --secondary-grad-2: rgba(20, 48, 122, 0.035); /* secondary-4 */
+  --secondary-grad-3: rgba(25, 60, 153, 0.03);  /* secondary-5 */
+  --secondary-grad-4: rgba(45, 83, 168, 0.025); /* secondary-6 */
+  --secondary-grad-5: rgba(65, 106, 184, 0.02); /* secondary-7 */
 
 
-/*  
-  #060607
-#1d1e21
-#261415
-#372625
 
-#ff8e6d
-#f1a39d
-#ffcbb5 */
+
+
+  
 
 --bg-footer: var(--neutral-color-1);
 --bg-important: var(--neutral-color-2);

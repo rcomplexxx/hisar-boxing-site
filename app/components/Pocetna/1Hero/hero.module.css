@@ -2,16 +2,24 @@
 
 
 .hero {
-background-image: linear-gradient(
-  to bottom,
-  
-  var(--neutral-color-1-grad),
-  var(--neutral-color-2-grad),
-  var(--neutral-color-3-grad),
-  var(--neutral-color-4-grad),
-  var(--neutral-color-5-grad)
-),
-    url("/Images/background5.png");
+background-image:
+    linear-gradient(
+    to bottom,
+    var(--secondary-grad-1),
+    var(--secondary-grad-2),
+    var(--secondary-grad-3),
+    var(--secondary-grad-4),
+    var(--secondary-grad-5)
+  ),
+  linear-gradient(
+    to bottom,
+    var(--neutral-color-1-grad),
+    var(--neutral-color-2-grad),
+    var(--neutral-color-3-grad),
+    var(--neutral-color-4-grad),
+    var(--neutral-color-5-grad)
+  ),
+  url("/Images/background5.png");
   background-repeat: no-repeat;
   background-size: cover;
 
