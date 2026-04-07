@@ -99,9 +99,9 @@ margin-bottom: var(--size-2);
 
     .prevArrow {
   /* nothing special for path, just position it */
-   transform: scale(1, 1.75);
+   transform: scale(1, 1.5);
 }
 
 .nextArrow {
-  transform: scale(-1, 1.75);
+  transform: scale(-1, 1.5);
 }
