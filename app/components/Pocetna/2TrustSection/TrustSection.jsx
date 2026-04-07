@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./trust.module.css";
+import Link from "next/link";
 
 export default function TrustSection() {
 
@@ -38,7 +39,11 @@ return ( <section className={styles.section}>
       on je način života koji jača telo i duh. Naša tradicija duguje se godinama stvaranja 
       vrhunskih boraca, a naš trening kombinuje ozbiljan rad sa druženjem i pozitivnom atmosferom.
     </p>
-    <button className={styles.button}>Saznaj više o nama</button>
+    <button className={styles.button}>
+      <Link href='/o-nama'>
+      Saznaj više o nama
+      </Link>
+      </button>
   </div>
 
   <div className={styles.right}>
