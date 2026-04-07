@@ -66,6 +66,7 @@
   --h1-fs: var(--fs-8);
   --h2-fs: var(--fs-7);
   --h3-fs: var(--fs-6);
+   --h4-fs: var(--fs-4);
   --p-fs: var(--fs-3);
   /* --topbar-height: 40px; */
   --topbar-height: 0px;
@@ -178,7 +179,7 @@
 --menu-icon-color: var(--neutral-color-14);
 --mobile-menu-link-color-hover: var(--main-color-6);
 
---footer-title-color: var(--main-color-5);
+--footer-title-color: var(--main-color-6);
 
 
 --hero-cta-bg: var(--main-color-4);
@@ -213,7 +214,7 @@
 --kontakt-cta-bg-hover: var(--neutral-color-3);
 --kontakt-cta-color: var(--text-highlighted-color-2);
 
---footer-border-top-color: var(--neutral-color-8);
+--footer-border-top-color: var(--neutral-color-9);
 --footer-text-classic-color: var(--text-classic-color-2);
 --footer-bg: var(--bg-footer);
  
@@ -343,6 +344,10 @@ h2{
   font-size: var(--h2-fs);
     font-weight: 700;
     line-height: 1.2;
+}
+
+h4 {
+font-size: var(--h4-fs);
 }
 
 
