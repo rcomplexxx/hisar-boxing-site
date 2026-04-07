@@ -38,7 +38,7 @@ return ( <section className={styles.section}>
       on je način života koji jača telo i duh. Naša tradicija duguje se godinama stvaranja 
       vrhunskih boraca, a naš trening kombinuje ozbiljan rad sa druženjem i pozitivnom atmosferom.
     </p>
-    <button className={styles.button}>Saznaj Više O Nama</button>
+    <button className={styles.button}>Saznaj više o nama</button>
   </div>
 
   <div className={styles.right}>
