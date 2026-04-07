@@ -62,8 +62,8 @@
 /* BOTTOM BAR */
 .bottom {
   border-top: 1px solid var(--neutral-color-5);
-  margin-top: 40px;
-  padding-top: 15px;
+  margin-top: var(--size-7);
+  padding-top: var(--size-5);
   text-align: center;
 }
 
@@ -71,6 +71,8 @@
   color: var(--text-color-dimmed-2);
   font-size: var(--fs-1);
 }
+
+
 
 /* MOBILE */
 @media (max-width: 900px) {
@@ -80,7 +82,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   .container {
     grid-template-columns: 1fr;
    
@@ -89,4 +91,15 @@
   .col {
    
   }
+
+  .bottom {
+ 
+  text-align: left;
+}
+
+.bottom p{
+  font-size: var(--fs-2);
+}
+
+
 }
