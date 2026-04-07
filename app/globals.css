@@ -248,17 +248,11 @@
      --fs-8: 2rem;
 
      --navbar-height: var(--size-14);
+     --section-padding-horizontal: var(--size-6);
   }
 }
 
-  @media (max-width: 480px) {
-  :root {
- 
-  
-  }
 
-
-}
 
 
 
