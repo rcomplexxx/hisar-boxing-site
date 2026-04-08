@@ -50,11 +50,7 @@ export default function Footer() {
             <Link
               key={link.href}
               href={link.href}
-              className={
-                pathname === link.href
-                  ? `${styles.link} ${styles.activeLink}`
-                  : styles.link
-              }
+              className={`${styles.link} ${pathname === link.href && styles.activeLink}` }
             >
               {link.label}
             </Link>

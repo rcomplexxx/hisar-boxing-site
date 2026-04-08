@@ -20,7 +20,7 @@
 }
 
 .activeLink{
-  color: var(--main-color-5) !important;
+  color: var(--main-color-4) !important;
   
 }
 
@@ -42,7 +42,7 @@
 .col {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 
 .col h4 {
