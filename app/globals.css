@@ -182,7 +182,9 @@
 --logo-heading-color: var(--main-color-5);
 --logo-heading-color-hover: var(--main-color-6);
 --menu-icon-color: var(--neutral-color-14);
---mobile-menu-link-color-hover: var(--main-color-6);
+--mobile-menu-link-color: var(--neutral-color-14);
+--mobile-menu-link-color-hover: var(--main-color-4);
+--mobile-menu-link-color-active: var(--main-color-4);
 
 --footer-title-color: var(--main-color-6);
 --footer-link-color: var(--secondary-color-9);

@@ -28,7 +28,6 @@
 
 
   .heading {
-  text-transform: uppercase; /* uppercase */
   color: var(--logo-heading-color);            /* text-red-600 */
   font-size: var(--fs-3);        /* text-xl */
   transition: color 0.2s;    /* optional smooth hover effect */
