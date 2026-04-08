@@ -40,8 +40,7 @@
 }
 
 @media (max-width: 480px) {
-  .heading {
-    font-size: var(--fs-2);   
+  .heading {  
   }
 }
 
