@@ -20,7 +20,8 @@
 }
 
 .activeLink{
-  color: var(--main-color-4) !important;
+  color: var(--main-color-5) !important;
+  
 }
 
 /* TEXT */
