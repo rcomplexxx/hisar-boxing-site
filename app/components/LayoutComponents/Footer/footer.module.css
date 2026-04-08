@@ -16,7 +16,11 @@
 
 
 .footer a:hover {
-  color: #f87171;
+ color: var(--main-color-4);
+}
+
+.activeLink{
+  color: var(--main-color-4) !important;
 }
 
 /* TEXT */

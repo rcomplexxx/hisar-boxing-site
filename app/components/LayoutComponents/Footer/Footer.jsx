@@ -1,9 +1,28 @@
+"use client";
+
+
 import Image from "next/image";
 import styles from "./footer.module.css";
 import React from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
+
+
+  const pathname = usePathname();
+
+    const navLinks = [
+    { href: "/", label: "Početna" },
+    { href: "/ekipa", label: "Ekipa" },
+    { href: "/galerija", label: "Galerija" },
+    { href: "/o-nama", label: "O nama" },
+    { href: "/kontakt", label: "Kontakt" },
+  ];
+
+  console.log('current pathname', pathname)
+
+
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
@@ -27,11 +46,19 @@ export default function Footer() {
         {/* Navigation */}
         <div className={styles.col}>
           <h4>Navigacija</h4>
-          <Link href="/">Početna</Link>
-          <Link href="/ekipa">Ekipa</Link>
-          <Link href="/galerija">Galerija</Link>
-          <Link href="/o-nama">O nama</Link>
-          <Link href="/kontakt">Kontakt</Link>
+            {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={
+                pathname === link.href
+                  ? `${styles.link} ${styles.activeLink}`
+                  : styles.link
+              }
+            >
+              {link.label}
+            </Link>
+          ))}
         </div>
 
         {/* Contact */}
