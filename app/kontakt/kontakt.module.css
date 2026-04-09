@@ -56,35 +56,63 @@
 }
 
 .ctaBox {
-  background: var(--kontakt-cta-box-bg);
-  padding: var(--size-6);
+background: linear-gradient(
+  to bottom,
+  var(--kontakt-cta-box-grad-1),
+  var(--kontakt-cta-box-grad-2),
+  var(--kontakt-cta-box-grad-3)
+);
+  border: 1px solid rgba(193, 71, 66, 0.2);
+  padding: var(--size-7);
   border-radius: var(--radius-3);
   text-align: center;
-  margin-bottom: var(--size-6);
+  margin-bottom: var(--size-7);
 }
 
 .ctaBox h2 {
   margin-bottom: var(--size-3);
 }
 
-.ctaButton {
-  display: inline-block;
-  margin-top: var(--size-3);
-  padding: 12px 20px;
-  background-color: var(--kontakt-cta-bg);
-  color: var(--kontakt-cta-color);
-  border-radius: var(--radius-1);
-  text-decoration: none;
-  font-weight: bold;
+.ctaActions {
+  display: flex;
+  justify-content: center;
+  gap: var(--size-3);
+  margin-top: var(--size-4);
+  flex-wrap: wrap;
 }
 
-.ctaButton:hover {
-  background-color: var(--kontakt-cta-bg-hover);
+.ctaPrimary {
+  background-color: var(--main-color-5);
+  color: white;
+  padding: 14px 22px;
+  border-radius: var(--radius-2);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.ctaPrimary:hover {
+  background-color: var(--main-color-6);
+  transform: translateY(-1px);
+}
+
+.ctaSecondary {
+  border: 1px solid var(--main-color-5);
+  color: var(--main-color-5);
+  padding: 14px 22px;
+  border-radius: var(--radius-2);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.ctaSecondary:hover {
+  background-color: rgba(193, 71, 66, 0.08);
 }
 
 .backLink {
   display: inline-block;
-  color: var(--text-classic-color-3);
+  color: var(--text-dimmed-color);
   text-decoration: none;
 }
 

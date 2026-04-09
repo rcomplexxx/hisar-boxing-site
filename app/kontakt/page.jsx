@@ -52,13 +52,24 @@ export default function ContactPage() {
         
         </div>
 
-        <div className={styles.ctaBox}>
-          <h2>Spreman da počneš?</h2>
-          <p>Pozovi nas da se učlanis i rezerviši svoj prvi trening.</p>
-          <a href="mailto:your@email.com" className={styles.ctaButton}>
-            Pozovi nas
-          </a>
-        </div>
+     <div className={styles.ctaBox}>
+  <h2>Spreman za prvi trening?</h2>
+  <p>Najbrži način je da nas pozoveš — odgovaramo odmah.</p>
+
+  <div className={styles.ctaActions}>
+    <a href="tel:+381601234567" className={styles.ctaPrimary}>
+      📞 Pozovi nas
+    </a>
+
+    <a
+      href="https://wa.me/381601234567"
+      target="_blank"
+      className={styles.ctaSecondary}
+    >
+      💬 WhatsApp
+    </a>
+  </div>
+</div>
 
         <Link href="/" className={styles.backLink}>
   ← Vrati se na početnu
