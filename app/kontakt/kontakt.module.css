@@ -50,6 +50,14 @@
   transform: translateY(-2px);
 }
 
+.item h4{
+  color: var(--text-classic-color);
+}
+
+.item p{
+  color: var(--text-classic-color-3);
+}
+
 .icon {
   width: var(--size-6);
   font-size: 1.5rem;
