@@ -18,7 +18,7 @@ export default function ContactPage() {
    <a href="tel:+381601234567" className={styles.item}>
             <div className={styles.icon}>📞</div>
             <div>
-              <h3>Pozovi nas</h3>
+              <h4>Pozovi nas</h4>
               <p>+381 60 1234567</p>
             </div>
           </a>
@@ -28,7 +28,7 @@ export default function ContactPage() {
           <a href="mailto:your@email.com" className={styles.item}>
             <div className={styles.icon}>📧</div>
             <div>
-              <h3>Email</h3>
+              <h4>Email</h4>
               <p>hisarboxing@gmail.com</p>
             </div>
           </a>
@@ -36,7 +36,7 @@ export default function ContactPage() {
             <a href="https://twitter.com" target="_blank" className={styles.item}>
             <div className={styles.icon}><InstagramIcon/></div>
             <div>
-              <h3>Instagram</h3>
+              <h4>Instagram</h4>
               <p>Send a DM</p>
             </div>
           </a>
@@ -44,7 +44,7 @@ export default function ContactPage() {
           <a href="https://wa.me/123456789" target="_blank" className={styles.item}>
             <div className={styles.icon}><WhatsAppIcon/></div>
             <div>
-              <h3>WhatsApp</h3>
+              <h4>WhatsApp</h4>
               <p>Chat instantly</p>
             </div>
           </a>
