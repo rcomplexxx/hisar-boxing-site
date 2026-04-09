@@ -1,28 +1,49 @@
 /* app/contact/contact.module.css */
 
+.sectionContainer{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container{
+
+  width: 100%;
+  max-width: var(--size-27);
+
+}
+
 .subtitle {
-  color: #9ca3af;
-  margin-bottom: 30px;
+  color: var(--text-classic-color-3);
+  
+  margin-top: var(--size-3);
+  margin-bottom: var(--size-7);
 }
 
 .options {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  margin-bottom: 30px;
+  gap: var(--size-5);
+  margin-bottom:  var(--size-7);
 }
 
 .item {
+
+  
+  background-color: var(--kontakt-item-bg);
+
   display: flex;
   align-items: center;
-  gap: 15px;
-  background-color: var(--kontakt-item-bg);
-  padding: 15px;
+  gap: var(--size-5);
+  padding: var(--size-5);
   border-radius: var(--radius-2);
   text-decoration: none;
   color: inherit;
   transition: all 0.2s ease;
 }
+
 
 .item:hover {
   background-color: var(--kontakt-item-bg-hover);
@@ -36,19 +57,19 @@
 
 .ctaBox {
   background: var(--kontakt-cta-box-bg);
-  padding: 25px;
+  padding: var(--size-6);
   border-radius: var(--radius-3);
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: var(--size-6);
 }
 
 .ctaBox h2 {
-  margin-bottom: 10px;
+  margin-bottom: var(--size-3);
 }
 
 .ctaButton {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: var(--size-3);
   padding: 12px 20px;
   background-color: var(--kontakt-cta-bg);
   color: var(--kontakt-cta-color);
@@ -63,21 +84,18 @@
 
 .backLink {
   display: inline-block;
-  margin-top: 10px;
-  color: #9ca3af;
+  color: var(--text-classic-color-3);
   text-decoration: none;
 }
 
 .backLink:hover {
-  color: white;
+  color: var(--text-classic-color);
 }
 
 @media (max-width: 600px) {
   .card {
-    padding: 25px;
+  
   }
 
-  .card h1 {
-    font-size: 2rem;
-  }
+
 }

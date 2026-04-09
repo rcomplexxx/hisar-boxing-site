@@ -5,19 +5,39 @@ import { InstagramIcon, WhatsAppIcon } from "../../public/Images/svgs/svgImages"
 
 export default function ContactPage() {
   return (
-    <div className={styles.container}>
-      <div className={styles.card}>
+      <section className={styles.sectionContainer}>
+        <div className={styles.container}>
         <h2>Kontaktiraj nas</h2>
         <p className={styles.subtitle}>
          Imate pitanje, želite da se učlanite ili vam je potrebna dodatna informacija? Slobodno nas kontaktirajte putem neke od opcija u nastavku — rado ćemo vam pomoći.
         </p>
 
         <div className={styles.options}>
+
+       
+   <a href="tel:+381601234567" className={styles.item}>
+            <div className={styles.icon}>📞</div>
+            <div>
+              <h3>Pozovi nas</h3>
+              <p>+381 60 1234567</p>
+            </div>
+          </a>
+
+
+
           <a href="mailto:your@email.com" className={styles.item}>
             <div className={styles.icon}>📧</div>
             <div>
               <h3>Email</h3>
               <p>hisarboxing@gmail.com</p>
+            </div>
+          </a>
+
+            <a href="https://twitter.com" target="_blank" className={styles.item}>
+            <div className={styles.icon}><InstagramIcon/></div>
+            <div>
+              <h3>Instagram</h3>
+              <p>Send a DM</p>
             </div>
           </a>
 
@@ -29,13 +49,7 @@ export default function ContactPage() {
             </div>
           </a>
 
-          <a href="https://twitter.com" target="_blank" className={styles.item}>
-            <div className={styles.icon}><InstagramIcon/></div>
-            <div>
-              <h3>Instagram</h3>
-              <p>Send a DM</p>
-            </div>
-          </a>
+        
         </div>
 
         <div className={styles.ctaBox}>
@@ -49,7 +63,7 @@ export default function ContactPage() {
         <Link href="/" className={styles.backLink}>
   ← Vrati se na početnu
 </Link>
-      </div>
-    </div>
+</div>
+      </section>
   );
 }
