@@ -55,7 +55,7 @@
 }
 
 .item p{
-  color: var(--text-classic-color-3);
+  color: var(--text-dimmed-color);
 }
 
 .icon {
