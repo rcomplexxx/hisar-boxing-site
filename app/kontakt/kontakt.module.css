@@ -1,6 +1,7 @@
 /* app/contact/contact.module.css */
 
 .sectionContainer{
+  background-color: var(--kontakt-section-bg);
     display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,6 +40,9 @@
   gap: var(--size-5);
   padding: var(--size-5);
   border-radius: var(--radius-2);
+
+   box-shadow: 0 2px 6px var(--kontakt-item-box-shadow-color);
+
   text-decoration: none;
   color: inherit;
   transition: all 0.2s ease;
