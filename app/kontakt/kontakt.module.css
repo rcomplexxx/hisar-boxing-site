@@ -69,7 +69,15 @@
   font-size: 1.5rem;
 }
 
+.iconPhone svg{
+  stroke-width: 2;
+  stroke: var(--main-color-6);
+}
 
+.iconEmail svg{
+  stroke-width: 1;
+  stroke: var(--secondary-color-7);
+}
 
 
 .ctaBox {

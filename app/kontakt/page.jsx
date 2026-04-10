@@ -1,7 +1,7 @@
 // app/contact/page.jsx
 import Link from "next/link";
 import styles from "./kontakt.module.css";
-import { InstagramIcon, WhatsAppIcon } from "../../public/Images/svgs/svgImages";
+import  { PhoneIcon, EmailIcon, InstagramIcon, WhatsAppIcon } from "../../public/Images/svgs/svgImages";
 
 export default function ContactPage() {
   return (
@@ -16,7 +16,7 @@ export default function ContactPage() {
 
        
    <a href="tel:+381601234567" className={styles.item}>
-            <div className={styles.icon}>📞</div>
+            <div className={`${styles.icon} ${styles.iconPhone}`}><PhoneIcon/></div>
             <div>
               <h4>Pozovi nas</h4>
               <p>+381 60 1234567</p>
@@ -26,7 +26,7 @@ export default function ContactPage() {
 
 
           <a href="mailto:your@email.com" className={styles.item}>
-            <div className={styles.icon}>📧</div>
+            <div className={`${styles.icon} ${styles.iconEmail}`}><EmailIcon/></div>
             <div>
               <h4>Email</h4>
               <p>hisarboxing@gmail.com</p>
