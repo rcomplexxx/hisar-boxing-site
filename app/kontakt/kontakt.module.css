@@ -62,13 +62,13 @@
   );
 }
 
-/* .itemHighlight2{
+.itemHighlight2{
      background: linear-gradient(
     135deg,
     var(--secondary-color-1),
     var(--secondary-color-2)
   );
-} */
+}
 
 
 
