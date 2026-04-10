@@ -37,8 +37,7 @@
     background: linear-gradient(
   135deg,
   var(--neutral-color-4),
-  var(--neutral-color-5),
-  var(--neutral-color-6)
+  var(--neutral-color-5)
 );
   overflow: hidden;
 
@@ -59,8 +58,7 @@
      background: linear-gradient(
     135deg,
      var(--main-color-2),
-    var(--main-color-3),
-    var(--main-color-4)
+    var(--main-color-3)
   );
 }
 
@@ -68,8 +66,7 @@
      background: linear-gradient(
     135deg,
     var(--secondary-color-2),
-    var(--secondary-color-3),
-    var(--secondary-color-4)
+    var(--secondary-color-3)
   );
 }
 
