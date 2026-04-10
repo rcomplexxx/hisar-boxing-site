@@ -12,7 +12,7 @@
 .container{
 
   width: 100%;
-  max-width: var(--size-26);
+  max-width: var(--size-23);
 
 }
 
@@ -115,7 +115,7 @@ background: linear-gradient(
 
 .ctaPrimary {
   background-color: var(--main-color-4);
-  color: var(--text-highlighted-color);
+  color: var(--text-highlighted-color-2);
   font-weight: 600;
 }
 
