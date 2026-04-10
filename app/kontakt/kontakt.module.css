@@ -125,8 +125,8 @@ background: linear-gradient(
 }
 
 .ctaSecondary {
-  border: 1px solid var(--main-color-4);
-  color: var(--main-color-4);
+  border: 1px solid var(--secondary-color-6);
+  color: var(--secondary-color-6);
   font-weight: 500;
 }
 
