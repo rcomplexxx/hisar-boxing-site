@@ -222,9 +222,9 @@
 --kontakt-item-box-shadow-color: var(--neutral-color-3);
 --kontakt-item-box-shadow-color-hover: var(--neutral-color-2);
 
---kontakt-cta-box-grad-1: rgba(149, 41, 36, 0.15); /* main-color-4 @ 0.15 */
---kontakt-cta-box-grad-2: rgba(186, 51, 45, 0.10); /* main-color-5 @ 0.10 */
---kontakt-cta-box-grad-3: rgba(202, 90, 86, 0.05); /* main-color-7 @ 0.05 */
+--kontakt-cta-box-grad-3: rgba(23, 24, 20, 0.6);  /* neutral-5 */
+--kontakt-cta-box-grad-2: rgba(32, 33, 29, 0.4);  /* neutral-6 */
+--kontakt-cta-box-grad-1: rgba(50, 51, 45, 0.25); /* neutral-8 */
 --kontakt-cta-bg: var(--neutral-color-4);
 --kontakt-cta-bg-hover: var(--neutral-color-3);
 --kontakt-cta-color: var(--text-highlighted-color-2);

@@ -120,7 +120,7 @@ background: linear-gradient(
 }
 
 .ctaPrimary:hover {
-  background-color: var(--main-color-6);
+  background-color: var(--main-color-5);
   transform: translateY(-1px);
 }
 
