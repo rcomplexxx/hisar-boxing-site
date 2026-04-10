@@ -33,12 +33,13 @@
 .item {
 
   
-  background: linear-gradient(
+  position: relative;
+    background: linear-gradient(
   135deg,
-  var(--neutral-color-7),
-  var(--neutral-color-6),
-  var(--neutral-color-5)
+  var(--neutral-color-5),
+  var(--neutral-color-6)
 );
+  overflow: hidden;
 
   display: flex;
   align-items: center;
@@ -53,6 +54,21 @@
   transition: all 0.2s ease;
 }
 
+.itemHighlight{
+     background: linear-gradient(
+    135deg,
+    var(--main-color-2),
+    var(--main-color-3)
+  );
+}
+
+/* .itemHighlight2{
+     background: linear-gradient(
+    135deg,
+    var(--secondary-color-1),
+    var(--secondary-color-2)
+  );
+} */
 
 
 
@@ -77,12 +93,12 @@
 
 .iconPhone svg{
   stroke-width: 2;
-  stroke: var(--main-color-6);
+  stroke: var(--neutral-color-12);
 }
 
 .iconEmail svg{
   stroke-width: 1;
-  stroke: var(--secondary-color-7);
+  stroke: var(--neutral-color-12);
 }
 
 

@@ -15,7 +15,7 @@ export default function ContactPage() {
         <div className={styles.options}>
 
        
-   <Link href="tel:+381601234567" className={styles.item}>
+   <Link href="tel:+381601234567" className={`${styles.item} ${styles.itemHighlight}`}>
             <div className={`${styles.icon} ${styles.iconPhone}`}><PhoneIcon/></div>
             <div>
               <h4>Pozovi nas</h4>
@@ -25,7 +25,7 @@ export default function ContactPage() {
 
 
 
-          <Link href="mailto:your@email.com" className={styles.item}>
+          <Link href="mailto:your@email.com" className={`${styles.item} ${styles.itemHighlight2}`}>
             <div className={`${styles.icon} ${styles.iconEmail}`}><EmailIcon/></div>
             <div>
               <h4>Email</h4>
