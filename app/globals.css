@@ -220,6 +220,7 @@
 --kontakt-item-bg: var(--neutral-color-7);
 --kontakt-item-bg-hover: var(--neutral-color-8);
 --kontakt-item-box-shadow-color: var(--neutral-color-3);
+--kontakt-item-box-shadow-color-hover: var(--neutral-color-2);
 
 --kontakt-cta-box-grad-1: rgba(149, 41, 36, 0.15); /* main-color-4 @ 0.15 */
 --kontakt-cta-box-grad-2: rgba(186, 51, 45, 0.10); /* main-color-5 @ 0.10 */

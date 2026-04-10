@@ -27,7 +27,7 @@
   display: flex;
   flex-direction: column;
   gap: var(--size-5);
-  margin-bottom:  var(--size-7);
+  margin-bottom:  var(--size-11);
 }
 
 .item {
@@ -51,6 +51,8 @@
 
 .item:hover {
   background-color: var(--kontakt-item-bg-hover);
+   /* stronger on hover */
+  box-shadow: 0 6px 16px var(--kontakt-item-box-shadow-color-hover);
   transform: translateY(-2px);
 }
 
@@ -66,6 +68,9 @@
   width: var(--size-6);
   font-size: 1.5rem;
 }
+
+
+
 
 .ctaBox {
 background: linear-gradient(
