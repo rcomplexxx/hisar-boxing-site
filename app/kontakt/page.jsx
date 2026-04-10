@@ -15,39 +15,39 @@ export default function ContactPage() {
         <div className={styles.options}>
 
        
-   <a href="tel:+381601234567" className={styles.item}>
+   <Link href="tel:+381601234567" className={styles.item}>
             <div className={`${styles.icon} ${styles.iconPhone}`}><PhoneIcon/></div>
             <div>
               <h4>Pozovi nas</h4>
               <p>+381 60 1234567</p>
             </div>
-          </a>
+          </Link>
 
 
 
-          <a href="mailto:your@email.com" className={styles.item}>
+          <Link href="mailto:your@email.com" className={styles.item}>
             <div className={`${styles.icon} ${styles.iconEmail}`}><EmailIcon/></div>
             <div>
               <h4>Email</h4>
               <p>hisarboxing@gmail.com</p>
             </div>
-          </a>
+          </Link>
 
-            <a href="https://twitter.com" target="_blank" className={styles.item}>
+            <Link href="https://instagram.com" target="_blank" className={styles.item}>
             <div className={styles.icon}><InstagramIcon/></div>
             <div>
               <h4>Instagram</h4>
               <p>Send a DM</p>
             </div>
-          </a>
+          </Link>
 
-          <a href="https://wa.me/123456789" target="_blank" className={styles.item}>
+          <Link href="https://wa.me/123456789" target="_blank" className={styles.item}>
             <div className={styles.icon}><WhatsAppIcon/></div>
             <div>
               <h4>WhatsApp</h4>
               <p>Chat instantly</p>
             </div>
-          </a>
+          </Link>
 
         
         </div>
@@ -57,17 +57,17 @@ export default function ContactPage() {
   <p>Najbrži način je da nas pozoveš — odgovaramo odmah.</p>
 
   <div className={styles.ctaActions}>
-    <a href="tel:+381601234567" className={styles.ctaPrimary}>
+    <Link href="tel:+381601234567" className={styles.ctaPrimary}>
       📞 Pozovi nas
-    </a>
+    </Link>
 
-    <a
+    <Link
       href="https://wa.me/381601234567"
       target="_blank"
       className={styles.ctaSecondary}
     >
       💬 WhatsApp
-    </a>
+    </Link>
   </div>
 </div>
 
