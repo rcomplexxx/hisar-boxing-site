@@ -19,7 +19,7 @@
 .subtitle {
   color: var(--text-classic-color-3);
   
-  margin-top: var(--size-3);
+  margin-top: var(--size-5);
   margin-bottom: var(--size-7);
 }
 
@@ -66,7 +66,6 @@
 
 .icon {
   width: var(--size-6);
-  font-size: 1.5rem;
 }
 
 .iconPhone svg{
