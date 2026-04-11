@@ -242,6 +242,9 @@ background: linear-gradient(
 }
 
 .ctaActions a{
+  background-color: var(--neutral-color-2);
+  
+  border: 1px solid var(--neutral-color-8);
   padding: var(--size-5) var(--size-7);
   border-radius: var(--radius-2);
     text-decoration: none;
@@ -249,30 +252,32 @@ background: linear-gradient(
 }
 
 .ctaPrimary {
-  background-color: var(--main-color-3);
-  color: var(--text-highlighted-color-2);
+    box-sizing: border-box;
+    border: 1px solid var(--main-color-9) !important;
+  color: var(--main-color-9);
   font-weight: 600;
 }
 
 .ctaPrimary:hover {
-  background-color: var(--main-color-3);
+  background-color: var(--neutral-color-1);
   transform: translateY(-1px);
 }
 
 .ctaSecondary {
-  border: 1px solid var(--secondary-color-5);
-  color: var(--secondary-color-6);
+  box-sizing: border-box;
+  color: var(--secondary-color-8);
   font-weight: 500;
 }
 
 .ctaSecondary:hover {
-  background-color: var(--neutral-6);
+  background-color: var(--neutral-color-1);
+  transform: translateY(-1px);
 }
 
 @media (max-width: 520px) {
 
   .ctaActions{
-    gap: var(--size-5);
+    gap: var(--size-3);
   margin-top: var(--size-6);
   }
   
@@ -288,7 +293,7 @@ background: linear-gradient(
   .ctaActions {
     flex-direction: column;
     align-items: stretch;
-    gap: var(--size-4);
+    gap: var(--size-3);
      margin-top: var(--size-7);
   }
 
