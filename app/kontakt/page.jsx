@@ -16,7 +16,7 @@ export default function ContactPage() {
             <h2 className={styles.pageTitle}>Kontakt</h2>
 
           <div className={styles.mainContactContainer}>
-        <h3>Kontaktiraj nas</h3>
+        <h3>Piši ili pozovi</h3>
         <p className={styles.subtitle}>
          Imate pitanje, želite da se učlanite ili vam treba više informacija? Kontaktirajte nas putem opcija ispod — rado ćemo pomoći.
             </p>
