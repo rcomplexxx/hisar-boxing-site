@@ -24,7 +24,7 @@
 .container{
 
   width: 100%;
-  max-width: var(--size-25);
+  max-width: var(--size-26);
 
 
 
@@ -36,7 +36,7 @@
 }
 
 
-/* .mainContactContainer{
+.mainContactContainer{
   padding: var(--size-7) var(--size-7);
   border-radius: var(--radius-3);
   box-sizing: border-box;
@@ -49,7 +49,7 @@
     padding: var(--size-7) var(--size-6);
   }
   
-} */
+}
 
 .subtitle {
   color: var(--text-classic-color-3);
