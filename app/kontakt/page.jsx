@@ -8,10 +8,12 @@ export default function ContactPage() {
       <section className={styles.sectionContainer}>
 
 
-  <h2 className={styles.pageTitle}>Kontakt</h2>
+
 
 
         <div className={styles.container}>
+
+            <h2 className={styles.pageTitle}>Kontakt</h2>
 
           <div className={styles.mainContactContainer}>
         <h3>Kontaktiraj nas</h3>

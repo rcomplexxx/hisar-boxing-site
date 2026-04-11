@@ -1,19 +1,34 @@
 /* app/contact/contact.module.css */
 
 .sectionContainer{
-  background-color: var(--kontakt-section-bg);
+ background: linear-gradient(
+  135deg,
+  var(--neutral-color-2),
+  var(--neutral-color-3)
+);
     display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+@media (max-width:480px) {
+  .sectionContainer{
+    background: var(--neutral-color-2);
+    padding: var(--section-padding-vertical) var(--section-padding-horizontal);
+  }
+  
+}
+
+
 
 
 
 .pageTitle {
+  color: var(--main-color-5);
   font-size: var(--h1-fs);
-  margin-bottom: var(--size-11);
+  /* margin-bottom: var(--size-11); */
+  align-self: center;
 }
 
 
@@ -26,7 +41,11 @@
   width: 100%;
   max-width: var(--size-26);
 
-
+  border-radius: var(--radius-3);
+ padding: var(--size-7) var(--size-7);
+  background-color: var(--neutral-color-1);
+   box-sizing: border-box;
+  border: 1px solid var(--neutral-color-7);
 
   display: flex;
   flex-direction: column;
@@ -35,21 +54,36 @@
 
 }
 
-
-.mainContactContainer{
-  padding: var(--size-7) var(--size-7);
-  border-radius: var(--radius-3);
-  box-sizing: border-box;
-  border: 1px solid var(--neutral-color-7);
-  background-color: var(--neutral-color-1);
-}
-
 @media (max-width:480px) {
-  .mainContactContainer{
-    padding: var(--size-7) var(--size-6);
+  .container{
+    background-color: transparent;
+    padding: 0;
+      border: none;
   }
   
 }
+
+
+
+
+.container > div{
+  
+}
+
+
+.mainContactContainer{
+ 
+  /* border-radius: var(--radius-3);
+  box-sizing: border-box;
+  border: 1px solid var(--neutral-color-7); */
+}
+
+/* @media (max-width:480px) {
+  .mainContactContainer{
+    padding: var(--size-5) var(--size-5);
+  }
+  
+} */
 
 /* @media (max-width:420px) {
   .mainContactContainer{
