@@ -8,7 +8,12 @@ export default function ContactPage() {
       <section className={styles.sectionContainer}>
 
 
-
+<div className={styles.pageHeader}>
+  <h2>Kontakt</h2>
+  <p className={styles.pageIntro}>
+    Tu smo ako želiš da se učlaniš, imaš pitanje ili ti treba više informacija o klubu.
+  </p>
+</div>
 
         <div className={styles.container}>
 

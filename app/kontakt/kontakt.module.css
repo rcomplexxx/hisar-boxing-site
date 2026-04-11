@@ -11,20 +11,20 @@
 
 
 .pageHeader {
-  margin-bottom: var(--size-12);
+  margin-bottom: var(--size-11);
   text-align: center;
 }
 
 .pageHeader h2 {
+  font-size: var(--h1-fs);
   margin-bottom: var(--size-3);
 }
 
 /* 👇 key: low attention, high readability */
 .pageIntro {
   color: var(--text-classic-color-3);
-  max-width: 55ch;
+  max-width: var(--size-20);
   margin: 0 auto;
-  font-size: 0.95rem;
  
 }
 
@@ -34,7 +34,9 @@
 .container{
 
   width: 100%;
-  max-width: var(--size-24);
+  max-width: var(--size-25);
+
+
 
   display: flex;
   flex-direction: column;
@@ -43,8 +45,11 @@
 
 }
 
-.mainContactContainer{
 
+.mainContactContainer{
+  padding:var(--size-6);
+  border-radius: var(--radius-3);
+  background-color: var(--neutral-color-3);
 }
 
 .subtitle {
