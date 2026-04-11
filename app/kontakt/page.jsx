@@ -1,6 +1,7 @@
 // app/contact/page.jsx
 import Link from "next/link";
 import styles from "./kontakt.module.css";
+import PageHeader from "@/app/components/LayoutComponents/PageHeader/PageHeader"
 import  { PhoneIcon, EmailIcon, InstagramIcon, WhatsAppIcon } from "../../public/Images/svgs/svgImages";
 
 export default function ContactPage() {
@@ -9,16 +10,16 @@ export default function ContactPage() {
 
 
 
+            <PageHeader title="Kontakt"/>
 
 
         <div className={styles.container}>
 
-            <h2 className={styles.pageTitle}>Kontakt</h2>
 
           <div className={styles.mainContactContainer}>
-        <h3>Piši ili pozovi</h3>
+        <h3>Kontaktirajte nas</h3>
         <p className={styles.subtitle}>
-         Imate pitanje, želite da se učlanite ili vam treba više informacija? Kontaktirajte nas putem opcija ispod — rado ćemo pomoći.
+         Imate bilo koje pitanje, ili želite da se učlanite? Kontaktirajte nas putem opcija ispod.
             </p>
 
         <div className={styles.options}>
