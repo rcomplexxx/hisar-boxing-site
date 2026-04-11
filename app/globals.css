@@ -373,7 +373,7 @@ font-size: var(--h4-fs);
 
 
 h3{
-  color: var(--text-highlighted-color-2);
+  color: var(--text-classic-color);
 
   margin-top: 0;
   padding-top: 0;

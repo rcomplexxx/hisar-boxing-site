@@ -6,8 +6,14 @@ import  { PhoneIcon, EmailIcon, InstagramIcon, WhatsAppIcon } from "../../public
 export default function ContactPage() {
   return (
       <section className={styles.sectionContainer}>
+
+
+
+
         <div className={styles.container}>
-        <h2>Kontaktiraj nas</h2>
+
+          <div className={styles.mainContactContainer}>
+        <h3>Kontaktiraj nas</h3>
         <p className={styles.subtitle}>
          Imate pitanje, želite da se učlanite ili vam je potrebna dodatna informacija? Slobodno nas kontaktirajte putem neke od opcija u nastavku — rado ćemo vam pomoći.
         </p>
@@ -51,10 +57,11 @@ export default function ContactPage() {
 
         
         </div>
+        </div>
 
         <div className={styles.locationRow}>
   <div className={styles.locationHeader}>
-    <h3>Gde se nalazimo?</h3>
+    <h3>Kako do nas?</h3>
     <Link
       href="https://maps.google.com"
       target="_blank"
@@ -72,9 +79,9 @@ export default function ContactPage() {
     />
   </div>
 </div>
-
+<div>
      <div className={styles.ctaBox}>
-  <h2>Spreman za prvi trening?</h2>
+  <h3>Spreman za prvi trening?</h3>
   <p>Najbrži način je da nas pozoveš — odgovaramo odmah.</p>
 
   <div className={styles.ctaActions}>
@@ -95,6 +102,7 @@ export default function ContactPage() {
         <Link href="/" className={styles.backLink}>
   ← Vrati se na početnu
 </Link>
+</div>
 </div>
       </section>
   );

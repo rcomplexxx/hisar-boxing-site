@@ -9,17 +9,48 @@
 }
 
 
+
+.pageHeader {
+  margin-bottom: var(--size-12);
+  text-align: center;
+}
+
+.pageHeader h2 {
+  margin-bottom: var(--size-3);
+}
+
+/* 👇 key: low attention, high readability */
+.pageIntro {
+  color: var(--text-classic-color-3);
+  max-width: 55ch;
+  margin: 0 auto;
+  font-size: 0.95rem;
+ 
+}
+
+
+
+
 .container{
 
   width: 100%;
   max-width: var(--size-24);
+
+  display: flex;
+  flex-direction: column;
+  
+  gap: var(--size-11);
+
+}
+
+.mainContactContainer{
 
 }
 
 .subtitle {
   color: var(--text-classic-color-3);
   
-  margin-top: var(--size-5);
+  margin-top: var(--size-4);
   margin-bottom: var(--size-7);
 }
 
@@ -27,7 +58,6 @@
   display: flex;
   flex-direction: column;
   gap: var(--size-5);
-  margin-bottom:  var(--size-11);
 }
 
 .item {
@@ -131,7 +161,6 @@
 
 
 .locationRow {
-  margin-bottom: var(--size-11);
 }
 
 .locationHeader {
@@ -142,7 +171,7 @@
 }
 
 .locationHeader h3 {
-  color: var(--text-highlighted-color-2);
+ 
 }
 
 .locationLink {
@@ -163,10 +192,10 @@
 
   /* keeps it subtle */
   opacity: 0.85;
-  filter: grayscale(0.4) contrast(0.95);
+  filter: brightness(0.7) grayscale(0.4) contrast(0.95);
   transition: all 0.25s ease;
 
-    filter: invert(90%) hue-rotate(180deg) brightness(0.85) contrast(0.9);
+    /* filter: invert(90%) hue-rotate(180deg) brightness(0.85) contrast(0.9); */
 }
 
 .mapWrapper iframe {
@@ -180,7 +209,7 @@
 /* only becomes “alive” on interaction */
 .mapWrapper:hover {
   opacity: 1;
-  filter: invert(90%) hue-rotate(180deg) brightness(0.85) grayscale(0) contrast(1);
+  filter: brightness(0.8)  grayscale(0) contrast(1);
 }
 
 
@@ -192,14 +221,15 @@ background: linear-gradient(
   var(--kontakt-cta-box-grad-2),
   var(--kontakt-cta-box-grad-3)
 );
+ box-sizing: border-box;
   border: 1px solid rgba(193, 71, 66, 0.2);
+ 
   padding: var(--size-7);
   border-radius: var(--radius-3);
   text-align: center;
-  margin-bottom: var(--size-7);
 }
 
-.ctaBox h2 {
+.ctaBox h3 {
   margin-bottom: var(--size-3);
 }
 
@@ -219,24 +249,24 @@ background: linear-gradient(
 }
 
 .ctaPrimary {
-  background-color: var(--main-color-4);
+  background-color: var(--main-color-3);
   color: var(--text-highlighted-color-2);
   font-weight: 600;
 }
 
 .ctaPrimary:hover {
-  background-color: var(--main-color-5);
+  background-color: var(--main-color-3);
   transform: translateY(-1px);
 }
 
 .ctaSecondary {
-  border: 1px solid var(--secondary-color-6);
+  border: 1px solid var(--secondary-color-5);
   color: var(--secondary-color-6);
   font-weight: 500;
 }
 
 .ctaSecondary:hover {
-  background-color: rgba(193, 71, 66, 0.08);
+  background-color: var(--neutral-6);
 }
 
 @media (max-width: 520px) {
@@ -292,6 +322,8 @@ background: linear-gradient(
   display: inline-block;
   color: var(--text-dimmed-color);
   text-decoration: none;
+
+  margin-top: var(--size-6);
 }
 
 .backLink:hover {
