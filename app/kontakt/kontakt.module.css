@@ -175,13 +175,13 @@
 }
 
 .locationLink {
-  font-size: 0.9rem;
+  font-size: var(--fs-2);
   color: var(--text-dimmed-color);
   text-decoration: none;
 }
 
 .locationLink:hover {
-  color: var(--text-classic-color);
+  color: var(--text-classic-color-3);
 }
 
 /* 👇 key part */
@@ -332,7 +332,7 @@ background: linear-gradient(
 }
 
 .backLink:hover {
-  color: var(--text-classic-color);
+   color: var(--text-classic-color-3);
 }
 
 @media (max-width: 600px) {
