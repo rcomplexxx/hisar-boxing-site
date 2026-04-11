@@ -192,7 +192,7 @@
 
   /* keeps it subtle */
   opacity: 0.85;
-  filter: brightness(0.7) grayscale(0.4) contrast(0.95);
+  filter: brightness(0.65) grayscale(0.4) contrast(0.95);
   transition: all 0.25s ease;
 
     /* filter: invert(90%) hue-rotate(180deg) brightness(0.85) contrast(0.9); */
@@ -253,7 +253,7 @@ background: linear-gradient(
 
 .ctaPrimary {
     box-sizing: border-box;
-    border: 1px solid var(--main-color-9) !important;
+    border: 1px solid var(--main-color-4) !important;
   color: var(--main-color-9);
   font-weight: 600;
 }
