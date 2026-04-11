@@ -254,7 +254,7 @@ background: linear-gradient(
 .ctaPrimary {
     box-sizing: border-box;
     border: 1px solid var(--main-color-4) !important;
-  color: var(--main-color-7);
+  color: var(--main-color-6);
   font-weight: 600;
 }
 
@@ -265,7 +265,7 @@ background: linear-gradient(
 
 .ctaSecondary {
   box-sizing: border-box;
-  color: var(--secondary-color-7);
+  color: var(--secondary-color-6);
   font-weight: 500;
 }
 
