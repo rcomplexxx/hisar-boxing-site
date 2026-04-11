@@ -167,7 +167,12 @@ color: var(--text-classic-color-2);
 
 .highlight {
 border: 1px solid var(--card-highlight-border-color);
-background: var(--card-highlight-bg);
+background: linear-gradient(
+    135deg,
+    var(--secondary-color-1),
+    var(--secondary-color-2),
+    var(--secondary-color-3)
+  );
 }
 
 /* desktop */
