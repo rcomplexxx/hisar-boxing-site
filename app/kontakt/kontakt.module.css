@@ -51,6 +51,14 @@
   
 }
 
+/* @media (max-width:420px) {
+  .mainContactContainer{
+    padding: var(--size-7) var(--size-5);
+  }
+  
+} */
+
+
 .subtitle {
   color: var(--text-classic-color-3);
   
