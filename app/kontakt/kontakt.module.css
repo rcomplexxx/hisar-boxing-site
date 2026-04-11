@@ -82,9 +82,18 @@
   .mainContactContainer{
     background-color: var(--neutral-color-1);
     border-radius: var(--radius-3);
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   border: 1px solid var(--neutral-color-7); ;
     padding: var(--size-6) var(--size-6);
+  }
+  
+}
+
+@media (max-width:480px) {
+  .mainContactContainer{
+
+  border: 1px solid var(--neutral-color-7); ;
+    padding: var(--size-5) var(--size-5);
   }
   
 }
@@ -336,7 +345,7 @@ background: linear-gradient(
 }
 
 
-@media (max-width: 520px) {
+@media (max-width: 480px) {
 
  
 
