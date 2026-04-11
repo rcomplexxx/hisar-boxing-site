@@ -53,12 +53,20 @@
   text-decoration: none;
   color: inherit;
   transition: all 0.2s ease;
+   background-blend-mode: overlay;
+}
+
+.item:hover {
+  background-color: var(--kontakt-item-bg-hover);
+   /* stronger on hover */
+  box-shadow: 0 6px 16px var(--kontakt-item-box-shadow-color-hover);
+  transform: translateY(-2px);
 }
 
 .itemHighlight{
      background: linear-gradient(
     135deg,
-     var(--main-color-2),
+     var(--main-color-1),
     var(--main-color-3),
     var(--main-color-4)
   );
@@ -67,20 +75,36 @@
 .itemHighlight2{
      background: linear-gradient(
     135deg,
-    var(--secondary-color-2),
+    var(--secondary-color-1),
     var(--secondary-color-3),
     var(--secondary-color-4)
   );
 }
 
-
-
-.item:hover {
-  background-color: var(--kontakt-item-bg-hover);
-   /* stronger on hover */
-  box-shadow: 0 6px 16px var(--kontakt-item-box-shadow-color-hover);
-  transform: translateY(-2px);
+/* .itemInstagram{
+  background: linear-gradient(
+  135deg,
+   rgba(42, 18, 59, 0.75),
+  rgba(74, 26, 52, 0.65),
+  rgba(90, 47, 29, 0.55)
+);
 }
+
+.itemWhatsApp{
+  background: linear-gradient(
+  135deg,
+  rgba(10, 31, 28, 0.55),
+   
+    rgba(14, 47, 34, 0.65),
+    rgba(11, 36, 26, 0.75)
+    
+  
+);
+} */
+
+
+
+
 
 .item h4{
   color: var(--text-highlighted-color-2);
@@ -143,7 +167,6 @@
   transition: all 0.25s ease;
 
     filter: invert(90%) hue-rotate(180deg) brightness(0.85) contrast(0.9);
-   mask-image: linear-gradient(to bottom, black 85%, transparent);
 }
 
 .mapWrapper iframe {

@@ -33,7 +33,7 @@ export default function ContactPage() {
             </div>
           </Link>
 
-            <Link href="https://instagram.com" target="_blank" className={styles.item}>
+            <Link href="https://instagram.com" target="_blank" className={`${styles.item} ${styles.itemInstagram}`}>
             <div className={styles.icon}><InstagramIcon/></div>
             <div>
               <h4>Instagram</h4>
@@ -41,7 +41,7 @@ export default function ContactPage() {
             </div>
           </Link>
 
-          <Link href="https://wa.me/123456789" target="_blank" className={styles.item}>
+          <Link href="https://wa.me/123456789" target="_blank" className={`${styles.item} ${styles.itemWhatsApp}`}>
             <div className={styles.icon}><WhatsAppIcon/></div>
             <div>
               <h4>WhatsApp</h4>
