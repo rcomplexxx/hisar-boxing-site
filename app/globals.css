@@ -209,6 +209,7 @@
 
 --first-section-gloves-icon-color: var(--neutral-color-10);
 
+--faq-section-bg: var(--neutral-color-4);
 --faq-section-card-bg: var(--neutral-color-7);
 --faq-section-card-bg-hover: var(--neutral-color-8);
 --faq-section-question-active-color: var(--secondary-color-9);
@@ -288,7 +289,7 @@ html{
 
 body{
   color:var(--text-classic-color-2);
-   background-color: var(--bg-classic);
+   background-color: var(--neutral-color-1);
  
  
    height: max-content;

@@ -1,6 +1,12 @@
-.faqSection {
+.faqSection{
+
+  background-color: var(--faq-section-bg);
+}
+
+.faqContainer {
   max-width: 768px;
   margin: 0 auto;
+  background-color: var(--faq-section-bg);
   color: var(--text-highlighted-color);
 }
 

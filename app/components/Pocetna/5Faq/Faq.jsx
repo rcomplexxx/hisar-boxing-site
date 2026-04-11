@@ -82,6 +82,7 @@ export default function Faq() {
 
   return (
     <section className={styles.faqSection}>
+      <div  className={styles.faqContainer}>
       <h2 className={styles.title}>Često postavljana pitanja</h2>
       <p className={styles.subtitle}>
         Slobodno nam pošaljite poruku na{" "}
@@ -106,6 +107,7 @@ export default function Faq() {
             </div>
           </div>
         ))}
+      </div>
       </div>
     </section>
   );
