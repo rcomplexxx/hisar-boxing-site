@@ -8,20 +8,16 @@ export default function ContactPage() {
       <section className={styles.sectionContainer}>
 
 
-<div className={styles.pageHeader}>
-  <h2>Kontakt</h2>
-  <p className={styles.pageIntro}>
-    Tu smo ako želiš da se učlaniš, imaš pitanje ili ti treba više informacija o klubu.
-  </p>
-</div>
+  <h2 className={styles.pageTitle}>Kontakt</h2>
+
 
         <div className={styles.container}>
 
           <div className={styles.mainContactContainer}>
         <h3>Kontaktiraj nas</h3>
         <p className={styles.subtitle}>
-         Imate pitanje, želite da se učlanite ili vam je potrebna dodatna informacija? Slobodno nas kontaktirajte putem neke od opcija u nastavku — rado ćemo vam pomoći.
-        </p>
+         Imate pitanje, želite da se učlanite ili vam treba više informacija? Kontaktirajte nas putem opcija ispod — rado ćemo pomoći.
+            </p>
 
         <div className={styles.options}>
 

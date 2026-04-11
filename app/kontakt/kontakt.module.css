@@ -10,23 +10,13 @@
 
 
 
-.pageHeader {
-  margin-bottom: var(--size-11);
-  text-align: center;
-}
 
-.pageHeader h2 {
+.pageTitle {
   font-size: var(--h1-fs);
-  margin-bottom: var(--size-3);
+  margin-bottom: var(--size-11);
 }
 
-/* 👇 key: low attention, high readability */
-.pageIntro {
-  color: var(--text-classic-color-3);
-  max-width: var(--size-20);
-  margin: 0 auto;
- 
-}
+
 
 
 
@@ -46,10 +36,12 @@
 }
 
 
-.mainContactContainer{
+/* .mainContactContainer{
   padding: var(--size-7) var(--size-7);
   border-radius: var(--radius-3);
-  background-color: var(--neutral-color-3);
+  box-sizing: border-box;
+  border: 1px solid var(--neutral-color-7);
+  background-color: var(--neutral-color-1);
 }
 
 @media (max-width:480px) {
@@ -57,7 +49,7 @@
     padding: var(--size-7) var(--size-6);
   }
   
-}
+} */
 
 .subtitle {
   color: var(--text-classic-color-3);
@@ -200,6 +192,7 @@
 .mapWrapper {
   border-radius: var(--radius-2);
   overflow: hidden;
+  box-sizing: border-box;
   border: 1px solid rgba(255,255,255,0.05);
 
   /* keeps it subtle */
@@ -255,7 +248,7 @@ background: linear-gradient(
 
 .ctaActions a{
   background-color: var(--neutral-color-2);
-  
+   box-sizing: border-box;
   border: 1px solid var(--neutral-color-8);
   padding: var(--size-5) var(--size-7);
   border-radius: var(--radius-2);
