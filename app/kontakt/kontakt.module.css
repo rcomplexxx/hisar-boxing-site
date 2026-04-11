@@ -92,8 +92,8 @@
 @media (max-width:480px) {
   .mainContactContainer{
 
-  border: 1px solid var(--neutral-color-7); ;
-    padding: var(--size-5) var(--size-5);
+  border: none; ;
+    padding: 0;
   }
   
 }
