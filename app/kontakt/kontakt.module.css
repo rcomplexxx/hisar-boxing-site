@@ -12,9 +12,9 @@
   align-items: center;
 }
 
-@media (max-width:480px) {
+@media (max-width:520px) {
   .sectionContainer{
-    background: var(--neutral-color-2);
+    background: var(--neutral-color-1);
     padding: var(--section-padding-vertical) var(--section-padding-horizontal);
   }
   
@@ -54,7 +54,7 @@
 
 }
 
-@media (max-width:480px) {
+@media (max-width:520px) {
   .container{
     background-color: transparent;
     padding: 0;
@@ -78,7 +78,7 @@
   border: 1px solid var(--neutral-color-7); */
 }
 
-@media (max-width:480px) {
+@media (max-width:520px) {
   .mainContactContainer{
     background-color: var(--neutral-color-1);
     border-radius: var(--radius-3);
@@ -159,9 +159,9 @@
     var(--secondary-color-3),
     var(--secondary-color-4)
   );
-} */
+}
 
-/* .itemInstagram{
+.itemInstagram{
   background: linear-gradient(
   135deg,
    rgba(42, 18, 59, 0.75),
@@ -336,7 +336,7 @@ background: linear-gradient(
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 520px) {
 
  
 
