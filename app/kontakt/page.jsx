@@ -52,6 +52,27 @@ export default function ContactPage() {
         
         </div>
 
+        <div className={styles.locationRow}>
+  <div className={styles.locationHeader}>
+    <h3>Gde se nalazimo?</h3>
+    <Link
+      href="https://maps.google.com"
+      target="_blank"
+      className={styles.locationLink}
+    >
+      Otvori u Google Maps →
+    </Link>
+  </div>
+
+  <div className={styles.mapWrapper}>
+    <iframe
+      src="https://www.google.com/maps?q=Leskovac&output=embed"
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    />
+  </div>
+</div>
+
      <div className={styles.ctaBox}>
   <h2>Spreman za prvi trening?</h2>
   <p>Najbrži način je da nas pozoveš — odgovaramo odmah.</p>
