@@ -160,7 +160,7 @@
   );
 }
 
-/* .itemHighlight2{
+.itemHighlight2{
      background: linear-gradient(
     135deg,
     var(--secondary-color-2),
@@ -169,7 +169,7 @@
   );
 }
 
-.itemInstagram{
+/* .itemInstagram{
   background: linear-gradient(
   135deg,
    rgba(42, 18, 59, 0.75),
