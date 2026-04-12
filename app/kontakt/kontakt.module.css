@@ -154,7 +154,7 @@
 .itemHighlight{
      background: linear-gradient(
     135deg,
-     var(--main-color-1),
+     var(--main-color-2),
     var(--main-color-3),
     var(--main-color-4)
   );
