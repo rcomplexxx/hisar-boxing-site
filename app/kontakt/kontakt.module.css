@@ -325,7 +325,7 @@ filter: brightness(1.3); /* slightly brighter */
 
 /* only becomes “alive” on interaction */
 .mapWrapper:hover,
-.mapWrapper:focus-within  {
+.mapWrapper:active  {
   opacity: 1;
   filter: brightness(0.85)  grayscale(0) contrast(1);
 }
