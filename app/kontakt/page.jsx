@@ -10,7 +10,7 @@ export default function ContactPage() {
 
 
 
-            <PageHeader title="Kontakt"/>
+            {/* <PageHeader title="Kontakt"/> */}
 
 
         <div className={styles.container}>
