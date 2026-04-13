@@ -155,8 +155,8 @@ border: 1px solid var(--neutral-color-5);
   position: relative;
     background: linear-gradient(
   135deg,
-  var(--neutral-color-4),
   var(--neutral-color-5),
+  var(--neutral-color-6),
   var(--neutral-color-7)
 );
   overflow: hidden;
@@ -200,7 +200,7 @@ border: 1px solid var(--neutral-color-5);
   );
 }
 
-/* .itemInstagram{
+.itemInstagram{
   background: linear-gradient(
   135deg,
    rgba(42, 18, 59, 0.75),
@@ -219,7 +219,7 @@ border: 1px solid var(--neutral-color-5);
     
   
 );
-} */
+}
 
 
 
