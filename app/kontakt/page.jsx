@@ -14,7 +14,7 @@ export default function ContactPage() {
 
 
         <div className={styles.container}>
-
+<div className={styles.leftColumn}>
 
           <div className={styles.mainContactContainer}>
         <h3>Kontaktirajte nas</h3>
@@ -62,7 +62,9 @@ export default function ContactPage() {
         
         </div>
         </div>
+</div>
 
+ <div className={styles.rightColumn}>
         <div className={styles.locationRow}>
   <div className={styles.locationHeader}>
     <h3>Kako do nas?</h3>
@@ -106,6 +108,7 @@ export default function ContactPage() {
         <Link href="/" className={styles.backLink}>
   ← Vrati se na početnu
 </Link>
+</div>
 </div>
 </div>
       </section>
