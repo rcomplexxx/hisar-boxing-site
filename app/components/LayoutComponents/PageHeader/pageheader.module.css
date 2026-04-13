@@ -28,7 +28,7 @@
 }
 
 .link:hover {
-  color: var(--neutral-color-15);
+  color: var(--neutral-color-14);
 }
 
 .link:hover::after {
@@ -36,11 +36,11 @@
 }
 
 .chevron {
-  color: var(--main-color-5);
+  color: var(--main-color-3);
   font-weight: bold;
 }
 
 .current {
-  color: var(--main-color-7);
+  color: var(--main-color-5);
   font-weight: 700;
 }
