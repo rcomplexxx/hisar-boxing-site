@@ -290,7 +290,7 @@ border: 1px solid var(--neutral-color-5);
 
 .mapWrapper iframe {
   width: 100%;
-  height: 260px; /* important: not too big */
+  height: var(--size-19); /* important: not too big */
   border: 0;
 }
 
