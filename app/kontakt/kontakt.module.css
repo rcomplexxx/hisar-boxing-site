@@ -50,7 +50,7 @@
     background-color: transparent;
     padding: 0;
       border: none;
-      gap: var(--size-12);
+      gap: var(--size-11);
   }
   
 }
@@ -97,7 +97,7 @@ border: 1px solid var(--neutral-color-8);
 }
 
   .rightColumn{
-   gap: var(--size-12);
+   gap: var(--size-11);
   }
   
 }
