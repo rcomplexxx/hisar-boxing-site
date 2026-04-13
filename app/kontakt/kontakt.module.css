@@ -333,6 +333,7 @@ background: linear-gradient(
 
 .ctaActions a{
   display: inline-flex;
+  justify-content: center;
   background-color: var(--neutral-color-3);
    box-sizing: border-box;
   border: 1px solid var(--neutral-color-7);
