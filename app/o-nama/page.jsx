@@ -22,7 +22,7 @@ export default function AboutPage() {
 sizes='100vw'
 height={0} width={0}
 className={styles.oldSparring}
-  src="/images/old-sparring2.jpg" 
+  src="/Images/old-sparring2.jpg" 
         alt="Stara slika bokserskog kluba"
 />
 </div>
@@ -79,7 +79,7 @@ Kroz tradiciju, rad i disciplinu, stvaramo mesto gde svako ima priliku da postan
 
 <div>
       <Image
-        src="/images/main_1.png" // ubaci svoju sliku
+        src="/Images/main_1.png" // ubaci svoju sliku
         alt="Trening u bokserskom klubu"
         height={0} width={0}
         className={styles.oldSparring}
