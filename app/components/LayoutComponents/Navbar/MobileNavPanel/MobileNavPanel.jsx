@@ -15,7 +15,7 @@ const navLinks = [
   { href: "/", label: "Početna" },
   { href: "/ekipa", label: "Ekipa" },
   { href: "/galerija", label: "Galerija" },
-  { href: "/o-nama", label: "O nama" },
+  { href: "/o-nama", label: "Naša Priča" },
   { href: "/kontakt", label: "Kontakt" },
 ];
 
