@@ -17,7 +17,6 @@
   font-weight: 600; /* font-semibold */
   font-size: 2rem;  /* text-2xl */
    transition: all 0.5s;
-  text-transform: uppercase;
   z-index: 1000;
 }
 
@@ -57,6 +56,9 @@
 
 .mobileMenuMain {
 
+  
+  background-color: var(--neutral-color-2);
+
   flex: 1;
 
    display: flex;
@@ -65,7 +67,8 @@
   justify-content: center;
   gap: var(--size-4);
 
-  background-color: var(--neutral-color-2);
+
+  text-transform: uppercase;
 
 }
 
