@@ -4,6 +4,7 @@
 import { useState } from "react";
 import styles from "./galerija.module.css";
 import FullscreenMediaViewer from '@/app/components/Galerija/FullScreenMedia/FullScreenMedia'
+import PageHeader from "../components/LayoutComponents/PageHeader/PageHeader";
 
 const sections = [
   { title: "Sala " },
@@ -18,10 +19,17 @@ export default function Gallery() {
   const onClose=()=>{setFullScreen(!fullScreen)};
 
   return (
-    <div className={styles.galleryWrapper}>
+    <>
+    
+    <section className={styles.galleryWrapper}>
       {/* {fullScreen && <FullscreenMediaViewer onClose={onClose}/>} */}
+
+<PageHeader title={"Galerija"}/>
+
+<div className={styles.galleryWrapper2}>
+
       {sections.map((section, i) => (
-        <div key={i} className={styles.section}>
+        <div key={i} className={styles.category}>
           <h2 className={styles.title}>{section.title}</h2>
 
           <div className={styles.grid}>
@@ -37,8 +45,12 @@ export default function Gallery() {
               </div>
             ))}
           </div>
+         
         </div>
       ))}
-    </div>
+       </div>
+    </section>
+
+    </>
   );
 }

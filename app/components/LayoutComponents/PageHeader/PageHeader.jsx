@@ -6,7 +6,7 @@ export default function PageHeader({ title, subtitle }) {
 <div className={styles.breadcrumb}>
   <a href="/" className={styles.link}>Početna</a>
   <span className={styles.chevron}>›</span>
-  <span className={styles.current}>Kontakt</span>
+  <span className={styles.current}>{title}</span>
 </div>
   );
 }
