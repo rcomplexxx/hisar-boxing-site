@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import PageHeader from "../components/LayoutComponents/PageHeader/PageHeader";
+import styles from './ekipa.module.css'
 
 const trainers = [
   {
@@ -30,21 +32,24 @@ const trainers = [
 
 export default function TeamPage() {
   return (
-    <main className="min-h-screen bg-black text-white px-6 py-16">
-      <div className="max-w-6xl mx-auto">
+    <section className={styles.wrapper2}>
+
+    <PageHeader title="Ekipa"/>
+
+      <div className={styles.wrapper}>
 
         {/* Heading */}
-        <div className="text-center mb-16">
+        {/* <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold uppercase mb-4">
             Ekipa
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
             Ljudi iza svakog uspeha. Iskustvo, znanje i posvećenost.
           </p>
-        </div>
+        </div> */}
 
         {/* STATS BAR */}
-        <div className="grid grid-cols-3 text-center mb-16 border-y border-gray-800 py-6">
+        {/* <div className="grid grid-cols-3 text-center mb-16 border-y border-gray-800 py-6">
           <div>
             <p className="text-3xl font-bold text-red-600">30+</p>
             <p className="text-gray-400 text-sm">Godina iskustva</p>
@@ -57,7 +62,7 @@ export default function TeamPage() {
             <p className="text-3xl font-bold text-red-600">50+</p>
             <p className="text-gray-400 text-sm">Osvojenih medalja</p>
           </div>
-        </div>
+        </div> */}
 
         {/* Trainers Grid */}
         <div className="grid md:grid-cols-3 gap-10">
@@ -148,6 +153,6 @@ export default function TeamPage() {
         </div>
 
       </div>
-    </main>
+    </section>
   );
 }
