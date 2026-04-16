@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import styles from './o-nama.module.css'
 import PageHeader from "@/app/components/LayoutComponents/PageHeader/PageHeader"
+import Link from 'next/link';
 
 
 export default function AboutPage() {
@@ -162,7 +163,8 @@ Kroz tradiciju, rad i disciplinu, stvaramo mesto gde svako ima priliku da postan
         <div className={styles.container}>
           <h2>Spreman da počneš?</h2>
           <p>Dođi na probni trening i uveri se sam.</p>
-          <button className={styles.button}>Kontaktiraj nas</button>
+        
+            <Link  className={styles.button} href="/kontakt">Kontaktiraj nas</Link>
         </div>
       </section>
 
