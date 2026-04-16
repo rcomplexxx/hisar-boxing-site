@@ -16,7 +16,7 @@ export default function Footer() {
     { href: "/", label: "Početna" },
     { href: "/ekipa", label: "Ekipa" },
     { href: "/galerija", label: "Galerija" },
-    { href: "/o-nama", label: "Naša Priča" },
+    { href: "/o-nama", label: "Naša priča" },
     { href: "/kontakt", label: "Kontakt" },
   ];
 
