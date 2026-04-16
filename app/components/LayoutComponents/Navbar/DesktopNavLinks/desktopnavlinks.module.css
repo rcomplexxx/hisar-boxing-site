@@ -16,12 +16,14 @@
 }
 
 .cta {
-  margin-bottom: 0.5rem;
+  
+ min-width: 0;
   color: var(--neutral-color-2);
   background-color: var(--main-color-4); /* yellow-700 */
   padding: var(--size-3) var(--size-4);
-  font-weight: 600;
 
+  font-weight: 600;
+  border-radius: var(--radius-1);
   transition: all 200ms ease;
 }
 

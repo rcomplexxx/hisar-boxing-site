@@ -15,11 +15,9 @@ export default function DesktopNavLinks({ isOpen }: { isOpen: boolean }) {
       <NavLink link="/galerija" text="Galerija" currentPath={currentPath} />
       <NavLink link="/o-nama" text="Naša Priča" currentPath={currentPath} />
 
-<button  className={styles.cta}>
-      <Link href="/kontakt">
+      <Link href="/kontakt"   className={styles.cta}>
         Učlani se
       </Link>
-      </button>
     </div>
   );
 }

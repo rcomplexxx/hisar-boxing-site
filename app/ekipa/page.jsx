@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const trainers = [
   {
@@ -138,12 +139,12 @@ export default function TeamPage() {
 
         {/* CONTACT LINK (NO HARD CTA) */}
         <div className="text-center mt-16">
-          <a
-            href="/contact"
+          <Link
+            href="/o-nama"
             className="text-red-500 hover:text-red-400 underline"
           >
-            Kontaktiraj nas za više informacija
-          </a>
+            Saznajte više o nama
+          </Link>
         </div>
 
       </div>
