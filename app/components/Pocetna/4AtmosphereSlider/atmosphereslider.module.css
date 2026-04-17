@@ -131,6 +131,11 @@
   right: 4px;
 }
 
+.pagination{
+  color:red;
+  background-color: red;
+}
+
 .swiper-pagination-bullet {
   background: #bbb;
   opacity: 1;

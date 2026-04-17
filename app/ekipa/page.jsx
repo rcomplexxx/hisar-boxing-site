@@ -114,11 +114,11 @@ export default function TeamPage() {
         </div>
 
         {/* QUOTE */}
-        <div className={styles.quote}>
+        {/* <div className={styles.quote}>
           <p>
               {'"Šampioni se ne stvaraju u ringu — tamo se samo dokazuje ono što su izgradili na treninzima."'}
           </p>
-        </div>
+        </div> */}
 
         {/* LINK */}
         <div className={styles.linkWrap}>
