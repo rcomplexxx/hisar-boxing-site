@@ -116,7 +116,7 @@ export default function TeamPage() {
         {/* QUOTE */}
         <div className={styles.quote}>
           <p>
-            "Šampioni se ne stvaraju u ringu — tamo se samo dokazuje ono što su izgradili na treninzima."
+              {'"Šampioni se ne stvaraju u ringu — tamo se samo dokazuje ono što su izgradili na treninzima."'}
           </p>
         </div>
 
