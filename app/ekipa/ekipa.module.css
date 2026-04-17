@@ -100,9 +100,9 @@
   transition: 0.3s ease;
 }
 
-.card:hover {
+/* .card:hover {
   transform: scale(1.05);
-}
+} */
 
 /* IMAGE */
 .imageWrap {
