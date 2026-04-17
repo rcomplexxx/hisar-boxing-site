@@ -1,10 +1,10 @@
 
 
 .paginationWrapper {
-  margin-top: 2rem;
+  margin-top: var(--size-7);
   display: flex;
   justify-content: center;
-  gap: 0.5rem;
+  gap:var(--size-3);
 }
 
 .dot {
@@ -14,7 +14,7 @@
   border-radius: 50%;
   border: none;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 
 /* active */
