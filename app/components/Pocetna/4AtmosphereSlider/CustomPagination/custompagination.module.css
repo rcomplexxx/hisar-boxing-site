@@ -10,8 +10,7 @@
 .dot {
   width: 8px;
   height: 8px;
-  background: var(--neutral-color-11);
-  opacity: 0.4;
+  background: var(--neutral-color-7);
   border-radius: 50%;
   border: none;
   cursor: pointer;
@@ -20,8 +19,7 @@
 
 /* active */
 .dot.active {
-  width: 22px;
-  border-radius: 6px;
-  background: var(--main-color-4);
-  opacity: 1;
+  width: var(--size-6);
+  border-radius: 4px;
+  background: var(--main-color-3);
 }

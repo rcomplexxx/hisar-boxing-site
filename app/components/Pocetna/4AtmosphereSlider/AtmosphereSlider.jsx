@@ -112,7 +112,9 @@ export default function AtmosphereSlider() {
             <NextArrow />
           </div>
 
-          <CustomPagination total={images.length} activeIndex={activeSlideIndex}/>
+          <CustomPagination total={images.length} activeIndex={activeSlideIndex}
+          onClick={(index) => {swiperRef.current?.slideToLoop(index); }}
+          />
       </div>
     </section>
   );
