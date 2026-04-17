@@ -1,8 +1,9 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
+import CustomPagination from './CustomPagination/CustomPagination'
 
 import styles from "./atmosphereslider.module.css";
 
@@ -20,75 +21,8 @@ const images = [
   "/Images/gym_atmosphere_6.jpg",
 ];
 
-
-const icons = [
-    {
-        icon: (
-            `<svg
-                width="86"
-                height="87"
-                viewBox="0 0 86 87"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <rect x="0.5" y="1.125" width="75" height="75" stroke="#1A1918" />
-                <rect x="10.5" y="11.125" width="75" height="75" stroke="#1A1918" />
-            </svg>`
-        ),
-    },
-    {
-        icon: (
-            `<svg
-                width="91"
-                height="84"
-                viewBox="0 0 91 84"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <rect x="0.5" y="1.125" width="75" height="75" stroke="#1A1918" />
-                <path
-                    d="M7.36379 83.25L48.5 12L89.6362 83.25H7.36379Z"
-                    stroke="#1A1918"
-                />
-            </svg>`
-        ),
-    },
-    {
-        icon: (
-            `<svg
-                width="88"
-                height="91"
-                viewBox="0 0 88 91"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <rect x="0.5" y="1.125" width="75" height="75" stroke="#1A1918" />
-                <rect
-                    x="8.5"
-                    y="11.5"
-                    width="79"
-                    height="79"
-                    rx="39.5"
-                    stroke="#1A1918"
-                />
-            </svg>`
-        ),
-    },
-];
-
-
-
-
 export default function AtmosphereSlider() {
-
-      const pagination = {
-        clickable: true,
-        renderBullet: function (index, className) {
-            return `<span class=${className}>${icons[index].icon}</span>`
-        },
-    };
-
-
+  const [activeSlideIndex, setActiveSlideIndex ]= useState();
   const swiperRef = useRef(null);
 
   const handleSlide = (next) => {
@@ -132,8 +66,6 @@ export default function AtmosphereSlider() {
         touchMoveStopPropagation={false}
         touchStartPreventDefault={false}
 
-        
-          agination={pagination}
             breakpoints={{
               640: { slidesPerView: 1 },
               768: { slidesPerView: 2 },
@@ -141,7 +73,12 @@ export default function AtmosphereSlider() {
             }}
             onSwiper={(swiper) => {
               swiperRef.current = swiper;
+               setActiveSlideIndex(swiper.realIndex);
             }}
+
+            onSlideChange={(swiper) => {
+  setActiveSlideIndex(swiper.realIndex);
+}}
           >
             {images.map((src, index) => (
               <SwiperSlide key={index}>
@@ -174,6 +111,8 @@ export default function AtmosphereSlider() {
           >
             <NextArrow />
           </div>
+
+          <CustomPagination total={images.length} activeIndex={activeSlideIndex}/>
       </div>
     </section>
   );
