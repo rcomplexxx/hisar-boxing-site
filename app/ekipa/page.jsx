@@ -64,6 +64,39 @@ export default function TeamPage() {
           </div>
         </div> */}
 
+
+
+<div className={styles.teamIntro}>
+
+  <div className={styles.teamIntroText}>
+    <h2>Tim koji stoji iza svakog napretka</h2>
+    <p>
+      Naš tim čine treneri sa dugogodišnjim iskustvom u radu sa rekreativcima 
+      i takmičarima. Svaki član donosi specifično znanje, ali svi dele isti pristup — 
+      rad, disciplina i posvećenost.
+    </p>
+  </div>
+
+  {/* VALUES STRIP */}
+  <div className={styles.values}>
+    <div>
+      <strong>Iskustvo</strong>
+      <span>godine rada u ringu</span>
+    </div>
+    <div>
+      <strong>Posvećenost</strong>
+      <span>rad sa svakim članom</span>
+    </div>
+    <div>
+      <strong>Rezultati</strong>
+      <span>vidljiv napredak</span>
+    </div>
+  </div>
+
+</div>
+
+
+
         {/* Trainers Grid */}
         <div className="grid md:grid-cols-3 gap-10">
           {trainers.map((trainer, index) => (
