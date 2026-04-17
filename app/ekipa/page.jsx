@@ -78,7 +78,7 @@ export default function TeamPage() {
   </div>
 
   {/* VALUES STRIP */}
-  <div className={styles.values}>
+  {/* <div className={styles.values}>
     <div>
       <strong>Iskustvo</strong>
       <span>godine rada u ringu</span>
@@ -91,7 +91,7 @@ export default function TeamPage() {
       <strong>Rezultati</strong>
       <span>vidljiv napredak</span>
     </div>
-  </div>
+  </div> */}
 
 </div>
 

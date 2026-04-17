@@ -68,6 +68,11 @@
 
 /* responsive */
 @media (max-width: 768px) {
+
+   .teamIntro{
+    text-align: left;
+   }
+
   .values {
     flex-direction: column;
     gap: 1rem;
