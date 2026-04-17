@@ -59,7 +59,7 @@ export default function AtmosphereSlider() {
               waitForTransition: false,       // ← Helps with rapid autoplay + clicks
             }}
             preventInteractionOnTransition={false}   // ← THIS ALLOWS CLICKS DURING TRANSITION
-            allowTouchMove={false}
+            allowTouchMove={true}
 
              preventClicks={false}
         preventClicksPropagation={false}
