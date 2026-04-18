@@ -5,6 +5,7 @@ import { useState } from "react";
 import styles from "./galerija.module.css";
 import FullscreenMediaViewer from '@/app/components/Galerija/FullScreenMedia/FullScreenMedia'
 import PageHeader from "../components/LayoutComponents/PageHeader/PageHeader";
+import Image from "next/image";
 
 const sections = [
   { title: "Sala " },
@@ -36,12 +37,15 @@ export default function Gallery() {
             {Array.from({ length: 6 }).map((_, idx) => (
               <div key={idx} className={styles.card}>
                 {/* Replace with img or video */}
-                <img
-                  src={`https://picsum.photos/400/300?random=${i * 10 + idx}`}
-                  alt="gallery"
-                  onClick={()=>{setFullScreen(true)}}
-                  className={styles.media}
-                />
+              <Image
+              src={`https://picsum.photos/400/300?random=${i * 10 + idx}`}
+              alt="gallery"
+              onClick={() => setFullScreen(true)}
+              className={styles.media}
+              sizes="(max-width: 600px) 100vw, (max-width: 980px) 50vw, 30vw"
+              width={0}
+              height={0}
+            />
               </div>
             ))}
           </div>
