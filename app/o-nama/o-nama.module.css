@@ -151,7 +151,7 @@
 
 /* VALUES / TIMELINE */
 .valuesSection {
-  background-color: #030712; /* gray-950 */
+  background-color: var(--secondary-color-1); /* gray-950 */
   /* padding: 6rem 1.5rem;     */
 }
 
@@ -185,14 +185,13 @@
 }
 
 .valueCard h3 {
-  font-size: 1.25rem;   /* xl */
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 0.75rem;
-  color: #ff4537;        /* closer to your first bright red (#ff4537) */
+  color: var(--main-color-8);        /* closer to your first bright red (#ff4537) */
 }
 
 .valueCard p {
-  color: #d1d5db;        /* Tailwind gray-300 for better readability */
+  color: var(--neutral-color-13);        /* Tailwind gray-300 for better readability */
  
 }
 
