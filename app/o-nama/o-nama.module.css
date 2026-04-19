@@ -151,7 +151,7 @@
 
 /* VALUES / TIMELINE */
 .valuesSection {
-  background-color: var(--secondary-color-1); /* gray-950 */
+  background-color: var(--secondary-color-0); /* gray-950 */
   /* padding: 6rem 1.5rem;     */
 }
 
@@ -187,7 +187,7 @@
 .valueCard h3 {
   font-weight: 700;
   margin-bottom: 0.75rem;
-  color: var(--main-color-8);        /* closer to your first bright red (#ff4537) */
+  color: var(--main-color-6);        /* closer to your first bright red (#ff4537) */
 }
 
 .valueCard p {
@@ -233,15 +233,16 @@
   margin-top: var(--size-6);
 
   padding: 0.8rem 1.5rem;
-  background: white;
-  color: black;
+  background: var(--main-color-4);
+  color: var(--neutral-color-16);
   border: none;
+  border-radius: var(--radius-2);
   cursor: pointer;
   transition: 0.3s;
 }
 
 .button:hover {
-  background: #ddd;
+ background: var(--main-color-5);
 }
 
 /* RESPONSIVE */
