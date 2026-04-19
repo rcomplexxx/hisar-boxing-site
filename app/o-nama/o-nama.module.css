@@ -223,8 +223,8 @@
 
 /* CTA */
 .cta {
-  background: black;
-  color: white;
+  background: var(--neutral-color-1);
+ 
   text-align: center;
 }
 
@@ -232,7 +232,7 @@
   display: inline-block;
   margin-top: var(--size-6);
 
-  padding: 0.8rem 1.5rem;
+  padding: var(--size-4) var(--size-6);
   background: var(--main-color-4);
   color: var(--neutral-color-16);
   border: none;
