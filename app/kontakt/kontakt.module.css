@@ -292,18 +292,30 @@ rgba(110, 60, 35, 0.4)
   box-sizing: border-box;
   border: 1px solid var(--neutral-color-5);
 
-  /* keeps it subtle */
- 
-  filter: brightness(0.55) grayscale(0.4) contrast(0.95);
-  transition: all 0.25s ease;
 
-    /* filter: invert(90%) hue-rotate(180deg) brightness(0.85) contrast(0.9); */
 }
+
+
 
 .mapWrapper iframe {
   width: 100%;
      aspect-ratio: 16/9;
   border: 0;
+
+    /* keeps it subtle */
+ 
+  filter: brightness(0.55) grayscale(0.4) contrast(0.95);
+  transition: filter 0.25s ease, opacity 0.25s ease;
+
+    /* filter: invert(90%) hue-rotate(180deg) brightness(0.85) contrast(0.9); */
+}
+
+
+.mapWrapper iframe:hover,
+.mapWrapper iframe:active,
+.mapWrapper iframe:focus-within {
+  opacity: 1;
+  filter: brightness(0.85)  grayscale(0) contrast(1);
 }
 
 @media (max-width: 980px) {
@@ -320,14 +332,17 @@ rgba(110, 60, 35, 0.4)
   
 }
 
+@media (hover: none) {
+  .mapWrapper {
+    filter: brightness(0.6) grayscale(0.3);
+  }
+
+ 
+}
+
 
 /* only becomes “alive” on interaction */
-.mapWrapper:hover,
-.mapWrapper:active,
-.mapWrapper:focus-within {
-  opacity: 1;
-  filter: brightness(0.85)  grayscale(0) contrast(1);
-}
+
 
 
 
