@@ -11,7 +11,7 @@ export default function DesktopNavLinks({ isOpen }: { isOpen: boolean }) {
       className={`${styles.container} ${isOpen && styles.hiddenWhenOpen}`}
     >
       <NavLink link="/" text="Početna" currentPath={currentPath} />
-      <NavLink link="/ekipa" text="Ekipa" currentPath={currentPath} />
+      <NavLink link="/treninzi" text="Treninzi" currentPath={currentPath} />
       <NavLink link="/galerija" text="Galerija" currentPath={currentPath} />
       <NavLink link="/o-nama" text="Naša priča" currentPath={currentPath} />
 

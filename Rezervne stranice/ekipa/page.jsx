@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import PageHeader from "../components/LayoutComponents/PageHeader/PageHeader";
-import styles from './ekipa.module.css';
+import styles from './treninzi.module.css';
 
 const trainers = [
   {
@@ -34,7 +34,7 @@ export default function TeamPage() {
   return (
     <section className={styles.wrapper2}>
 
-      <PageHeader title="Ekipa" />
+      <PageHeader title="Treninzi" />
 
       <div className={styles.wrapper}>
 
@@ -113,12 +113,6 @@ export default function TeamPage() {
 
         </div>
 
-        {/* QUOTE */}
-        {/* <div className={styles.quote}>
-          <p>
-              {'"Šampioni se ne stvaraju u ringu — tamo se samo dokazuje ono što su izgradili na treninzima."'}
-          </p>
-        </div> */}
 
         {/* LINK */}
         <div className={styles.linkWrap}>

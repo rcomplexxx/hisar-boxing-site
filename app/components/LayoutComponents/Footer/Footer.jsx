@@ -14,7 +14,7 @@ export default function Footer() {
 
     const navLinks = [
     { href: "/", label: "Početna" },
-    { href: "/ekipa", label: "Ekipa" },
+    { href: "/treninzi", label: "Treninzi" },
     { href: "/galerija", label: "Galerija" },
     { href: "/o-nama", label: "Naša priča" },
     { href: "/kontakt", label: "Kontakt" },
