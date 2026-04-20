@@ -31,10 +31,17 @@
 
    max-width: var(--size-29);
   
-  background-color: var(--neutral-color-2);
+  background-color: var(--neutral-color-1);
   display: flex;
   flex-direction: column;
   /* gap: var(--size-11); */
+}
+
+
+@media (max-width: 980px) {
+.wrapper{
+   background-color: var(--neutral-color-2);
+}
 }
 
 
@@ -209,13 +216,15 @@
 /* CARD */
 .card {
   padding: 1.5rem;
-  border: 1px solid #ddd;
+  border: 1px solid var(--neutral-color-9);
+  border-radius: var(--radius-2);
   transition: 0.3s;
+  user-select: none;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  border-color: black;
+  border-color: var(--neutral-color-11);
 }
 
 
