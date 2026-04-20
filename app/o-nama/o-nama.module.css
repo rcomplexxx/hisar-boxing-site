@@ -18,7 +18,7 @@
 @media (max-width: 980px) {
 .wrapper2{
   
- padding: 0 var(--section-padding-horisontal);
+ padding: 0;
  padding-top: var(--section-padding-vertical);
 }
 }

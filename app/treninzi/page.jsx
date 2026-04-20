@@ -9,14 +9,28 @@ export default function TreninziPage() {
 
       <PageHeader title="Treninzi" />
 
-      <div className={styles.wrapper}>
+      <section className={styles.wrapper}>
 
 
 
 
 <div className={styles.container}>
 
-  <div className={styles.left}>
+
+
+  <div className={styles.right}>
+   <div className={styles.trainingImageWrap}>
+  <Image
+    src="/Images/box-training-2.jpg" // promeni po potrebi
+    alt="Boks trening"
+    height={0} width={0} sizes="100vw"
+    className={styles.trainingImage}
+    priority
+  />
+</div>
+  </div>
+
+    <div className={styles.left}>
     <h2>Treninzi za svaki nivo</h2>
       <p>
               Bilo da si početnik ili želiš da se takmičiš, naši treninzi su
@@ -31,18 +45,6 @@ export default function TreninziPage() {
   <li>✔ Individualni pristup</li>
 </ul>
    
-  </div>
-
-  <div className={styles.right}>
-   <div className={styles.trainingImageWrap}>
-  <Image
-    src="/Images/box-training-2.jpg" // promeni po potrebi
-    alt="Boks trening"
-    height={0} width={0} sizes="100vw"
-    className={styles.trainingImage}
-    priority
-  />
-</div>
   </div>
 
 </div>
@@ -120,7 +122,7 @@ export default function TreninziPage() {
           </Link>
         </div>
 
-      </div>
+      </section >
     </section>
   );
 }
