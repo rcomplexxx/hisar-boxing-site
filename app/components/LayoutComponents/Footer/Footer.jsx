@@ -77,7 +77,7 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className={styles.bottom}>
-        <p>© {new Date().getFullYear()} Hisar Boxing Club. Sva prava zadržana.</p>
+        <p>© {new Date().getFullYear()} Hisar Boxing Club.</p>
       </div>
     </footer>
   );

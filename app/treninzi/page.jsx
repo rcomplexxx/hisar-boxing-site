@@ -103,18 +103,20 @@ export default function TreninziPage() {
         </div>
 
         {/* SCHEDULE */}
-        <div className={styles.schedule}>
+        {/* <div className={styles.schedule}>
           <h2 className={styles.sectionTitle}>Raspored treninga</h2>
           <p className={styles.textSecondary}>
             Ponedeljak – Petak: 18:00 – 21:00 <br />
             Subota: 12:00 – 14:00
           </p>
-        </div>
+        </div> */}
 
         {/* CTA */}
         <div className={styles.linkWrap}>
-          <Link href="/kontakt" className={styles.link}>
-            Prijavi se na trening
+          <Link href="/o-nama" className={styles.link}>
+            {/* Prijavi se na trening */}
+
+            Saznajte više o nama
           </Link>
         </div>
 
