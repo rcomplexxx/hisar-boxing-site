@@ -18,6 +18,10 @@
 .wrapper {
   max-width: var(--size-29);
   background-color: var(--neutral-color-1);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-11);
 }
 
 
@@ -29,75 +33,7 @@
 }
 }
 
-/* INTRO */
-.teamIntro {
-  margin-bottom: 4rem;
-  text-align: center;
-}
 
-.teamIntroText {
-  max-width: 700px;
-  margin: 0 auto 2rem;
-}
-
-.teamIntroText h2 {
-  margin-bottom: 1rem;
-}
-
-.teamIntroText p {
-  color: #9ca3af;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  .teamIntro {
-    text-align: left;
-  }
-}
-
-
-.section {
-
-  
-  position: relative;
-
- background: linear-gradient(
-    135deg,
-    var(--neutral-color-1) 0%,   /* #34332C - dark base */
-    var(--neutral-color-2) 100% /* #A9A59D - soft highlight */
-  );
-  
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  overflow: hidden;
-}
-
-
-
-.header {
-text-align: center;
-max-width: 700px;
-margin: 0 auto var(--size-10);
-}
-
-
-
-@media (max-width: 480px) {
-  .header {
-    margin: 0 auto var(--size-8);
-  }
-}
-
-.header h2 {
-}
-
-
-.header p {
-  
-margin-top: 1rem;
-}
 
 
 
@@ -137,7 +73,7 @@ margin-top: 1rem;
     flex-direction: column; /* stack vertically */
     align-items: stretch;
 
-      gap: var(--size-5);
+      gap: var(--size-7);
   }
 
   .left{
@@ -178,7 +114,6 @@ margin-top: 1rem;
 .trainingImageWrap {
   position: relative;
  
-  margin-bottom: 3rem;
   border-radius: var(--radius-3);
   overflow: hidden;
 }
@@ -192,8 +127,7 @@ margin-top: 1rem;
 /* TRAINING TYPES */
 .trainingTypes {
   display: grid;
-  gap: 2rem;
-  margin-top: 3rem;
+  gap: var(--size-7);
 }
 
 @media (min-width: 768px) {
@@ -213,12 +147,11 @@ margin-top: 1rem;
 }
 
 .trainingBlock p {
-  color: #9ca3af;
+  color: var(--neutral-color-13);
 }
 
 /* APPROACH */
 .approach {
-  margin-top: 6rem;
   display: grid;
   gap: 3rem;
   align-items: center;
@@ -265,14 +198,12 @@ margin-top: 1rem;
 
 /* SCHEDULE */
 .schedule {
-  margin-top: 5rem;
   text-align: center;
 }
 
 /* LINK */
 .linkWrap {
   text-align: center;
-  margin-top: 4rem;
 }
 
 .link {

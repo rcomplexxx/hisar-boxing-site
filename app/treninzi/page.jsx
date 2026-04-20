@@ -94,7 +94,12 @@ export default function TreninziPage() {
             </p>
           </div>
 
+     <div>
+          <h2 className={styles.sectionTitle}>Fokus treninga</h2>
+
           <div className={styles.featuresGrid}>
+
+      
             {["Tehnika", "Snaga", "Kondicija", "Disciplina"].map((item) => (
               <div key={item} className={styles.featureCard}>
                 <p>{item}</p>
@@ -103,6 +108,9 @@ export default function TreninziPage() {
           </div>
 
         </div>
+
+        
+     </div>
 
         {/* SCHEDULE */}
         {/* <div className={styles.schedule}>
