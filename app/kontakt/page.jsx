@@ -43,7 +43,7 @@ export default function ContactPage() {
             </div>
           </Link>
 
-            <Link href="https://instagram.com" target="_blank" className={`${styles.item} ${styles.itemInstagram}`}>
+            <Link href="https://instagram.com/hisarboxingclub/" target="_blank" className={`${styles.item} ${styles.itemInstagram}`}>
             <div className={styles.icon}><InstagramIcon/></div>
             <div>
               <h4>Instagram</h4>
