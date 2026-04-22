@@ -1,9 +1,39 @@
+'use client';
+
+
 import Link from "next/link";
 import PageHeader from "../components/LayoutComponents/PageHeader/PageHeader";
 import styles from './treninzi.module.css';
 import Image from "next/image";
+import { useEffect } from "react";
 
 export default function TreninziPage() {
+
+
+
+ useEffect(() => {
+    const blocks = document.querySelectorAll(`.${styles.trainingBlock}`);
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(styles.visible);
+          }
+        });
+      },
+      { threshold: 0.4 }
+    );
+
+    blocks.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
+
+
+
+
+
   return (
     <section className={styles.wrapper2}>
 
@@ -38,11 +68,11 @@ export default function TreninziPage() {
               kondiciji i konstantnom napretku.
             </p>
 
-            <ul className={styles.benefits}>
-  <li>✔ Rad na tehnici i gardu</li>
-  <li>✔ Kondiciono i snaga</li>
-  <li>✔ Sparing i kontrolisani rad</li>
-  <li>✔ Individualni pristup</li>
+      <ul className={styles.benefits}>
+  <li>Rad na tehnici i gardu</li>
+  <li>Kondiciono i snaga</li>
+  <li>Sparing i kontrolisani rad</li>
+  <li>Individualni pristup</li>
 </ul>
    
   </div>
