@@ -114,10 +114,13 @@ export default function TreninziPage() {
           
           <div>
             <h2 className={styles.sectionTitle}>Kako radimo</h2>
-            <p className={styles.textPrimary}>
-              Svaki trening ima jasnu strukturu: zagrevanje, tehnika,
-              rad na džaku i kondicija.
-            </p>
+        <p className={styles.textPrimary}>
+  Svaki trening ima jasnu strukturu:{" "}
+  <span className={styles.highlight}>zagrevanje</span>,{" "}
+  <span className={styles.highlight}>tehnika</span>,{" "}
+  <span className={styles.highlight}>rad na džaku</span> i{" "}
+  <span className={styles.highlight}>kondicija</span>.
+</p>
             <p className={styles.textSecondary}>
               Radimo u manjim grupama kako bi svaki član dobio pažnju
               i napredovao iz treninga u trening.
