@@ -28,7 +28,7 @@ export default function Footer() {
       <div className={styles.container}>
         
         {/* Brand */}
-        <div className={styles.col}>
+        <div className={`${styles.col} ${styles.logoCol}`}>
           <div className={styles.logoWrapper}>
   <Image
     src="/Images/logo3.png" // put your logo in /public
