@@ -58,7 +58,7 @@ export default function Footer() {
         </div>
 
         {/* Contact */}
-        <div className={styles.col}>
+        <div className={`${styles.col} ${styles.colKontakt}`}>
           <h4>Kontakt</h4>
            <p>📞 <a href="tel:+381600000000">+381 62 123456</a></p>
           <p>📧 <a href="mailto:hisarboxing@gmail.com">hisarboxing@gmail.com</a></p>

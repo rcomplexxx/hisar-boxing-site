@@ -31,7 +31,7 @@
 
 /* GRID LAYOUT */
 .container {
-  max-width: 1200px;
+  max-width: var(--size-29);
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -50,6 +50,7 @@
   margin-bottom: 12px;
   color: var(--footer-title-color);
 }
+
 
 .logoWrapper {
   display: flex;
@@ -83,7 +84,7 @@
 @media (max-width: 900px) {
   .container {
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: var(--size-7);
   }
 }
 
@@ -94,12 +95,32 @@
 
 
   .container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: minmax(0, 1fr) auto ; 
+    gap: var(--size-6);
+    
   }
+
+  .link{
+    min-width: 0;
+  }
+
+  .container > *{
+    width: fit-content;
+  white-space: nowrap;
+
+
+}
 
   .container > :first-child {
   grid-column: span 2;
+   white-space: wrap;
 }
+
+.container > :nth-child(odd){
+  /* grid-column: span 1; */
+}
+
+
 
 
 .bottom p{
