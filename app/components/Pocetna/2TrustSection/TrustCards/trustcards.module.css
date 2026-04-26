@@ -1,0 +1,121 @@
+
+
+/*Card*/
+
+
+.card {
+  color: var(--card-color);
+  background: var(--card-bg);
+  padding: 2rem;
+  box-sizing: border-box;
+  border-radius: var(--radius-3);
+  text-align: left;
+  border: 1px solid var(--card-border-color);
+  opacity: 0;
+  transform: translateY(20px) scale(0.97); /* start slightly smaller and lower */
+}
+
+.animate {
+   animation: fadeUpScale 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+
+@media (max-width: 480px) {
+  
+ .card {
+  transform: translateX(16px) scale(0.98);
+}
+
+ .animate {
+   animation: fadeUpScaleMobile 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+  
+}
+
+/* .card:hover {
+transform: translateY(-6px);
+background: rgba(255, 255, 255, 0.07);
+} */
+
+.card h3 {
+font-size: 2.5rem;
+font-weight: 800;
+}
+
+.card h4 {
+margin-top: 0.3rem;
+font-weight: 600;
+}
+
+.card p {
+margin-top: 0.5rem;
+color: var(--text-classic-color-2);
+}
+
+.highlight {
+border: 1px solid var(--card-highlight-border-color);
+background: linear-gradient(
+    135deg,
+    var(--secondary-color-1),
+    var(--secondary-color-2),
+    var(--secondary-color-3)
+  );
+}
+
+/* desktop */
+@media (min-width: 768px) {
+.grid {
+grid-template-columns: repeat(4, 1fr);
+}
+
+.card:nth-child(1) {
+transform: translateY(-10px);
+}
+
+.card:nth-child(2) {
+transform: translateY(10px);
+}
+}
+
+@keyframes fadeUpScale {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.97);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-5px) scale(1.02); /* slight overshoot for pop effect */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+@keyframes fadeUpScaleMobile {
+  0% {
+    opacity: 0;
+    transform: translateY(16px) scale(0.98);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-2px) scale(1.02); /* slight overshoot for pop effect */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+}
+
+
+
+
+@keyframes fadeUp {
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+

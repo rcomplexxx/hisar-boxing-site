@@ -1,34 +1,17 @@
-'use client';
+
 
 
 import Link from "next/link";
 import PageHeader from "../components/LayoutComponents/PageHeader/PageHeader";
 import styles from './treninzi.module.css';
 import Image from "next/image";
-import { useEffect } from "react";
+import TrainingTypes from "./TrainingTypes/TrainingTypes";
 
 export default function TreninziPage() {
 
 
 
- useEffect(() => {
-    const blocks = document.querySelectorAll(`.${styles.trainingBlock}`);
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add(styles.visible);
-          }
-        });
-      },
-      { threshold: 0.4 }
-    );
-
-    blocks.forEach((el) => observer.observe(el));
-
-    return () => observer.disconnect();
-  }, []);
 
 
 
@@ -79,35 +62,9 @@ export default function TreninziPage() {
 
 </div>
 
+      <TrainingTypes/>
 
-        {/* TRAINING TYPES */}
-        <div className={styles.trainingTypes}>
-
-          <div className={styles.trainingBlock}>
-            <h3>Početnički treninzi</h3>
-            <p>
-              Učiš osnove boksa: stav, kretanje, udarci i pravilna tehnika.
-              Idealno za one koji prvi put ulaze u salu.
-            </p>
-          </div>
-
-          <div className={styles.trainingBlock}>
-            <h3>Rekreativni treninzi</h3>
-            <p>
-              Kombinacija boksa i kondicije. Savršeno za formu, zdravlje i
-              oslobađanje stresa.
-            </p>
-          </div>
-
-          <div className={styles.trainingBlock}>
-            <h3>Takmičarski treninzi</h3>
-            <p>
-              Intenzivni treninzi za borce koji žele da se takmiče.
-              Fokus na sparingu, taktici i maksimalnoj spremi.
-            </p>
-          </div>
-
-        </div>
+      
 
         {/* APPROACH */}
         <div className={styles.approach}>

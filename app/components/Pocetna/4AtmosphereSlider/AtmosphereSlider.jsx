@@ -8,8 +8,7 @@ import CustomPagination from './CustomPagination/CustomPagination'
 import styles from "./atmosphereslider.module.css";
 
 import "swiper/css";
-import "swiper/css/pagination";
-import { NextArrow, PrevArrow } from "../../../../public/Images/svgs/svgImages";
+import { NextArrow, PrevArrow } from "@/public/Images/svgs/svgImages";
 import Image from "next/image";
 
 const images = [
