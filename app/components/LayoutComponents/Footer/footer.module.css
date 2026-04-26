@@ -124,7 +124,7 @@
    white-space: normal;
 }
 
-.container > :nth-child(odd){
+.container > :nth-child(odd) h4{
   /* grid-column: span 1; */
 }
 
