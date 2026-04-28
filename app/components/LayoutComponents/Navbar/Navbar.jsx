@@ -45,7 +45,7 @@ export default function Navbar() {
           
       
 
-        <Logo/>
+        <Logo isOpen={isOpen}/>
 
         {isOpen?   <button className={styles.menuOpenButton} onClick={()=>{router.back();}}>
                   <CancelIcon

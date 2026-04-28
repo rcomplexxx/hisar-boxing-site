@@ -69,17 +69,20 @@ export default function MobileNavPanel({isOpen, toggleOpen}) {
         if(isOpen){
             increaseDeepLink('mobile_menu');
         window?.addEventListener("popstate", handlePopState);
+        document.body.style.overflow = "hidden";
         }
 
         else{
            window?.removeEventListener("popstate", handlePopState);
-          decreaseDeepLink()
+          decreaseDeepLink();
+          document.body.style.overflow = "";
         }
 
          return () => {
 
             window?.removeEventListener("popstate", handlePopState);
-          decreaseDeepLink()
+          decreaseDeepLink();
+          document.body.style.overflow = "";
         
         };
 
