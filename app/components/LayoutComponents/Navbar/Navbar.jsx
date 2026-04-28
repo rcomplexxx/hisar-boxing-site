@@ -2,7 +2,7 @@
 
 
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import DesktopNavLinks from "./DesktopNavLinks/DesktopNavLinks";
 import {MenuIcon,CancelIcon } from "@/public/Images/svgs/svgImages";
 import styles from './navbar.module.css'
@@ -15,11 +15,18 @@ import { useGlobalStoreShallow } from "../../../Contexts/AppContext";
 
 export default function Navbar() {
 
+  
  const [isOpen, setOpen] = useState(false);
 
   const { router } = useGlobalStoreShallow((state) => ({
        router: state.router
   }));
+
+
+
+
+
+
 
 
 
@@ -31,7 +38,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className={styles.navWrapper}>
+    <nav className={`${styles.navWrapper} ${isOpen ? styles.open : ""}`}>
     {/* <div className={styles.topBar}>📍 Mlinska 30, Leskovac | 📞 +381 62 123456</div> */}
    
         <div className={styles.navBar}>
@@ -55,6 +62,7 @@ export default function Navbar() {
 
           <DesktopNavLinks isOpen={isOpen}/>
         </div>
+        
 
       <MobileNavPanel isOpen={isOpen} toggleOpen={toggleOpen}/>
 

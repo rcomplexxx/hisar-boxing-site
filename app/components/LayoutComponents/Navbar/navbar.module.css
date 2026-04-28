@@ -4,6 +4,32 @@
    z-index: 1000;
 }
 
+.navWrapper::before {
+  display: none;
+  content: "";
+  position: fixed; /* covers whole screen */
+  inset: 0;
+  backdrop-filter: blur(0.8px);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  z-index: -1; /* sits behind nav content */
+}
+
+/* when menu is open */
+.navWrapper.open::before {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (max-width: 768px) {
+
+  .navWrapper::before {
+  display: block;
+  }
+  
+}
+
 
 
 .topBar{
@@ -29,7 +55,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 2;
+  z-index: 1000;
 }
 
 

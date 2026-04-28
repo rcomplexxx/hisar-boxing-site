@@ -30,6 +30,29 @@ export default function MobileNavPanel({isOpen, toggleOpen}) {
     }));
 
 
+  useEffect(() => {
+  if (!isOpen) return;
+
+  const mq = window.matchMedia("(min-width: 768px)");
+
+  const handleChange = (e) => {
+    if (e.matches) {
+      console.log('resize observer activated')
+      router.back();
+    }
+  };
+
+ 
+
+  // listen continuously
+  mq.addEventListener("change", handleChange);
+
+  return () => {
+    mq.removeEventListener("change", handleChange);
+  };
+}, [isOpen, router]);
+
+
 
       
 
@@ -84,6 +107,10 @@ export default function MobileNavPanel({isOpen, toggleOpen}) {
   };
 
   return (
+
+    
+ 
+
     <div className={`${styles.mobileMenu} ${isOpen?styles.mobileMenuOpen:styles.mobileMenuClosed}`}>
      
        {/* <button className={styles.menuOpenButton} onClick={clickClose}>
@@ -119,5 +146,7 @@ export default function MobileNavPanel({isOpen, toggleOpen}) {
 
      
     </div>
+
+    
   );
 }
