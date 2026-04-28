@@ -4,9 +4,6 @@ import React, { useEffect } from 'react'
 import styles from './mobilenavpanel.module.css'
 import Link from 'next/link'
 import { useGlobalStoreShallow } from "@/app/Contexts/AppContext";
-import { useRouter } from 'next/router';
-import { CancelIcon } from '../../../../../public/Images/svgs/svgImages';
-import Logo from '../Logo/Logo';
 import { usePathname } from 'next/navigation';
 
 
@@ -16,7 +13,7 @@ const navLinks = [
   { href: "/treninzi", label: "Treninzi" },
   { href: "/galerija", label: "Galerija" },
   { href: "/o-nama", label: "Naša priča" },
-  { href: "/kontakt", label: "Kontakt" },
+  // { href: "/kontakt", label: "Kontakt" },
 ];
 
 
@@ -26,43 +23,45 @@ export default function MobileNavPanel({isOpen, toggleOpen}) {
 
 
 
-    const { router, increaseDeepLink, decreaseDeepLink } = useGlobalStoreShallow((state) => ({
-      router: state.router,
+    const { increaseDeepLink, decreaseDeepLink } = useGlobalStoreShallow((state) => ({
       increaseDeepLink: state.increaseDeepLink,
       decreaseDeepLink: state.decreaseDeepLink
     }));
 
 
- useEffect(() => {
 
+      
 
+      useEffect(()=>{
 
-        const handlePopState = ()=>{
+          const handlePopState = ()=>{
 
-          console.log('mobile nav pop state activated.')
+          console.log('mobile nav pop state activated.', isOpen)
           
           toggleOpen();
           
         }
- console.log('mobile nav pop state activated.')
-       
-        increaseDeepLink('mobile_menu');
+
+        if(isOpen){
+            increaseDeepLink('mobile_menu');
         window?.addEventListener("popstate", handlePopState);
-         
-  
-        return () => {
+        }
 
-          
-          window?.removeEventListener("popstate", handlePopState);
+        else{
+           window?.removeEventListener("popstate", handlePopState);
           decreaseDeepLink()
+        }
 
+         return () => {
+
+            window?.removeEventListener("popstate", handlePopState);
+          decreaseDeepLink()
         
-
         };
-      }, []);
+
+      }, [isOpen])
 
 
-      const clickClose = ()=>{router.back();}
   
 
   const pathname = usePathname();
@@ -73,16 +72,14 @@ export default function MobileNavPanel({isOpen, toggleOpen}) {
   };
 
   return (
-    <div className={styles.mobileMenu}>
-      <div className={styles.mobileMenuTop}>
-        <Logo />
-        <button className={styles.menuOpenButton} onClick={clickClose}>
+    <div className={`${styles.mobileMenu} ${isOpen?styles.mobileMenuOpen:styles.mobileMenuClosed}`}>
+     
+       {/* <button className={styles.menuOpenButton} onClick={clickClose}>
           <CancelIcon
             styleClassName={styles.closeButton}
             color={"#ad4a4a"}
           />
-        </button>
-      </div>
+        </button> */}
 
       <div className={styles.mobileMenuMain}>
         {navLinks.map((link) => (
@@ -97,7 +94,14 @@ export default function MobileNavPanel({isOpen, toggleOpen}) {
             {link.label}
           </Link>
         ))}
+
+         <Link href="/kontakt"   className={styles.cta}>
+        Učlani se
+      </Link>
+
       </div>
+
+     
     </div>
   );
 }

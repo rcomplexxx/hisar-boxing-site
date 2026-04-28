@@ -3,12 +3,12 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import styles from './desktopnavlinks.module.css'
 
-export default function DesktopNavLinks({ isOpen }: { isOpen: boolean }) {
+export default function DesktopNavLinks() {
   const currentPath = usePathname();
 
   return (
     <div
-      className={`${styles.container} ${isOpen && styles.hiddenWhenOpen}`}
+      className={`${styles.container}`}
     >
       <NavLink link="/" text="Početna" currentPath={currentPath} />
       <NavLink link="/treninzi" text="Treninzi" currentPath={currentPath} />
