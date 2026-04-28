@@ -77,7 +77,7 @@ export default function ContactPage() {
     </Link>
   </div>
 
-  <div className={styles.mapWrapper}>
+  <div className={styles.mapWrapper} tabindex="0">
    <iframe 
    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1062.0159893559558!2d21.947806839889495!3d42.992566820138784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475582adbba41269%3A0x60c7b8db3cf588a0!2sMlinska%2030%2C%20Leskovac%2016000!5e0!3m2!1sen!2srs!4v1776722843309!5m2!1sen!2srs" 
   loading="lazy"
