@@ -85,9 +85,15 @@
   gap: var(--size-7);
 }
 
+.contentWrapper > div{
+  width: 100%;
+}
+
 .contentWrapper2{
   flex-direction: column-reverse;
 }
+
+
 }
 
 .oldSparring {
@@ -120,7 +126,7 @@
 }
 
 .stats strong {
-
+  color: var(--secondary-color-5);
   font-size: 1.8rem;
 }
 
