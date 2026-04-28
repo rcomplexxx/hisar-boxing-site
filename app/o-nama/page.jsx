@@ -93,7 +93,7 @@ Kroz tradiciju, rad i disciplinu, stvaramo mesto gde svako ima priliku da postan
 </section>
 
  
-
+  <div className={`${styles.spacerMainColor} ${styles.spacerOnlyDesktop}`}/>
 
             {/* VALUES */}
       <section className={styles.valuesSection}>
@@ -121,7 +121,7 @@ Kroz tradiciju, rad i disciplinu, stvaramo mesto gde svako ima priliku da postan
 
       {/* ŠTA NAS IZDVAJA */}
       <section className={styles.sectionAlt}>
-        <div className={styles.container}>
+        <div className={styles.altContainer}>
           <h2>Šta nas izdvaja</h2>
 
           <div className={styles.grid}>

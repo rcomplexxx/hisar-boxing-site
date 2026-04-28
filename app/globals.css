@@ -76,7 +76,7 @@
 
 
  
-
+ --main-color-0: #0c0504;
  --main-color-1: #250a09;
  --main-color-2: #4a1412;
  /*main 1 i 2 se retko koriste*/
@@ -92,7 +92,7 @@
 
 
 
---secondary-color-0:  #040A1A;
+--secondary-color-0:  rgb(5, 11, 27);
  --secondary-color-1: #050C1F;
 --secondary-color-2: #0A183D;
 /* rarely used */
