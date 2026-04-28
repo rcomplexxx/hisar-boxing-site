@@ -24,6 +24,8 @@ export default function Navbar() {
 
 
   function toggleOpen() {
+
+    console.log('toggle happened UwU')
     setOpen(!isOpen);
     
   }

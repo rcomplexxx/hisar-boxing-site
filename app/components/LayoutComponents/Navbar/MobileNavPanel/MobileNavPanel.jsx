@@ -20,10 +20,11 @@ const navLinks = [
 export default function MobileNavPanel({isOpen, toggleOpen}) {
 
 
+  //Ubaci nextLink mehanizam
 
 
-
-    const { increaseDeepLink, decreaseDeepLink } = useGlobalStoreShallow((state) => ({
+    const { router, increaseDeepLink, decreaseDeepLink } = useGlobalStoreShallow((state) => ({
+      router: state.router,
       increaseDeepLink: state.increaseDeepLink,
       decreaseDeepLink: state.decreaseDeepLink
     }));
@@ -34,9 +35,9 @@ export default function MobileNavPanel({isOpen, toggleOpen}) {
 
       useEffect(()=>{
 
+
           const handlePopState = ()=>{
 
-          console.log('mobile nav pop state activated.', isOpen)
           
           toggleOpen();
           
@@ -60,6 +61,17 @@ export default function MobileNavPanel({isOpen, toggleOpen}) {
         };
 
       }, [isOpen])
+
+
+       
+
+         const handleLinkExecution = (event, url) => {
+          event.preventDefault();
+          global.executeNextLink = url;
+           router.back();
+          
+        }
+
 
 
   
@@ -89,13 +101,17 @@ export default function MobileNavPanel({isOpen, toggleOpen}) {
             className={`${styles.linkStyle} ${
               isActive(link.href) ? styles.activeLink : ""
             }`}
-            onClick={toggleOpen}
+
+            onClick={(event)=>{handleLinkExecution(event, link.href) } }
+
           >
             {link.label}
           </Link>
         ))}
 
-         <Link href="/kontakt"   className={styles.cta}>
+         <Link href="/kontakt"   className={styles.cta}
+          onClick={(event)=>{handleLinkExecution(event, "/kontakt") }}
+          >
         Učlani se
       </Link>
 
