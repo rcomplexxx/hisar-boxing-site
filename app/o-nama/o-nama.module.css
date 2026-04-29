@@ -126,7 +126,7 @@
 }
 
 .stats strong {
-  color: var(--secondary-color-5);
+  color: var(--main-color-5);
   font-size: 1.8rem;
 }
 
@@ -209,7 +209,7 @@
 .valueCard h3 {
   font-weight: 700;
   margin-bottom: 0.75rem;
-  color: var(--main-color-4);       
+  color: var(--secondary-color-4);       
 }
 
 .valueCard p {
@@ -218,7 +218,7 @@
 }
 
 .sectionAlt {
-  padding: 4rem 2rem;
+
   background-color: var(--neutral-color-3);
   
 }
@@ -258,7 +258,7 @@
 
   padding: 1.5rem;
   border: 1px solid var(--neutral-color-9);
-  border-radius: var(--radius-2);
+  border-radius: var(--radius-3);
   transition: 0.3s;
   user-select: none;
 }
