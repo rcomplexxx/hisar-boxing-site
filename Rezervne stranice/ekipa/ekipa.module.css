@@ -58,12 +58,12 @@
 
 .values strong {
   font-size: 1.1rem;
-  color: #ef4444; /* red accent */
+  color: var(--main-color-3);
 }
 
 .values span {
   font-size: 0.85rem;
-  color: #6b7280;
+  color: var(--main-color-3);
 }
 
 /* responsive */

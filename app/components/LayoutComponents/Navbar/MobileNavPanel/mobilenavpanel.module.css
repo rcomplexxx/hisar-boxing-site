@@ -124,7 +124,7 @@
 
 .mobileMenu a {
   color: var(--mobile-menu-link-color);
-  transition: color 0.2s;
+  transition: color 0.3s ease;
 }
 
 .mobileMenu a:hover {
@@ -140,7 +140,7 @@
 .cta {
   
  min-width: 0;
-  color: var(--neutral-color-2);
+  color: var(--neutral-color-15) !important;
   background-color: var(--main-color-4); /* yellow-700 */
 
   margin-top: var(--size-5);
@@ -150,11 +150,11 @@
   font-size: var(--fs-4);
   border-radius: var(--radius-2);
   text-align: center;
-  transition: all 200ms ease;
+  transition: all 0.3s ease !important;
 }
 
 .cta:hover {
-  background-color: #ef4444; /* red-500 */
+  background-color: var(--main-color-3); /* red-500 */
 }
 
 @media (max-width: 480px) {
